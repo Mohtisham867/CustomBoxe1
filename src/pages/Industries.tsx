@@ -92,7 +92,7 @@ const Industries = () => {
 
       {/* Hero Section */}
       <section
-        className="relative h-[400px] flex items-center justify-center bg-cover bg-center mt-[180px]"
+        className="relative h-[400px] flex items-center justify-center bg-cover bg-center mt-[120px] md:mt-[160px]"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />

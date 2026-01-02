@@ -40,7 +40,7 @@ const CorrugatedBoxes = () => {
             <Header />
 
             {/* Breadcrumb */}
-            <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mt-[180px]">
+            <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mt-[120px] md:mt-[160px]">
                 <div className="container mx-auto px-4 py-4">
                     <Breadcrumb>
                         <BreadcrumbList>
@@ -115,7 +115,7 @@ const CorrugatedBoxes = () => {
                                         className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                                     >
                                         <CardContent className="p-0">
-                                            <div className="h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                            <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
                                                 <div className="relative h-full w-full flex items-center justify-center">
                                                     {product.image ? (
                                                         <img

@@ -81,7 +81,7 @@ const MoisturizerJar = () => {
         <div className="min-h-screen bg-background w-full max-w-[100vw] overflow-x-hidden">
             <Header />
 
-            <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mt-[180px]">
+            <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mt-[120px] md:mt-[160px]">
                 <div className="container mx-auto px-4 py-4">
                     <Breadcrumb>
                         <BreadcrumbList>

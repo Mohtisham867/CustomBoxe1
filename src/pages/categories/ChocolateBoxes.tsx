@@ -44,7 +44,7 @@ const ChocolateBoxes = () => {
       <Header />
 
       {/* Main Content */}
-      <main className="mt-[180px]">
+      <main className="mt-[120px] md:mt-[160px]">
         {/* Breadcrumb */}
         <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <div className="container mx-auto px-4 py-4">

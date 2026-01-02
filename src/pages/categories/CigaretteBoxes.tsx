@@ -47,7 +47,7 @@ const CigaretteBoxes = () => {
       <Header />
 
       {/* Hero Section with Split Layout */}
-      <section className="mt-[180px] py-12 bg-background">
+      <section className="mt-[120px] md:mt-[160px] py-12 bg-background">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <div className="mb-8">

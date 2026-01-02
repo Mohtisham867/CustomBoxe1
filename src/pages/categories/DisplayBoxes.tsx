@@ -77,11 +77,11 @@ const productOptions = [
 
 const DisplayBoxes = () => {
     return (
-        <div className="min-h-screen bg-background px-[10px]">
+        <div className="min-h-screen bg-background w-full max-w-[100vw] overflow-x-hidden">
             <Header />
 
             {/* Breadcrumb */}
-            <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mt-[180px]">
+            <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mt-[120px] md:mt-[160px]">
                 <div className="container mx-auto px-4 py-4">
                     <Breadcrumb>
                         <BreadcrumbList>
@@ -118,7 +118,7 @@ const DisplayBoxes = () => {
                                 Custom, attractive, and robust packaging solutions designed to showcase products effectively in retail and counter settings.
                             </p>
                             <div className="pt-4">
-                                <div className="relative w-[480px] h-[300px] overflow-hidden rounded-lg shadow-lg">
+                                <div className="relative w-full max-w-[480px] h-[300px] overflow-hidden rounded-lg shadow-lg">
                                     <img
                                         src={displayBoxesHero}
                                         alt="Display Boxes Hero"
@@ -151,14 +151,14 @@ const DisplayBoxes = () => {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                         {relatedProducts.map((product, index) => (
                             <Card
                                 key={index}
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
                                         {/* Product image placeholder - intentionally empty */}
                                         {product.image ? (
                                             <img
