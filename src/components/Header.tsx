@@ -157,7 +157,7 @@ export const Header = () => {
   const navItems = [
     { label: "Box by Industry", href: "/industries", hasDropdown: true },
     { label: "Shapes & Styles", href: "/shapes-styles", hasDropdown: true },
-    { label: "Box by Materials", href: "/materials", hasDropdown: true },
+    { label: "Box by Materials", href: "/box-by-materials", hasDropdown: true },
     { label: "Mylar Bags", href: "/categories/custom-mylar-bags", hasDropdown: false },
     { label: "Primary Packaging", href: "/primary-packaging", hasDropdown: false },
     { label: "Packaging Hub", href: "/packaging-hub", hasDropdown: false },
@@ -230,7 +230,7 @@ export const Header = () => {
       {/* Main Header */}
       <div className={`bg-background border-b border-border transition-all duration-300 relative z-[60] ${hideMainHeader ? '-translate-y-full opacity-0 h-0 overflow-hidden' : 'translate-y-0 opacity-100'
         }`}>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-[10px]">
           <div className="flex items-center justify-between h-20 gap-4">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-2 group flex-shrink-0">
@@ -324,7 +324,7 @@ export const Header = () => {
 
       {/* Secondary Navigation - Desktop */}
       <div className="hidden md:block bg-accent/30 border-b border-border">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-[10px]">
           <nav className="flex items-center gap-1 relative h-[40px]">
             {navItems.map((item) => (
               <div
@@ -431,7 +431,7 @@ export const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden fixed inset-x-0 top-[115px] bottom-0 bg-background border-b border-border shadow-lg overflow-y-auto z-50">
           {/* Mobile Search */}
-          <div className="px-4 py-3 border-b border-border sticky top-0 bg-background z-10">
+          <div className="px-[10px] py-3 border-b border-border sticky top-0 bg-background z-10">
             <div className="relative search-container">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground z-10" />
               <Input
@@ -480,15 +480,24 @@ export const Header = () => {
               <div key={item.label}>
                 {item.label === "Box by Materials" ? (
                   <>
-                    <button
-                      onClick={() => setIsMaterialsOpen(!isMaterialsOpen)}
-                      className="flex items-center justify-between w-full px-4 py-4 text-foreground hover:bg-accent transition-colors border-b border-border/50 text-base font-medium"
-                    >
-                      <span className="font-medium">{item.label}</span>
-                      <ChevronDown
-                        className={`h-4 w-4 transition-transform duration-200 ${isMaterialsOpen ? "rotate-180" : ""}`}
-                      />
-                    </button>
+                    <div className="flex items-center justify-between w-full border-b border-border/50">
+                      <a
+                        href="/box-by-materials"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="flex-1 px-4 py-4 text-foreground hover:bg-accent transition-colors text-base font-medium"
+                      >
+                        <span className="font-medium">{item.label}</span>
+                      </a>
+                      <button
+                        onClick={() => setIsMaterialsOpen(!isMaterialsOpen)}
+                        className="px-4 py-4 text-foreground hover:bg-accent transition-colors"
+                        aria-label="Toggle materials submenu"
+                      >
+                        <ChevronDown
+                          className={`h-4 w-4 transition-transform duration-200 ${isMaterialsOpen ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                    </div>
                     <div
                       className={`grid transition-all duration-200 ease-in-out overflow-hidden bg-accent/5 ${isMaterialsOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                         }`}

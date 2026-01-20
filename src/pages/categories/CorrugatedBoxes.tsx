@@ -42,7 +42,7 @@ const CorrugatedBoxes = () => {
 
             {/* Breadcrumb */}
             <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mt-[120px] md:mt-[160px]">
-                <div className="container mx-auto px-4 py-4">
+                <div className="container mx-auto px-[10px] py-4">
                     <Breadcrumb>
                         <BreadcrumbList>
                             <BreadcrumbItem>
@@ -67,7 +67,7 @@ const CorrugatedBoxes = () => {
 
             {/* Top Split Section */}
             <main className="py-16">
-                <div className="container mx-auto px-4">
+                <div className="container mx-auto px-[10px]">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-16 mb-12 items-start">
                         {/* Left Side */}
                         <div className="space-y-6 text-center lg:text-left">
@@ -78,70 +78,68 @@ const CorrugatedBoxes = () => {
                                 Discover our range of custom corrugated boxes, engineered for superior strength and durability.
                                 Perfect for shipping, storage, and e-commerce, ensuring your products arrive safely every time.
                             </p>
-                            <div className="max-w-lg">
-                                <div className="flex justify-center lg:justify-start">
-                                    <div className="w-full max-w-[480px] h-[300px] bg-gray-200 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
-                                        <img
-                                            src={corrugatedBoxesHero}
-                                            alt="Custom Corrugated Boxes Hero"
-                                            className="w-full h-full object-cover"
-                                        />
-                                    </div>
+                            <div className="flex justify-center lg:justify-start">
+                                <div className="w-full max-w-[480px] h-[300px] bg-gray-200 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+                                    <img
+                                        src={corrugatedBoxesHero}
+                                        alt="Custom Corrugated Boxes Hero"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
-                            </div>
-
-                            {/* Right Side - Instant Quote Form */}
-                            <div className="flex justify-end">
-                                <InstantQuoteFormCompact customProducts={corrugatedBoxProducts} />
                             </div>
                         </div>
 
-{/* Related Products Section */}
-                        <section className="mt-16">
-                            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                                Durable Corrugated Packaging Solutions
-                            </h2>
-                            <p className="text-lg text-muted-foreground mb-8 max-w-3xl">
-                                Explore our selection of high-quality corrugated boxes designed to withstand the rigors of transit
-                                while presenting your brand professionally.
-                            </p>
-
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                                {relatedProducts.map((product, index) => (
-                                    <Card
-                                        key={index}
-                                        className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
-                                    >
-                                        <CardContent className="p-0">
-                                            <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
-                                                <div className="relative h-full w-full flex items-center justify-center">
-                                                    {product.image ? (
-                                                        <img
-                                                            src={product.image}
-                                                            alt={product.name}
-                                                            className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
-                                                        />
-                                                    ) : (
-                                                        <div className="w-full h-full flex items-center justify-center bg-gray-200">
-                                                            <span className="text-gray-400 text-xs">Image Placeholder</span>
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            </div>
-                                            <div className="p-4 border-t border-border">
-                                                <h3 className="font-semibold text-foreground text-sm mb-2">
-                                                    {product.name}
-                                                </h3>
-                                                <p className="text-xs text-muted-foreground">
-                                                    {product.description}
-                                                </p>
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                ))}
-                            </div>
-                        </section>
+                        {/* Right Side - Instant Quote Form */}
+                        <div className="flex justify-end">
+                            <InstantQuoteFormCompact customProducts={corrugatedBoxProducts} />
+                        </div>
                     </div>
+
+                    {/* Related Products Section */}
+                    <section className="mt-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                            Durable Corrugated Packaging Solutions
+                        </h2>
+                        <p className="text-lg text-muted-foreground mb-8 max-w-3xl">
+                            Explore our selection of high-quality corrugated boxes designed to withstand the rigors of transit
+                            while presenting your brand professionally.
+                        </p>
+
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            {relatedProducts.map((product, index) => (
+                                <Card
+                                    key={index}
+                                    className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
+                                >
+                                    <CardContent className="p-0">
+                                        <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                            <div className="relative h-full w-full flex items-center justify-center">
+                                                {product.image ? (
+                                                    <img
+                                                        src={product.image}
+                                                        alt={product.name}
+                                                        className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                    />
+                                                ) : (
+                                                    <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                                                        <span className="text-gray-400 text-xs">Image Placeholder</span>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </div>
+                                        <div className="p-4 border-t border-border">
+                                            <h3 className="font-semibold text-foreground text-sm mb-2">
+                                                {product.name}
+                                            </h3>
+                                            <p className="text-xs text-muted-foreground">
+                                                {product.description}
+                                            </p>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            ))}
+                        </div>
+                    </section>
                 </div>
             </main>
 
@@ -151,7 +149,7 @@ const CorrugatedBoxes = () => {
             <QuoteForm />
             <SEOContent>
 
-                <h2>The Ultimate Guide to Corrugated Boxes</h2>
+                    <h2>The Ultimate Guide to Corrugated Boxes</h2>
                 <p>
                     In the competitive world of retail and e-commerce, packaging is no longer just a container—it's a powerful marketing tool that communicates your brand's value instantly. 
                     Our <strong>Corrugated Boxes</strong> are engineered to deliver precisely that impact. merging superior structural integrity with breathtaking aesthetics, these boxes serve as the perfect ambassador for your products.
@@ -205,7 +203,7 @@ const CorrugatedBoxes = () => {
                     Our flexible production lines allow for competitive pricing on short runs and massive volume discounts on wholesale orders. 
                     Partnering with us means gaining a dedicated packaging team committed to your timeline, budget, and quality standards.
                 </p>
-            </SEOContent>
+                </SEOContent>
             <Footer />
         </div>
     );

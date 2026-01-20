@@ -84,6 +84,7 @@ import GlassCreamJars from "./pages/categories/GlassCreamJars";
 import CustomPreRollTubes from "./pages/categories/CustomPreRollTubes";
 import DropperBottles from "./pages/categories/DropperBottles";
 import JarsWithPump from "./pages/categories/JarsWithPump";
+import BoxByMaterials from "./pages/BoxByMaterials";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -172,6 +173,7 @@ const App = () => (
           <Route path="/primary-packaging/custom-pre-roll-tubes" element={<CustomPreRollTubes />} />
           <Route path="/primary-packaging/dropper-bottles" element={<DropperBottles />} />
           <Route path="/primary-packaging/jars-with-pump" element={<JarsWithPump />} />
+          <Route path="/box-by-materials" element={<BoxByMaterials />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
