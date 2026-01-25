@@ -1,17 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import cosmeticBoxes from "@/assets/products/cosmetic-boxes.jpg";
-import soapBoxes from "@/assets/products/soap-boxes.jpg";
-import candleBoxes from "@/assets/products/candle-boxes.jpg";
+import cosmeticBoxes from "@/assets/products/cosmetic-boxes-new.png";
+import soapBoxes from "@/assets/products/soap-boxes-new.jpg";
+import candleBoxes from "@/assets/products/candle-boxes-new.jpg";
 import displayBoxes from "@/assets/products/display-boxes.jpg";
-import mailerBoxes from "@/assets/products/mailer-boxes.jpg";
-import beveragePackaging from "@/assets/products/beverage-packaging.jpg";
+import mailerBoxes from "@/assets/products/mailer-boxes-new.jpg";
+import beveragePackaging from "@/assets/products/beverage-packaging-new.jpg";
 import cbdBoxes from "@/assets/products/cbd-boxes.jpg";
-import rigidBoxes from "@/assets/products/rigid-boxes.jpg";
+import rigidBoxes from "@/assets/products/rigid-boxes-new.png";
 import tuckBoxes from "@/assets/products/tuck-boxes.jpg";
 import cigaretteBoxes from "@/assets/products/cigarette-boxes.jpg";
-import mylarBags from "@/assets/products/mylar-bags.jpg";
-import cardboardBoxes from "@/assets/products/cardboard-boxes.jpg";
+import mylarBags from "@/assets/products/mylar-bags-new.png";
+import cardboardBoxes from "@/assets/products/cardboard-boxes-new.jpg";
 
 const products = [
   { name: "COSMETIC BOXES", image: cosmeticBoxes, link: "/industries/cosmetic-boxes" },

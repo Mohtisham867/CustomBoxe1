@@ -141,11 +141,11 @@ const SleevesAndTrays = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer text-left"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="w-full aspect-square overflow-hidden relative">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className={`h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110 ${product.isPlaceholder ? 'opacity-80' : ''}`}
+                                            className={`w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110 ${product.isPlaceholder ? 'opacity-80' : ''}`}
                                         />
                                         {product.isPlaceholder && (
                                             <div className="absolute inset-0 flex items-center justify-center bg-black/5">

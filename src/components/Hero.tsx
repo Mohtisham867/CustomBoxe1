@@ -1,6 +1,6 @@
 import { ArrowRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/main-home-hero.png";
+import heroImage from "@/assets/main-home-hero-new.png";
 import { useCounterAnimation } from "@/hooks/use-counter-animation";
 
 export const Hero = () => {
