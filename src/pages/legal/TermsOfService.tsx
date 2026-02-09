@@ -25,9 +25,7 @@ const TermsOfService = () => {
                 {/* Content */}
                 <div className="relative z-10 text-center px-4 pt-32">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Terms of Service</h1>
-                    <p className="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto">
-                        Last Updated: {lastUpdated}
-                    </p>
+                    {/* <p className="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto">Last Updated: {lastUpdated}</p> */}
                 </div>
             </div>
 

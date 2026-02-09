@@ -234,7 +234,7 @@ export const Header = () => {
           <div className="flex items-center justify-between h-20 gap-4">
             {/* Logo */}
             <a href="/" className="flex items-center group flex-shrink-0 cursor-pointer">
-              <img src={logo} alt="CustomPackMakers" className="h-12 md:h-16 w-auto object-contain mr-4 transition-transform hover:scale-105" loading="lazy" />
+              <img src={logo} alt="CustomPackMakers" className="h-12 md:h-15 w-auto object-contain mr-4 transition-transform " loading="lazy" />
             </a>
 
             {/* Search Bar - Desktop */}

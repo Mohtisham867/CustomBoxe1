@@ -20,7 +20,7 @@ export const Footer = () => {
               <img src={logo} alt="CustomPackMakers" className="h-10 w-auto object-contain transition-transform hover:scale-105" loading="lazy" />
             </a>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Premium custom packaging solutions for businesses worldwide. Transform your brand with exceptional boxes.
+              CustomPackMakers provides premium packaging solutions to elevate your brand. We combine innovative designs with high-quality materials for every box. Your vision, our packaging—delivering excellence across every shipment..
             </p>
             <div className="flex gap-3 pt-2">
               <a href="#" className="bg-white border border-border hover:border-primary hover:text-primary p-2 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md">
