@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { QuoteForm } from "@/components/QuoteForm";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -12,60 +12,116 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-// Icons for brand placeholder
-import { Circle, User } from "lucide-react";
-
 // Images
-import cardboardHero from "@/assets/cardboard-boxes-hero.webp";
 import rigidHero from "@/assets/rigid-boxes/rigid-boxes-hero.webp";
 import cosmeticHero from "@/assets/cosmetic-boxes-hero.webp";
+import mailerBoxes from "@/assets/mailer-boxes/mailer-boxes-hero.webp";
+import mylarBags from "@/assets/mylar-bags/mylar-bags-hero.webp";
 import apparelHero from "@/assets/apparel-boxes/hero.webp";
-import cannabisTinctureBoxes from "@/assets/cannabis-packaging/tincture-boxes.webp";
-import hairExtensionBoxes from "@/assets/cosmetic-boxes/Hair Extension Boxes.webp";
-import glassCandleJars from "@/assets/primary-packaging/glass-candle-jars.webp";
-import chocolateBoxes from "@/assets/chocolate-boxes-hero.webp"; // Assuming exist or similar
-import kraftBoxes from "@/assets/cardboard-boxes-hero.webp"; // Reusing for now to ensure load, can swap if custom-kraft exists
+import cannabisHero from "@/assets/cannabis-packaging/hero.webp";
+import foodBoxes from "@/assets/food-boxes/hero.webp";
+import jewelryBoxes from "@/assets/jewelry-boxes-hero.webp";
+import kraftBoxes from "@/assets/kraft-boxes/kraft-boxes-hero-v2.webp";
+import soapBoxes from "@/assets/soap-boxes/soap hero.webp";
+import giftBoxes from "@/assets/gift-boxes/gift hero.webp";
+import holographicBoxes from "@/assets/holographic-boxes-hero.webp";
+import preRollBoxes from "@/assets/pre-roll-boxes/hero (pre).webp";
+import displayBoxes from "@/assets/display-boxes/display-boxes-hero.webp";
+import pharmaPackaging from "@/assets/pharma-packaging-hero.webp";
+import fragranceBoxes from "@/assets/fragrance-boxes-hero.webp";
+import bakeryBoxes from "@/assets/bakery-products/Hero.webp";
+import retailBoxes from "@/assets/retail-boxes/hero.webp";
 
-const inspirationItems = [
+const productItems = [
     {
-        title: "Cardboard Boxes",
-        author: "WK Creative",
-        image: cardboardHero,
-    },
-    {
-        title: "Straight Tuck Tincture Box",
-        author: "Green IVe",
-        image: cannabisTinctureBoxes,
-    },
-    {
-        title: "Rigid Boxes",
-        author: "Veronix",
+        title: "Luxury Rigid Boxes",
+        category: "Premium",
         image: rigidHero,
+        link: "/industries/rigid-boxes",
     },
     {
-        title: "Cosmetic Tuck Boxes",
-        author: "Belapel Cosmetics",
+        title: "Custom Mailer Boxes",
+        category: "E-Commerce",
+        image: mailerBoxes,
+        link: "/industries/mailer-boxes",
+    },
+    {
+        title: "Custom Mylar Bags",
+        category: "Cannabis",
+        image: mylarBags,
+        link: "/categories/custom-mylar-bags",
+    },
+    {
+        title: "Cosmetic Packaging",
+        category: "Beauty",
         image: cosmeticHero,
+        link: "/industries/cosmetic-boxes",
     },
     {
-        title: "Hair Extension Packaging",
-        author: "Luxe Locks",
-        image: hairExtensionBoxes,
-    },
-    {
-        title: "Luxury Candle Box",
-        author: "Lumina Wax",
-        image: glassCandleJars,
-    },
-    {
-        title: "Apparel Gift Boxes",
-        author: "Fashion Forward",
+        title: "Apparel Boxes",
+        category: "Fashion",
         image: apparelHero,
+        link: "/industries/apparel-boxes",
     },
     {
-        title: "Kraft Eco Boxes",
-        author: "Boldora",
-        image: kraftBoxes, // Reusing cardboard hero
+        title: "Cannabis Packaging",
+        category: "Cannabis",
+        image: cannabisHero,
+        link: "/industries/cannabis-packaging",
+    },
+    {
+        title: "Custom Food Boxes",
+        category: "Food & Beverage",
+        image: foodBoxes,
+        link: "/industries/food-boxes",
+    },
+    {
+        title: "Custom Jewelry Boxes",
+        category: "Luxury",
+        image: jewelryBoxes,
+        link: "/industries/jewelry-boxes",
+    },
+    {
+        title: "Eco-Friendly Kraft Boxes",
+        category: "Sustainable",
+        image: kraftBoxes,
+        link: "/industries/custom-kraft-boxes",
+    },
+    {
+        title: "Custom Soap Boxes",
+        category: "Beauty",
+        image: soapBoxes,
+        link: "/industries/soap-boxes",
+    },
+    {
+        title: "Premium Gift Boxes",
+        category: "Special Edition",
+        image: giftBoxes,
+        link: "/industries/gift-boxes",
+    },
+    {
+        title: "Holographic Luxury Boxes",
+        category: "Premium",
+        image: holographicBoxes,
+        link: "/industries/holographic-boxes",
+    },
+    {
+        title: "Pre Roll Boxes",
+        category: "Cannabis",
+        image: preRollBoxes,
+        link: "/industries/pre-roll-boxes",
+    },
+    {
+        title: "Retail Display Boxes",
+        category: "Retail",
+        image: displayBoxes,
+        link: "/industries/display-boxes",
+    },
+    {
+        title: "Pharmaceutical Packaging",
+        category: "Healthcare",
+        image: pharmaPackaging,
+        link: "/industries/pharma-packaging",
     },
 ];
 
@@ -94,52 +150,60 @@ const PackagingHub = () => {
             </div>
 
             {/* Main Content */}
-            <main className="py-12 md:py-16">
+            <main className="py-12 md:py-20">
                 <div className="container mx-auto px-4">
-                    {/* Headline */}
-                    <div className="mb-12 text-left">
-                        <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
-                            Packaging Hub.
+                    {/* Enhanced Headline */}
+                    <div className="mb-16 text-center max-w-3xl mx-auto">
+                        <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4">
+                            Packaging Hub
                         </h1>
-                        <p className="text-xl md:text-2xl text-muted-foreground font-light">
-                            Packaging inspiration and solutions for your industry.
+                        <p className="text-lg md:text-xl text-slate-500 font-light leading-relaxed">
+                            Discover premium packaging solutions and design inspiration for every industry. From luxury branding to sustainable options.
                         </p>
                     </div>
 
-                    {/* Inspiration Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
-                        {inspirationItems.map((item, index) => (
-                            <div key={index} className="group cursor-pointer">
-                                {/* Image Card */}
-                                <Card className="overflow-hidden border-none shadow-none bg-transparent mb-4">
-                                    <div className="relative aspect-[4/5] md:aspect-square overflow-hidden rounded-xl bg-gray-100 shadow-sm transition-all duration-300 group-hover:shadow-md">
-                                        <img
-                                            src={item.image}
-                                            alt={item.title}
-                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"
-                                        />
-                                        {/* Overlay slightly on hover for effect? Optional. Keeping clean as requested. */}
-                                    </div>
-                                </Card>
+                    {/* Professional Grid - 3 columns on desktop, 1 on mobile */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                        {productItems.map((item, index) => (
+                            <Link
+                                key={index}
+                                to={item.link}
+                                className="group cursor-pointer block"
+                            >
+                                {/* Image Card with Enhanced Hover */}
+                                <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-gray-100 shadow-md transition-all duration-300 group-hover:shadow-2xl mb-4">
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                        loading="lazy"
+                                    />
+                                </div>
 
-                                {/* Content */}
-                                <div className="space-y-1">
-                                    <h3 className="text-lg font-bold text-[#991b1b] leading-tight group-hover:underline decoration-[#991b1b]/30 underline-offset-4 transition-all">
+                                {/* Content with Enhanced Typography */}
+                                <div className="space-y-2">
+                                    {/* Category Label */}
+                                    <p className="text-sm font-semibold text-primary uppercase tracking-wide">
+                                        {item.category}
+                                    </p>
+
+                                    {/* Product Title */}
+                                    <h3 className="text-lg font-bold text-slate-900 leading-tight group-hover:text-primary transition-colors">
                                         {item.title}
                                     </h3>
-
-                                    <div className="flex items-center gap-2 text-muted-foreground">
-                                        <div className="w-5 h-5 rounded-full bg-gray-200 flex items-center justify-center">
-                                            {/* Placeholder circular logo */}
-                                            <User className="w-3 h-3 text-gray-400" />
-                                        </div>
-                                        <span className="text-sm text-gray-500 font-medium">
-                                            {item.author}
-                                        </span>
-                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
+                    </div>
+
+                    {/* Load More Button */}
+                    <div className="flex justify-center mt-16">
+                        <Button
+                            variant="outline"
+                            className="border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white px-8 py-6 text-base font-semibold rounded-lg transition-all duration-300"
+                        >
+                            Load More
+                        </Button>
                     </div>
                 </div>
             </main>
