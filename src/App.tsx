@@ -86,6 +86,8 @@ import DropperBottles from "./pages/categories/DropperBottles";
 import JarsWithPump from "./pages/categories/JarsWithPump";
 import BoxByMaterials from "./pages/BoxByMaterials";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
+import TermsOfService from "./pages/legal/TermsOfService";
 
 const queryClient = new QueryClient();
 
@@ -174,6 +176,8 @@ const App = () => (
           <Route path="/primary-packaging/dropper-bottles" element={<DropperBottles />} />
           <Route path="/primary-packaging/jars-with-pump" element={<JarsWithPump />} />
           <Route path="/box-by-materials" element={<BoxByMaterials />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

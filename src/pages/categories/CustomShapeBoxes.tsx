@@ -15,20 +15,20 @@ import {
 import { Link } from "react-router-dom";
 
 // Images
-import customShapeHero from "@/assets/custom-shape-boxes/custom-shape-boxes-hero.png";
-import placeholder from "@/assets/custom-shape-boxes/placeholder.png";
-import customHandleBoxesImg from "@/assets/custom-shape-boxes/custom-handle-boxes.jpg";
-import customPieBoxesImg from "@/assets/custom-shape-boxes/custom-pie-boxes.jpg";
-import braceletSquareBoxesImg from "@/assets/custom-shape-boxes/bracelet-square-boxes.jpg";
-import customDieCutBoxesImg from "@/assets/custom-shape-boxes/custom-die-cut-boxes.jpg";
-import squareSoapBoxesImg from "@/assets/custom-shape-boxes/square-soap-boxes.jpg";
-import customPyramidBoxesImg from "@/assets/custom-shape-boxes/custom-pyramid-boxes.jpg";
-import hexagonBoxesImg from "@/assets/custom-shape-boxes/hexagon-boxes.jpg";
-import rectangularBoxesImg from "@/assets/custom-shape-boxes/rectangular-boxes.jpg";
-import triangleBoxesImg from "@/assets/custom-shape-boxes/triangle-boxes.jpg";
-import octagonBoxesImg from "@/assets/custom-shape-boxes/octagon-boxes.jpg";
-import squareBoxesImg from "@/assets/custom-shape-boxes/square-boxes.jpg";
-import cubeBoxesImg from "@/assets/custom-shape-boxes/cube-boxes.jpg";
+import customShapeHero from "@/assets/custom-shape-boxes/custom-shape-boxes-hero.webp";
+import placeholder from "@/assets/custom-shape-boxes/placeholder.webp";
+import customHandleBoxesImg from "@/assets/custom-shape-boxes/custom-handle-boxes.webp";
+import customPieBoxesImg from "@/assets/custom-shape-boxes/custom-pie-boxes.webp";
+import braceletSquareBoxesImg from "@/assets/custom-shape-boxes/bracelet-square-boxes.webp";
+import customDieCutBoxesImg from "@/assets/custom-shape-boxes/custom-die-cut-boxes.webp";
+import squareSoapBoxesImg from "@/assets/custom-shape-boxes/square-soap-boxes.webp";
+import customPyramidBoxesImg from "@/assets/custom-shape-boxes/custom-pyramid-boxes.webp";
+import hexagonBoxesImg from "@/assets/custom-shape-boxes/hexagon-boxes.webp";
+import rectangularBoxesImg from "@/assets/custom-shape-boxes/rectangular-boxes.webp";
+import triangleBoxesImg from "@/assets/custom-shape-boxes/triangle-boxes.webp";
+import octagonBoxesImg from "@/assets/custom-shape-boxes/octagon-boxes.webp";
+import squareBoxesImg from "@/assets/custom-shape-boxes/square-boxes.webp";
+import cubeBoxesImg from "@/assets/custom-shape-boxes/cube-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // Placeholder assignments
@@ -109,7 +109,7 @@ const CustomShapeBoxes = () => {
                                     <img
                                         src={customShapeHero}
                                         alt="Custom Shape Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -146,7 +146,7 @@ const CustomShapeBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className={`w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110 ${product.image === placeholder ? 'opacity-80' : ''}`}
+                                            className={`w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110 ${product.image === placeholder ? 'opacity-80' : ''}`} loading="lazy"
                                         />
                                         {product.image === placeholder && (
                                             <div className="absolute inset-0 flex items-center justify-center bg-black/5">

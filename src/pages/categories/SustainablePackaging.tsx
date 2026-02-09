@@ -15,14 +15,14 @@ import {
 import { Link } from "react-router-dom";
 
 // Images
-import heroImage from "@/assets/sustainable-packaging-hero.png";
-import customKraftSoapBoxes from "@/assets/custom-kraft-soap-boxes.png";
-import kraftGiftBoxes from "@/assets/kraft-gift-boxes.png";
-import kraftMylarBags from "@/assets/kraft-mylar-bags.png";
-import kraftFoodBoxes from "@/assets/kraft-food-boxes.png";
-import kraftPieBoxes from "@/assets/kraft-pie-boxes.png";
-import kraftTuckTopBoxes from "@/assets/kraft-tuck-top-boxes.png";
-import kraftMailerBoxes from "@/assets/kraft-mailer-boxes.png";
+import heroImage from "@/assets/sustainable-packaging/hero.webp";
+import customKraftSoapBoxes from "@/assets/sustainable-packaging/kraft-soap-boxes.webp";
+import kraftGiftBoxes from "@/assets/sustainable-packaging/kraft-gift-boxes.webp";
+import kraftMylarBags from "@/assets/sustainable-packaging/kraft-mylar-bags.webp";
+import kraftFoodBoxes from "@/assets/sustainable-packaging/kraft-food-boxes.webp";
+import kraftPieBoxes from "@/assets/sustainable-packaging/kraft-pie-boxes.webp";
+import kraftTuckTopBoxes from "@/assets/sustainable-packaging/kraft-tuck-top-boxes.webp";
+import kraftMailerBoxes from "@/assets/sustainable-packaging/kraft-mailer-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -94,7 +94,7 @@ const SustainablePackaging = () => {
                                     <img
                                         src={heroImage}
                                         alt="Sustainable Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -131,7 +131,7 @@ const SustainablePackaging = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

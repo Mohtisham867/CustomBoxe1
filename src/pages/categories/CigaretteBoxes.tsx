@@ -14,18 +14,18 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/cigarette-boxes-hero.png";
-import eCigaretteBoxes from "@/assets/cigarette-products/e-cigarette-boxes.jpg";
-import hempCigaretteBoxes from "@/assets/cigarette-products/hemp-cigarette-boxes.jpg";
-import paperCigaretteBoxes from "@/assets/cigarette-products/paper-cigarette-boxes.jpg";
-import cardboardCigaretteBoxes from "@/assets/cigarette-products/cardboard-cigarette-boxes.jpg";
-import blankCigaretteBoxes from "@/assets/cigarette-products/blank-cigarette-boxes.jpg";
-import disposableCigaretteBoxes from "@/assets/cigarette-products/disposable-cigarette-boxes.jpg";
-import lighterBoxes from "@/assets/cigarette-products/lighter-boxes.jpg";
-import emptyCigaretteBoxes from "@/assets/cigarette-products/empty-cigarette-boxes.jpg";
-import cigaretteDisplayBoxes from "@/assets/cigarette-products/cigarette-display-boxes.jpg";
-import cardboardCigarBoxes from "@/assets/cigarette-products/cardboard-cigar-boxes.jpg";
-import cigaretteCartons from "@/assets/cigarette-products/cigarette-cartons.jpg";
+import heroImage from "@/assets/cigarette-boxes/hero.webp";
+import eCigaretteBoxes from "@/assets/cigarette-boxes/e-cigarette-boxes.webp";
+import hempCigaretteBoxes from "@/assets/cigarette-boxes/hemp-cigarette-boxes.webp";
+import paperCigaretteBoxes from "@/assets/cigarette-boxes/paper-cigarette-boxes.webp";
+import cardboardCigaretteBoxes from "@/assets/cigarette-boxes/cardboard-cigarette-boxes.webp";
+import blankCigaretteBoxes from "@/assets/cigarette-boxes/blank-cigarette-boxes.webp";
+import disposableCigaretteBoxes from "@/assets/cigarette-boxes/disposable-cigarette-boxes.webp";
+import lighterBoxes from "@/assets/cigarette-boxes/lighter-boxes.webp";
+import emptyCigaretteBoxes from "@/assets/cigarette-boxes/empty-cigarette-boxes.webp";
+import cigaretteDisplayBoxes from "@/assets/cigarette-boxes/cigarette-display-boxes.webp";
+import cardboardCigarBoxes from "@/assets/cigarette-boxes/cardboard-cigar-boxes.webp";
+import cigaretteCartons from "@/assets/cigarette-boxes/cigarette-cartons.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -47,32 +47,34 @@ const CigaretteBoxes = () => {
     <div className="min-h-screen bg-background w-full max-w-[100vw] overflow-x-hidden">
       <Header />
 
-      {/* Hero Section with Split Layout */}
-      <section className="mt-[120px] md:mt-[160px] py-12 bg-background">
-        <div className="container mx-auto px-4">
-          {/* Breadcrumb */}
-          <div className="mb-8">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/industries">Industries</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Cigarette Boxes</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-          </div>
+      {/* Breadcrumb */}
+      <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mt-[120px] md:mt-[160px]">
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/industries">Industries</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Cigarette Boxes</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+      </div>
 
+      {/* Hero Section with Split Layout */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4">
           {/* Split Layout */}
           <div className="flex flex-col lg:flex-row gap-8 items-start">
             {/* Left Content */}
@@ -87,7 +89,7 @@ const CigaretteBoxes = () => {
                 <img
                   src={heroImage}
                   alt="Custom Cigarette Boxes Collection"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover" loading="lazy"
                 />
               </div>
             </div>
@@ -121,7 +123,7 @@ const CigaretteBoxes = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                      className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                     />
                   </div>
                   <div className="p-4 border-t border-border">

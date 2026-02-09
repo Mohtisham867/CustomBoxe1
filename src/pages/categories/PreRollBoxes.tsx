@@ -14,16 +14,16 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/pre-roll-boxes/pre-roll-boxes-hero.png";
+import heroImage from "@/assets/pre-roll-boxes/hero (pre).webp";
 
 // Specific images maps
-import hempPreRollBoxes from "@/assets/pre-roll-boxes/hemp-pre-roll-boxes.png";
-import preRollDisplayBoxes from "@/assets/pre-roll-boxes/custom-pre-roll-display-boxes.png";
-import preRollLabels from "@/assets/pre-roll-boxes/pre-roll-packaging-labels.png";
-import luxuryPreRollPackaging from "@/assets/pre-roll-boxes/luxury-pre-roll-packaging.png";
-import preRollConePackaging from "@/assets/pre-roll-boxes/custom-pre-roll-cone-packaging.png";
-import preRollJointBoxes from "@/assets/pre-roll-boxes/pre-roll-joint-boxes.png";
-import childResistantPreRollBox from "@/assets/pre-roll-boxes/child-resistant-pre-roll-box.png";
+import hempPreRollBoxes from "@/assets/pre-roll-boxes/hemp-pre-roll-boxes.webp";
+import preRollDisplayBoxes from "@/assets/pre-roll-boxes/custom-pre-roll-display-boxes.webp";
+import preRollLabels from "@/assets/pre-roll-boxes/pre-roll-packaging-labels.webp";
+import luxuryPreRollPackaging from "@/assets/pre-roll-boxes/luxury-pre-roll-packaging.webp";
+import preRollConePackaging from "@/assets/pre-roll-boxes/custom-pre-roll-cone-packaging.webp";
+import preRollJointBoxes from "@/assets/pre-roll-boxes/pre-roll-joint-boxes.webp";
+import childResistantPreRollBox from "@/assets/pre-roll-boxes/child-resistant-pre-roll-box.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -94,7 +94,7 @@ const PreRollBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Custom Pre Roll Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -127,11 +127,11 @@ const PreRollBoxes = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

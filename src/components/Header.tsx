@@ -233,9 +233,8 @@ export const Header = () => {
         <div className="container mx-auto px-[10px]">
           <div className="flex items-center justify-between h-20 gap-4">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-2 group flex-shrink-0">
-              <img src={logo} alt="CustomBox" className="h-10 md:h-12 w-auto group-hover:scale-105 transition-transform hue-rotate-[-45deg] brightness-110" />
-              <span className="text-lg md:text-2xl font-bold gradient-text">CustomBox</span>
+            <a href="/" className="flex items-center group flex-shrink-0 cursor-pointer">
+              <img src={logo} alt="CustomPackMakers" className="h-12 md:h-16 w-auto object-contain mr-4 transition-transform hover:scale-105" loading="lazy" />
             </a>
 
             {/* Search Bar - Desktop */}
@@ -300,7 +299,7 @@ export const Header = () => {
               <a href="tel:+1234567890" className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full hover:bg-accent transition-colors">
                 <Phone className="h-5 w-5 text-foreground" />
               </a>
-              <a href="mailto:info@custombox.com" className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full hover:bg-accent transition-colors">
+              <a href="mailto:sales@custompackmakers.com" className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full hover:bg-accent transition-colors">
                 <Mail className="h-5 w-5 text-foreground" />
               </a>
               <a href="#quote">
@@ -541,7 +540,7 @@ export const Header = () => {
                 <Phone className="h-4 w-4" />
                 <span>Call Us</span>
               </a>
-              <a href="mailto:info@custombox.com" className="flex items-center justify-center gap-2 p-3 rounded-lg bg-accent/50 text-foreground font-medium">
+              <a href="mailto:sales@custompackmakers.com" className="flex items-center justify-center gap-2 p-3 rounded-lg bg-accent/50 text-foreground font-medium">
                 <Mail className="h-4 w-4" />
                 <span>Email Us</span>
               </a>

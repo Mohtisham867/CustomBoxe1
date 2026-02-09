@@ -11,43 +11,43 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import apparelBoxes from "@/assets/industries/apparel-boxes.jpg";
-import automotiveBoxes from "@/assets/industries/automotive-boxes.jpg";
-import bakeryBoxes from "@/assets/industries/bakery-boxes.jpg";
-import beveragePackaging from "@/assets/industries/beverage-packaging.jpg";
-import candleBoxes from "@/assets/industries/candle-boxes.jpg";
-import cannabisPackaging from "@/assets/industries/cannabis-packaging.jpg";
-import chocolateBoxes from "@/assets/industries/chocolate-boxes.jpg";
-import christmasBoxes from "@/assets/industries/christmas-boxes.jpg";
-import cigaretteBoxes from "@/assets/industries/cigarette-boxes.jpg";
-import cosmeticBoxes from "@/assets/industries/cosmetic-boxes.jpg";
-import customCandyBoxes from "@/assets/industries/custom-candy-boxes.jpg";
-import customCbdBoxes from "@/assets/industries/custom-cbd-boxes.jpg";
-import customHempBoxes from "@/assets/industries/custom-hemp-boxes.jpg";
+import apparelBoxes from "@/assets/industries/apparel-boxes.webp";
+import automotiveBoxes from "@/assets/industries/automotive-boxes.webp";
+import bakeryBoxes from "@/assets/industries/bakery-boxes.webp";
+import beveragePackaging from "@/assets/industries/beverage-packaging.webp";
+import candleBoxes from "@/assets/industries/candle-boxes.webp";
+import cannabisPackaging from "@/assets/industries/cannabis-packaging.webp";
+import chocolateBoxes from "@/assets/industries/chocolate-boxes.webp";
+import christmasBoxes from "@/assets/industries/christmas-boxes.webp";
+import cigaretteBoxes from "@/assets/industries/cigarette-boxes.webp";
+import cosmeticBoxes from "@/assets/industries/cosmetic-boxes.webp";
+import customCandyBoxes from "@/assets/industries/custom-candy-boxes.webp";
+import customCbdBoxes from "@/assets/industries/custom-cbd-boxes.webp";
+import customHempBoxes from "@/assets/industries/custom-hemp-boxes.webp";
 // Use product asset as fallback since industry asset missing
-import displayBoxes from "@/assets/products/display-boxes.jpg";
-import eCommerce from "@/assets/industries/e-commerce.jpg";
-import electronicsBoxes from "@/assets/industries/electronics-boxes.jpg";
-import foodBoxes from "@/assets/industries/food-boxes.jpg";
-import fragranceBoxes from "@/assets/industries/fragrance-boxes.jpg";
-import gameBoxes from "@/assets/industries/game-boxes.jpg";
-import giftBoxes from "@/assets/industries/gift-boxes.jpg";
-import holidayBoxes from "@/assets/industries/holiday-boxes.jpg";
-import jewelryBoxes from "@/assets/industries/jewelry-boxes.jpg";
-import marijuanaPackaging from "@/assets/industries/marijuana-packaging.jpg";
+import displayBoxes from "@/assets/products/display-boxes.webp";
+import eCommerce from "@/assets/industries/e-commerce.webp";
+import electronicsBoxes from "@/assets/industries/electronics-boxes.webp";
+import foodBoxes from "@/assets/industries/food-boxes.webp";
+import fragranceBoxes from "@/assets/industries/fragrance-boxes.webp";
+import gameBoxes from "@/assets/industries/game-boxes.webp";
+import giftBoxes from "@/assets/industries/gift-boxes.webp";
+import holidayBoxes from "@/assets/industries/holiday-boxes.webp";
+import jewelryBoxes from "@/assets/industries/jewelry-boxes.webp";
+import marijuanaPackaging from "@/assets/industries/marijuana-packaging.webp";
 // Use product asset as fallback since industry asset missing
-import mailerBoxes from "@/assets/products/mailer-boxes.jpg";
-import pharmaPackaging from "@/assets/industries/pharma-packaging.jpg";
-import preRollBoxes from "@/assets/industries/pre-roll-boxes.jpg";
-import retailBoxes from "@/assets/industries/retail-boxes.jpg";
-import soapBoxes from "@/assets/industries/soap-boxes.jpg";
-import sportsBoxes from "@/assets/industries/sports-boxes.jpg";
-import stationeryBoxes from "@/assets/industries/stationery-boxes.jpg";
-import sustainablePackaging from "@/assets/industries/sustainable-packaging.jpg";
-import teaCoffeeCups from "@/assets/industries/tea-coffee-cups.jpg";
-import vapeBoxes from "@/assets/industries/vape-boxes.jpg";
-import weedBoxes from "@/assets/industries/weed-boxes.jpg";
-import heroBackground from "@/assets/industries-hero-v3.png";
+import mailerBoxes from "@/assets/products/mailer-boxes.webp";
+import pharmaPackaging from "@/assets/industries/pharma-packaging.webp";
+import preRollBoxes from "@/assets/industries/pre-roll-boxes.webp";
+import retailBoxes from "@/assets/industries/retail-boxes.webp";
+import soapBoxes from "@/assets/industries/soap-boxes.webp";
+import sportsBoxes from "@/assets/industries/sports-boxes.webp";
+import stationeryBoxes from "@/assets/industries/stationery-boxes.webp";
+import sustainablePackaging from "@/assets/industries/sustainable-packaging.webp";
+import teaCoffeeCups from "@/assets/industries/tea-coffee-cups.webp";
+import vapeBoxes from "@/assets/industries/vape-boxes.webp";
+import weedBoxes from "@/assets/industries/weed-boxes.webp";
+import heroBackground from "@/assets/industries-hero-v3.webp";
 
 const industries = [
   { name: "Apparel Boxes", image: apparelBoxes },
@@ -148,7 +148,7 @@ const Industries = () => {
                         <img
                           src={industry.image}
                           alt={industry.name}
-                          className="w-full h-full object-contain p-8 transition-transform duration-300 group-hover:scale-110"
+                          className="w-full h-full object-contain p-8 transition-transform duration-300 group-hover:scale-110" loading="lazy"
                         />
                       </div>
                       <div className="p-4 text-center border-t border-border">
@@ -180,7 +180,7 @@ const Industries = () => {
                 [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:space-y-3 [&>li]:text-gray-800 [&>li]:text-[15px]">
 
             <p className="mt-0">
-              In today's competitive marketplace, packaging is far more than a protective vessel—it's a strategic brand asset that communicates value, ensures product integrity, and creates memorable customer experiences. At CustomBoxe, we understand that each industry faces unique challenges, regulatory requirements, and consumer expectations. Our comprehensive portfolio of custom packaging solutions is designed to address the specific needs of diverse sectors, from cosmetics and food & beverage to CBD, pharmaceuticals, retail, and beyond. This guide explores how industry-tailored packaging drives brand recognition, ensures compliance, and delivers measurable business results.
+              In today's competitive marketplace, packaging is far more than a protective vessel—it's a strategic brand asset that communicates value, ensures product integrity, and creates memorable customer experiences. At CustomPackMakers, we understand that each industry faces unique challenges, regulatory requirements, and consumer expectations. Our comprehensive portfolio of custom packaging solutions is designed to address the specific needs of diverse sectors, from cosmetics and food & beverage to CBD, pharmaceuticals, retail, and beyond. This guide explores how industry-tailored packaging drives brand recognition, ensures compliance, and delivers measurable business results.
             </p>
 
             <h3>Cosmetics & Beauty Packaging: Luxury Meets Functionality</h3>
@@ -275,7 +275,7 @@ const Industries = () => {
               Finishing options transform standard packaging into premium brand experiences. Matte or gloss lamination provides protection and visual appeal. Spot UV coating creates contrast and highlights key design elements. Foil stamping in metallic or holographic finishes adds luxury and shelf impact. Embossing and debossing create tactile dimension that engages multiple senses. Soft-touch coating delivers a velvety feel that communicates premium quality.
             </p>
             <p>
-              Our production capabilities support both small-batch orders for product launches and testing, and large-scale production runs with consistent quality across millions of units. We maintain rigorous quality control processes, provide prototyping and sampling services, and offer design consultation to ensure your packaging achieves both functional and aesthetic objectives. Partner with CustomBoxe to create industry-specific packaging that protects your products, elevates your brand, and drives measurable business results.
+              Our production capabilities support both small-batch orders for product launches and testing, and large-scale production runs with consistent quality across millions of units. We maintain rigorous quality control processes, provide prototyping and sampling services, and offer design consultation to ensure your packaging achieves both functional and aesthetic objectives. Partner with CustomPackMakers to create industry-specific packaging that protects your products, elevates your brand, and drives measurable business results.
             </p>
 
           </div>

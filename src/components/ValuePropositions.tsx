@@ -1,4 +1,4 @@
-import valuePropsImage from "@/assets/value-props-boxes.png";
+import valuePropsImage from "@/assets/value-props-boxes.webp";
 
 export const ValuePropositions = () => {
   const values = [
@@ -53,7 +53,7 @@ export const ValuePropositions = () => {
             <img
               src={valuePropsImage}
               alt="Custom packaging boxes in various colors and designs"
-              className="w-full max-w-2xl rounded-lg shadow-lg"
+              className="w-full max-w-2xl rounded-lg shadow-lg" loading="lazy"
             />
           </div>
         </div>

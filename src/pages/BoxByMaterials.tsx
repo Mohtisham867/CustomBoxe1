@@ -10,12 +10,12 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import heroBg from "@/assets/box-by-materials-hero.png";
-import kraftBoxesHero from "@/assets/kraft-boxes/kraft-boxes-hero.png";
-import cardboardBoxesHero from "@/assets/cardboard-boxes-hero.png";
-import corrugatedBoxesHero from "@/assets/corrugated-boxes-hero.png";
-import rigidBoxesHero from "@/assets/products/rigid-boxes-new.png";
-import holographicBoxesHero from "@/assets/holographic-boxes-hero.jpg";
+import heroBg from "@/assets/box-by-materials-hero.webp";
+import kraftBoxesHero from "@/assets/box-by-materials/kraft-boxes-premium.webp";
+import cardboardBoxesHero from "@/assets/box-by-materials/cardboard-boxes-premium.webp";
+import corrugatedBoxesHero from "@/assets/box-by-materials/corrugated-boxes-premium.webp";
+import rigidBoxesHero from "@/assets/products/rigid-boxes-new.webp";
+import holographicBoxesHero from "@/assets/holographic-boxes-hero.webp";
 
 import { Link } from "react-router-dom";
 
@@ -96,36 +96,38 @@ const BoxByMaterials = () => {
       </div>
 
       {/* Main Content */}
-      <section className="px-[10px] py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">Premium Packaging Solutions by Material</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Choose from our diverse range of high-quality materials tailored to protect and present your brand.
-          </p>
-        </div>
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Premium Packaging Solutions by Material</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Choose from our diverse range of high-quality materials tailored to protect and present your brand.
+            </p>
+          </div>
 
-        {/* Category Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {materialCategories.map((item, index) => (
-            <Link to={item.link} key={index} className="block h-full">
-              <Card
-                className="group cursor-pointer hover:shadow-xl transition-all duration-300 overflow-hidden h-full"
-              >
-                <div className="relative aspect-square w-full overflow-hidden bg-muted">
-                  <img
-                    src={item.image}
-                    alt={`${item.name} - ${item.description || item.name}`}
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                <CardContent className="p-4">
-                  <h3 className="text-lg font-semibold text-center group-hover:text-primary transition-colors">
-                    {item.name}
-                  </h3>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+          {/* Category Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {materialCategories.map((item, index) => (
+              <Link to={item.link} key={index} className="block h-full">
+                <Card
+                  className="group cursor-pointer hover:shadow-xl transition-all duration-300 overflow-hidden h-full"
+                >
+                  <div className="relative aspect-square w-full overflow-hidden bg-muted">
+                    <img
+                      src={item.image}
+                      alt={`${item.name} - ${item.description || item.name}`}
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy"
+                    />
+                  </div>
+                  <CardContent className="p-4">
+                    <h3 className="text-lg font-semibold text-center group-hover:text-primary transition-colors">
+                      {item.name}
+                    </h3>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

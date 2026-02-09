@@ -13,16 +13,16 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import walletBoxes from "@/assets/rigid-boxes/wallet-boxes.jpg";
-import flipTopBoxes from "@/assets/rigid-boxes/flip-top-boxes.jpg";
-import rigidGiftBoxes from "@/assets/rigid-boxes/rigid-gift-boxes.jpg";
-import creditCardBoxes from "@/assets/rigid-boxes/credit-card-boxes.jpg";
-import rigidSetupBoxes from "@/assets/rigid-boxes/rigid-setup-boxes.jpg";
-import ribbonBoxes from "@/assets/rigid-boxes/ribbon-boxes.jpg";
-import magneticClosureBoxes from "@/assets/rigid-boxes/magnetic-closure-boxes.jpg";
-import rigidPaperBoxes from "@/assets/rigid-boxes/rigid-paper-boxes.jpg";
-import flipTopMagneticClosure from "@/assets/rigid-boxes/flip-top-magnetic-closure.jpg";
-import heroImage from "@/assets/rigid-boxes/rigid-boxes-hero.jpg";
+import walletBoxes from "@/assets/rigid-boxes/wallet-boxes-v2.webp";
+import flipTopBoxes from "@/assets/rigid-boxes/flip-top-boxes-v2.webp";
+import rigidGiftBoxes from "@/assets/rigid-boxes/rigid-gift-boxes-v2.webp";
+import creditCardBoxes from "@/assets/rigid-boxes/credit-card-boxes-v2.webp";
+import rigidSetupBoxes from "@/assets/rigid-boxes/rigid-setup-boxes-v2.webp";
+import ribbonBoxes from "@/assets/rigid-boxes/ribbon-boxes-v2.webp";
+import magneticClosureBoxes from "@/assets/rigid-boxes/magnetic-closure-boxes-v2.webp";
+import rigidPaperBoxes from "@/assets/rigid-boxes/rigid-paper-boxes-v2.webp";
+import flipTopMagneticClosure from "@/assets/rigid-boxes/flip-top-magnetic-closure-v2.webp";
+import heroImage from "@/assets/rigid-boxes/rigid-boxes-hero-v2.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // Product list for dropdown
@@ -100,7 +100,7 @@ const RigidBoxes = () => {
                                         <img
                                             src={heroImage}
                                             alt="Rigid Boxes Collection"
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-cover" loading="lazy"
                                         />
                                     </div>
                                 </div>
@@ -130,12 +130,12 @@ const RigidBoxes = () => {
                                     className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                                 >
                                     <CardContent className="p-0">
-                                        <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                        <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                             {product.image ? (
                                                 <img
                                                     src={product.image}
                                                     alt={product.name}
-                                                    className={`h-full w-auto object-contain mx-auto group-hover:scale-105 transition-transform duration-300`}
+                                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                                 />
                                             ) : (
                                                 <div className="w-full h-full flex items-center justify-center bg-gray-200">

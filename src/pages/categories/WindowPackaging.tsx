@@ -13,16 +13,16 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import windowPackagingHero from "@/assets/window-packaging/window-packaging-hero.png";
+import windowPackagingHero from "@/assets/window-packaging/window-packaging-hero.webp";
 
-import candleBoxesWithWindow from "@/assets/window-packaging/candle-boxes-with-window.png";
-import gableBoxesWithWindow from "@/assets/window-packaging/gable-boxes-with-window.png";
-import halloweenWindowBoxes from "@/assets/window-packaging/halloween-window-boxes.png";
-import soapBoxesWithWindow from "@/assets/window-packaging/soap-boxes-with-window.png";
-import pillowBoxesWithWindow from "@/assets/window-packaging/pillow-boxes-with-window.png";
-import kraftPaperBoxesWithWindow from "@/assets/window-packaging/kraft-paper-boxes-with-window.png";
-import candyBoxesWithWindow from "@/assets/window-packaging/candy-boxes-with-window.png";
-import cookieBoxesWithWindow from "@/assets/window-packaging/cookie-boxes-with-window.png";
+import candleBoxesWithWindow from "@/assets/window-packaging/candle-boxes-with-window.webp";
+import gableBoxesWithWindow from "@/assets/window-packaging/gable-boxes-with-window.webp";
+import halloweenWindowBoxes from "@/assets/window-packaging/halloween-window-boxes.webp";
+import soapBoxesWithWindow from "@/assets/window-packaging/soap-boxes-with-window.webp";
+import pillowBoxesWithWindow from "@/assets/window-packaging/pillow-boxes-with-window.webp";
+import kraftPaperBoxesWithWindow from "@/assets/window-packaging/kraft-paper-boxes-with-window.webp";
+import candyBoxesWithWindow from "@/assets/window-packaging/candy-boxes-with-window.webp";
+import cookieBoxesWithWindow from "@/assets/window-packaging/cookie-boxes-with-window.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -85,7 +85,7 @@ const WindowPackaging = () => {
                                     <img
                                         src={windowPackagingHero}
                                         alt="Window Packaging Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -118,13 +118,13 @@ const WindowPackaging = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         {/* Product image placeholder */}
                                         {product.image ? (
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-muted flex items-center justify-center">

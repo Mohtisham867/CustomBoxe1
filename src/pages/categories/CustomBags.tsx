@@ -13,23 +13,23 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/custom_bags/custom-bags-hero.png";
-import heatSealMylar from "@/assets/custom_bags/heat-seal-mylar-bags.png";
-import weedMylar from "@/assets/custom_bags/weed-mylar-bags.png";
-import edibleMylar from "@/assets/custom_bags/edible-mylar-bags.png";
-import paperBagsHandle from "@/assets/custom_bags/paper-bags-with-handles.png";
-import holographicBags from "@/assets/custom_bags/holographic-bags.png";
-import kraftBags from "@/assets/custom_bags/kraft-bags.png";
-import takeOutBags from "@/assets/custom_bags/take-out-bags.png";
-import tShirtBags from "@/assets/custom_bags/t-shirt-bags.png";
-import paperGroceryBags from "@/assets/custom_bags/paper-grocery-bags.png";
-import vacuumSealWebBags from "@/assets/custom_bags/vacuum-seal-weed-bags.png";
-import smellProofWeedBags from "@/assets/custom_bags/smell-proof-weed-bags.png";
-import weedBags35 from "@/assets/custom_bags/weed-bags-3-5.png";
-import sachetPackaging from "@/assets/custom_bags/sachet-packaging.png";
-import coffeeBags from "@/assets/custom_bags/coffee-bags.png";
-import flatBottomBags from "@/assets/custom_bags/flat-bottom-bags.png";
-import tinTiePaperBags from "@/assets/custom_bags/tin-tie-paper-bags.png";
+import heroImage from "@/assets/custom_bags/custom-bags-hero.webp";
+import heatSealMylar from "@/assets/custom_bags/heat-seal-mylar-bags.webp";
+import weedMylar from "@/assets/custom_bags/weed-mylar-bags.webp";
+import edibleMylar from "@/assets/custom_bags/edible-mylar-bags.webp";
+import paperBagsHandle from "@/assets/custom_bags/paper-bags-with-handles.webp";
+import holographicBags from "@/assets/custom_bags/holographic-bags.webp";
+import kraftBags from "@/assets/custom_bags/kraft-bags.webp";
+import takeOutBags from "@/assets/custom_bags/take-out-bags.webp";
+import tShirtBags from "@/assets/custom_bags/t-shirt-bags.webp";
+import paperGroceryBags from "@/assets/custom_bags/paper-grocery-bags.webp";
+import vacuumSealWebBags from "@/assets/custom_bags/vacuum-seal-weed-bags.webp";
+import smellProofWeedBags from "@/assets/custom_bags/smell-proof-weed-bags.webp";
+import weedBags35 from "@/assets/custom_bags/weed-bags-3-5.webp";
+import sachetPackaging from "@/assets/custom_bags/sachet-packaging.webp";
+import coffeeBags from "@/assets/custom_bags/coffee-bags.webp";
+import flatBottomBags from "@/assets/custom_bags/flat-bottom-bags.webp";
+import tinTiePaperBags from "@/assets/custom_bags/tin-tie-paper-bags.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const products = [
@@ -164,7 +164,7 @@ const CustomBags = () => {
                                     <img
                                         src={heroImage}
                                         alt="Custom Bags Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -197,11 +197,11 @@ const CustomBags = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

@@ -15,22 +15,20 @@ import {
 import { Link } from "react-router-dom";
 
 // Product Images
-import kraftGableBox from "@/assets/gable-boxes/kraft-gable-box.png";
-import christmasGableBox from "@/assets/gable-boxes/christmas-gable-box.png";
-import genericGableBox from "@/assets/box-shapes/gable-boxes.jpg";
+import kraftGableBox from "@/assets/gable-boxes/kraft-gable-boxes.webp";
+import christmasGableBox from "@/assets/gable-boxes/christmas-gable-boxes.webp";
+import whiteGableBox from "@/assets/gable-boxes/white-gable-boxes.webp";
+import largeGableBox from "@/assets/gable-boxes/large-gable-boxes.webp";
+import gableGiftBox from "@/assets/gable-boxes/gable-gift-boxes.webp";
+import blackGableBox from "@/assets/gable-boxes/black-gable-boxes.webp";
+import gableBoxWindow from "@/assets/gable-boxes/gable-boxes-with-window.webp";
+import gableBag from "@/assets/gable-boxes/gable-bags.webp";
+import blueGableBox from "@/assets/gable-boxes/blue-gable-boxes.webp";
+import cardboardGableBox from "@/assets/gable-boxes/cardboard-gable-boxes.webp";
+import redGableBox from "@/assets/gable-boxes/red-gable-boxes.webp";
+import kraftPaperGableBox from "@/assets/gable-boxes/kraft-paper-gable-box.webp";
+import gableBoxesHero from "@/assets/gable-boxes/gable-boxes-hero.webp";
 import { SEOContent } from "@/components/SEOContent";
-
-// Reusing generated images for other variants where appropriate
-const whiteGableBox = genericGableBox; // Placeholder
-const largeGableBox = kraftGableBox; // Reuse
-const gableGiftBox = christmasGableBox; // Reuse
-const blackGableBox = genericGableBox; // Placeholder
-const gableBoxWindow = genericGableBox; // Placeholder
-const gableBags = kraftGableBox; // Reuse
-const blueGableBox = genericGableBox; // Placeholder
-const cardboardGableBox = kraftGableBox; // Reuse
-const redGableBox = christmasGableBox; // Reuse
-const kraftPaperGableBox = kraftGableBox; // Reuse
 
 const gableProducts = [
     "Kraft Gable Boxes",
@@ -55,7 +53,7 @@ const relatedProducts = [
     { name: "Gable Gift Boxes", image: gableGiftBox, description: "Perfect for gifting and special occasions featuring unique shapes and premium customizable branding" },
     { name: "Black Gable Boxes", image: blackGableBox, description: "Premium black finish for a luxury look designed for high-end boutique retail and gift presentations" },
     { name: "Gable Boxes with Window", image: gableBoxWindow, description: "Showcase your product with a clear window inset perfect for bakery items and visual retail display" },
-    { name: "Gable Bags", image: gableBags, description: "Convenient bag-style gable packaging designed for easy carry and stylish retail shelf presentation" },
+    { name: "Gable Bags", image: gableBag, description: "Convenient bag-style gable packaging designed for easy carry and stylish retail shelf presentation" },
     { name: "Blue Gable Boxes", image: blueGableBox, description: "Vibrant blue boxes to stand out on retail shelves featuring high-quality print and durable board" },
     { name: "Cardboard Gable Boxes", image: cardboardGableBox, description: "Sturdy cardboard construction offering maximum protection for food items and small retail products" },
     { name: "Red Gable Boxes", image: redGableBox, description: "Bold red gable boxes for high visibility and festive impact perfect for seasonal retail promotions" },
@@ -107,9 +105,9 @@ const GableBoxes = () => {
                             <div className="pt-4 flex justify-center lg:justify-start">
                                 <div className="relative w-full max-w-[480px] h-[300px] overflow-hidden rounded-lg shadow-lg">
                                     <img
-                                        src={genericGableBox}
+                                        src={gableBoxesHero}
                                         alt="Gable Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -146,7 +144,7 @@ const GableBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

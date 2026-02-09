@@ -15,26 +15,26 @@ import {
 import { Link } from "react-router-dom";
 
 // Images
-import subscriptionBoxesHero from "@/assets/subscription-boxes/subscription-boxes-hero.png";
-import candleSubscriptionBox from "@/assets/subscription-boxes/candle-subscription-box.jpg";
-import cbdSubscriptionBox from "@/assets/subscription-boxes/cbd-subscription-box.jpg";
-import chocolateSubscriptionBox from "@/assets/subscription-boxes/chocolate-subscription-box.jpg";
-import cosmeticSubscriptionBox from "@/assets/subscription-boxes/cosmetic-subscription-box.jpg";
-import soapSubscriptionBox from "@/assets/subscription-boxes/soap-subscription-box.jpg";
-import stationerySubscriptionBox from "@/assets/subscription-boxes/stationery-subscription-box.jpg";
-import subscriptionBoxesForMen from "@/assets/subscription-boxes/subscription-boxes-for-men.jpg";
-import subscriptionBoxesForKids from "@/assets/subscription-boxes/subscription-boxes-for-kids.jpg";
-import foodSubscriptionBoxes from "@/assets/subscription-boxes/food-subscription-boxes.jpg";
-import mysterySubscriptionBoxes from "@/assets/subscription-boxes/mystery-subscription-boxes.jpg";
-import candySubscriptionBoxes from "@/assets/subscription-boxes/candy-subscription-boxes.jpg";
-import artSubscriptionBoxes from "@/assets/subscription-boxes/art-subscription-boxes.jpg";
-import petFoodSubscriptionBoxes from "@/assets/subscription-boxes/pet-food-subscription-boxes.jpg";
-import golfSubscriptionBoxes from "@/assets/subscription-boxes/golf-subscription-boxes.jpg";
-import subscriptionBoxesForWomen from "@/assets/subscription-boxes/subscription-boxes-for-women.jpg";
-import monthlySubscriptionBoxes from "@/assets/subscription-boxes/monthly-subscription-boxes.jpg";
-import harryPotterSubscriptionBoxes from "@/assets/subscription-boxes/harry-potter-subscription-boxes.jpg";
-import sportsSubscriptionBoxes from "@/assets/subscription-boxes/sports-subscription-boxes.jpg";
-import disneySubscriptionBoxes from "@/assets/subscription-boxes/disney-subscription-boxes.jpg";
+import subscriptionBoxesHero from "@/assets/subscription-boxes/subscription-boxes-hero.webp";
+import candleSubscriptionBox from "@/assets/subscription-boxes/candle-subscription-box.webp";
+import cbdSubscriptionBox from "@/assets/subscription-boxes/cbd-subscription-box.webp";
+import chocolateSubscriptionBox from "@/assets/subscription-boxes/chocolate-subscription-box.webp";
+import cosmeticSubscriptionBox from "@/assets/subscription-boxes/cosmetic-subscription-box.webp";
+import soapSubscriptionBox from "@/assets/subscription-boxes/soap-subscription-box.webp";
+import stationerySubscriptionBox from "@/assets/subscription-boxes/stationery-subscription-box.webp";
+import subscriptionBoxesForMen from "@/assets/subscription-boxes/subscription-boxes-for-men.webp";
+import subscriptionBoxesForKids from "@/assets/subscription-boxes/subscription-boxes-for-kids.webp";
+import foodSubscriptionBoxes from "@/assets/subscription-boxes/food-subscription-boxes.webp";
+import mysterySubscriptionBoxes from "@/assets/subscription-boxes/mystery-subscription-boxes.webp";
+import candySubscriptionBoxes from "@/assets/subscription-boxes/candy-subscription-boxes.webp";
+import artSubscriptionBoxes from "@/assets/subscription-boxes/art-subscription-boxes.webp";
+import petFoodSubscriptionBoxes from "@/assets/subscription-boxes/pet-food-subscription-boxes.webp";
+import golfSubscriptionBoxes from "@/assets/subscription-boxes/golf-subscription-boxes.webp";
+import subscriptionBoxesForWomen from "@/assets/subscription-boxes/subscription-boxes-for-women.webp";
+import monthlySubscriptionBoxes from "@/assets/subscription-boxes/monthly-subscription-boxes.webp";
+import harryPotterSubscriptionBoxes from "@/assets/subscription-boxes/harry-potter-subscription-boxes.webp";
+import sportsSubscriptionBoxes from "@/assets/subscription-boxes/sports-subscription-boxes.webp";
+import disneySubscriptionBoxes from "@/assets/subscription-boxes/disney-subscription-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 // Use hero as placeholder for now since we ran out of quota
 const placeholderImage = subscriptionBoxesHero;
@@ -110,7 +110,7 @@ const SubscriptionBoxes = () => {
                                     <img
                                         src={subscriptionBoxesHero}
                                         alt="Subscription Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -148,14 +148,14 @@ const SubscriptionBoxes = () => {
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-muted flex items-center justify-center relative overflow-hidden">
                                                 <img
                                                     src={placeholderImage}
                                                     className="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm scale-150"
-                                                    alt="placeholder background"
+                                                    alt="placeholder background" loading="lazy"
                                                 />
                                                 <span className="relative z-10 text-muted-foreground/50 text-xs font-medium px-2 text-center">
                                                     Image Coming Soon

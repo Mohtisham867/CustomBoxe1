@@ -14,13 +14,13 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/marijuana-packaging-hero.png";
+import heroImage from "@/assets/marijuana-packaging/hero.webp";
 
 // Specific images
-import marijuanaEdiblesPackaging from "@/assets/products/marijuana-edibles-packaging.png";
-import marijuanaLabels from "@/assets/box-shapes/stickers-and-labels.jpg";
-import medicalMarijuanaPackaging from "@/assets/products/medical-marijuana-packaging.png";
-import marijuanaCartridgePackaging from "@/assets/cannabis-products/cannabis-cartridge-packaging.jpg";
+import marijuanaEdiblesPackaging from "@/assets/marijuana-packaging/edibles-packaging.webp";
+import marijuanaLabels from "@/assets/marijuana-packaging/labels.webp";
+import medicalMarijuanaPackaging from "@/assets/marijuana-packaging/medical-packaging.webp";
+import marijuanaCartridgePackaging from "@/assets/marijuana-packaging/cartridge-packaging.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 
@@ -86,7 +86,7 @@ const MarijuanaPackaging = () => {
                                     <img
                                         src={heroImage}
                                         alt="Custom Marijuana Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -123,7 +123,7 @@ const MarijuanaPackaging = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

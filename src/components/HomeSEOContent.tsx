@@ -16,13 +16,13 @@ export const HomeSEOContent = () => {
                         [&::-webkit-scrollbar-track]:bg-gray-100
                         [&::-webkit-scrollbar-thumb]:bg-primary
                         [&::-webkit-scrollbar-thumb]:rounded-full">
-                    <div className="prose prose-lg prose-slate max-w-none 
+                    <div className="prose prose-lg prose-slate max-w-none
                             [&>h3]:text-2xl [&>h3]:font-bold [&>h3]:text-black [&>h3]:mt-10 [&>h3]:mb-4
                             [&>p]:text-[15px] [&>p]:leading-relaxed [&>p]:text-gray-800 [&>p]:mb-6
                             [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:space-y-3 [&>li]:text-gray-800 [&>li]:text-[15px]">
 
                         <p className="mt-0">
-                            In the rapidly evolving landscape of modern retail and e-commerce, packaging has transcended its traditional role as a mere vessel for transport. It has emerged as a powerful marketing tool, a tangible touchpoint for brand identity, and a critical component of the customer experience. At CustomBoxe, we recognize that the moment a customer receives their package is a moment of truth—a pivotal interaction that can solidify brand loyalty or leave a lasting impression of indifference. That is why we are dedicated to engineering premium custom packaging solutions that do more than just protect; they perform.
+                            In the rapidly evolving landscape of modern retail and e-commerce, packaging has transcended its traditional role as a mere vessel for transport. It has emerged as a powerful marketing tool, a tangible touchpoint for brand identity, and a critical component of the customer experience. At CustomPackMakers, we recognize that the moment a customer receives their package is a moment of truth—a pivotal interaction that can solidify brand loyalty or leave a lasting impression of indifference. That is why we are dedicated to engineering premium custom packaging solutions that do more than just protect; they perform.
                         </p>
                         <p>
                             From the structural integrity of the box to the tactile quality of the finish, every detail communicates a message about your brand's values and commitment to quality. Whether you are launching a luxury cosmetic line, a subscription box service, or a high-volume retail product, our comprehensive suite of packaging services is designed to meet your specific needs with precision, creativity, and scalability.
@@ -33,7 +33,7 @@ export const HomeSEOContent = () => {
                             The "unboxing experience" is not just a buzzword; it is a psychological phenomenon driven by anticipation and reward. When a customer opens a well-crafted package, dopamine is released, creating a positive emotional association with the brand. This experience is amplified by thoughtful design elements such as easy-open tabs, printed interiors, and high-quality textures.
                         </p>
                         <p>
-                            Research shows that premium packaging stimulates the reward centers of the brain, making the product inside appear more valuable. By investing in custom packaging, you are essentially investing in the perceived value of your product. A plain brown box says "utility," but a custom-printed, soft-touch box with gold foil stamping says "luxury," "care," and "exclusivity." At CustomBoxe, we help you leverage these psychological triggers to turn one-time buyers into lifelong brand advocates who are eager to share their unboxing experiences on social media.
+                            Research shows that premium packaging stimulates the reward centers of the brain, making the product inside appear more valuable. By investing in custom packaging, you are essentially investing in the perceived value of your product. A plain brown box says "utility," but a custom-printed, soft-touch box with gold foil stamping says "luxury," "care," and "exclusivity." At CustomPackMakers, we help you leverage these psychological triggers to turn one-time buyers into lifelong brand advocates who are eager to share their unboxing experiences on social media.
                         </p>
 
                         <h3>Material Excellence: The Foundation of Quality</h3>
@@ -101,7 +101,7 @@ export const HomeSEOContent = () => {
                             Our logistics team manages the complexities of global shipping, ensuring your packaging arrives on time, every time. We offer warehousing solutions, just-in-time delivery, and split-shipment capabilities to help you manage inventory flow efficiently.
                         </p>
                         <p>
-                            Start your packaging journey today with CustomBoxe. Let us help you create a package that not only projects your product but projects your brand's future. Contact our packaging specialists today for a consultation and discover how we can elevate your brand to new heights.
+                            Start your packaging journey today with CustomPackMakers. Let us help you create a package that not only projects your product but projects your brand's future. Contact our packaging specialists today for a consultation and discover how we can elevate your brand to new heights.
                         </p>
                     </div>
                 </div>

@@ -2,22 +2,22 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { QuoteForm } from "@/components/QuoteForm";
 import { Card, CardContent } from "@/components/ui/card";
-import heroBg from "@/assets/primary-packaging-hero-bg.jpg";
-import glassSerumBottle from "@/assets/primary-packaging/glass-serum-bottle.jpg";
-import plasticCleanserTube from "@/assets/primary-packaging/plastic-cleanser-tube.jpg";
-import plasticMistBottle from "@/assets/primary-packaging/plastic-mist-bottle.jpg";
-import glassRollOnBottle from "@/assets/primary-packaging/glass-roll-on-bottle.jpg";
-import plasticShampooBottle from "@/assets/primary-packaging/plastic-shampoo-bottle.jpg";
-import paperTubes from "@/assets/primary-packaging/paper-tubes.jpg";
-import glassCandleJars from "@/assets/primary-packaging/glass-candle-jars.jpg";
-import glassPerfumeBottle from "@/assets/primary-packaging/glass-perfume-bottle.jpg";
-import plasticCapsuleBottle from "@/assets/primary-packaging/plastic-capsule-bottle.jpg";
-import moisturizerJar from "@/assets/primary-packaging/moisturizer-jar.jpg";
-import plasticLotionBottle from "@/assets/primary-packaging/plastic-lotion-bottle.jpg";
-import glassCreamJars from "@/assets/primary-packaging/glass-cream-jars.jpg";
-import customPreRollTubes from "@/assets/primary-packaging/custom-pre-roll-tubes.jpg";
-import dropperBottles from "@/assets/primary-packaging/dropper-bottles.jpg";
-import jarsWithPump from "@/assets/primary-packaging/jars-with-pump.jpg";
+import heroBg from "@/assets/primary-packaging-hero-bg.webp";
+import glassSerumBottle from "@/assets/primary-packaging/glass-serum-bottle-premium.webp";
+import plasticCleanserTube from "@/assets/primary-packaging/plastic-cleanser-tube-premium.webp";
+import plasticMistBottle from "@/assets/primary-packaging/plastic-mist-bottle-premium.webp";
+import glassRollOnBottle from "@/assets/primary-packaging/glass-roll-on-bottle-premium.webp";
+import plasticShampooBottle from "@/assets/primary-packaging/plastic-shampoo-bottle-premium.webp";
+import paperTubes from "@/assets/primary-packaging/paper-tubes-premium.webp";
+import glassCandleJars from "@/assets/primary-packaging/glass-candle-jars-premium.webp";
+import glassPerfumeBottle from "@/assets/primary-packaging/glass-perfume-bottle-premium.webp";
+import plasticCapsuleBottle from "@/assets/primary-packaging/plastic-capsule-bottle-premium.webp";
+import moisturizerJar from "@/assets/primary-packaging/moisturizer-jar-premium.webp";
+import plasticLotionBottle from "@/assets/primary-packaging/plastic-lotion-bottle-premium.webp";
+import glassCreamJars from "@/assets/primary-packaging/glass-cream-jars-premium.webp";
+import customPreRollTubes from "@/assets/primary-packaging/custom-pre-roll-tubes-premium.webp";
+import dropperBottles from "@/assets/primary-packaging/dropper-bottles-premium.webp";
+import jarsWithPump from "@/assets/primary-packaging/jars-with-pump-premium.webp";
 
 import { Link } from "react-router-dom";
 
@@ -85,6 +85,7 @@ const PrimaryPackaging = () => {
                   <img
                     src={item.image}
                     alt={item.name}
+                    loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -101,7 +102,7 @@ const PrimaryPackaging = () => {
       </section>
 
       <QuoteForm />
-      
+
       <section className="py-16 px-[50px] bg-white border-t border-slate-100">
         <div className="w-full mx-auto text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 leading-tight">
@@ -113,52 +114,52 @@ const PrimaryPackaging = () => {
                 [&>p]:text-[15px] [&>p]:leading-relaxed [&>p]:text-gray-800 [&>p]:mb-6
                 [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:space-y-3 [&>li]:text-gray-800 [&>li]:text-[15px]">
 
-              <p className="mt-0">
-                Primary packaging sits closest to the product — it is the first physical interface between your item and the consumer. Whether it’s a glass serum bottle, a plastic tube, or a food-grade pouch, materials that contact the product must combine inertness, sterilizability, and structural integrity. This section outlines the material choices, sterilization pathways, and design considerations that ensure safety, compliance, and retail appeal.
-              </p>
+            <p className="mt-0">
+              Primary packaging sits closest to the product — it is the first physical interface between your item and the consumer. Whether it’s a glass serum bottle, a plastic tube, or a food-grade pouch, materials that contact the product must combine inertness, sterilizability, and structural integrity. This section outlines the material choices, sterilization pathways, and design considerations that ensure safety, compliance, and retail appeal.
+            </p>
 
-              <h3>Direct-Contact Materials & Food-Safe Polymers</h3>
-              <p>
-                Materials that come into direct contact with consumable or topical products are selected for chemical inertness and low migration. Common primary packaging substrates include pharmaceutical‑grade glass, HDPE/LDPE, PET, and engineered polymers formulated for cosmetic or food-contact use. Each substrate offers trade-offs: glass is non‑porous and chemically stable, making it ideal for serums and perfumes; PET and HDPE provide excellent impact resistance and are preferred for retail bottles and jars.
-              </p>
-              <p>
-                For food or ingestible products, certification of polymer grades (FDA, EU FCM) and documentation of additive migration limits are essential. We partner with material suppliers who provide full declarations of conformity to streamline regulatory filing and ensure product safety on a global scale.
-              </p>
+            <h3>Direct-Contact Materials & Food-Safe Polymers</h3>
+            <p>
+              Materials that come into direct contact with consumable or topical products are selected for chemical inertness and low migration. Common primary packaging substrates include pharmaceutical‑grade glass, HDPE/LDPE, PET, and engineered polymers formulated for cosmetic or food-contact use. Each substrate offers trade-offs: glass is non‑porous and chemically stable, making it ideal for serums and perfumes; PET and HDPE provide excellent impact resistance and are preferred for retail bottles and jars.
+            </p>
+            <p>
+              For food or ingestible products, certification of polymer grades (FDA, EU FCM) and documentation of additive migration limits are essential. We partner with material suppliers who provide full declarations of conformity to streamline regulatory filing and ensure product safety on a global scale.
+            </p>
 
-              <h3>Sterilization, Cleanline Processes & Production Controls</h3>
-              <p>
-                Sterility and cleanliness begin long before filling. Primary packaging intended for sterile or aseptic products must be compatible with the intended sterilization method—autoclave, gamma irradiation, ethylene oxide, or validated chemical sterilants. For heat-stable glass, autoclaving is common; certain polymers tolerate irradiation but must be tested for changes in mechanical properties or leachables.
-              </p>
-              <p>
-                Our production lines support cleanroom filling environments and validated cleaning procedures to minimize particulate and microbial contamination. We also provide guidance on pre-treatment, sterilization validation, and shelf stability studies to ensure the packaged product remains safe throughout its lifecycle.
-              </p>
+            <h3>Sterilization, Cleanline Processes & Production Controls</h3>
+            <p>
+              Sterility and cleanliness begin long before filling. Primary packaging intended for sterile or aseptic products must be compatible with the intended sterilization method—autoclave, gamma irradiation, ethylene oxide, or validated chemical sterilants. For heat-stable glass, autoclaving is common; certain polymers tolerate irradiation but must be tested for changes in mechanical properties or leachables.
+            </p>
+            <p>
+              Our production lines support cleanroom filling environments and validated cleaning procedures to minimize particulate and microbial contamination. We also provide guidance on pre-treatment, sterilization validation, and shelf stability studies to ensure the packaged product remains safe throughout its lifecycle.
+            </p>
 
-              <h3>Retail Presentation & Structural Protection</h3>
-              <p>
-                Primary packaging must protect the product through distribution while projecting the correct brand message on shelf. Structural features—shoulder profiles, tamper-evident caps, inner seals, and integrated pumps—combine with high-quality printing and finishing to create a cohesive retail experience. Barrier liners and seal integrity prevent leakage and protect formulations from oxygen and moisture ingress.
-              </p>
-              <p>
-                For cosmetics and topical products, finishes like soft-touch lamination, metallic foils, and embossed logos enhance perceived value. For food and nutraceuticals, clear labeling, tamper bands, and functional closures (dispensing caps, flip-tops, droppers) improve usability and compliance.
-              </p>
+            <h3>Retail Presentation & Structural Protection</h3>
+            <p>
+              Primary packaging must protect the product through distribution while projecting the correct brand message on shelf. Structural features—shoulder profiles, tamper-evident caps, inner seals, and integrated pumps—combine with high-quality printing and finishing to create a cohesive retail experience. Barrier liners and seal integrity prevent leakage and protect formulations from oxygen and moisture ingress.
+            </p>
+            <p>
+              For cosmetics and topical products, finishes like soft-touch lamination, metallic foils, and embossed logos enhance perceived value. For food and nutraceuticals, clear labeling, tamper bands, and functional closures (dispensing caps, flip-tops, droppers) improve usability and compliance.
+            </p>
 
-              <h3>Protective Barriers & Compatibility Testing</h3>
-              <p>
-                Selecting a protective barrier requires compatibility testing against the specific product chemistry. Some active ingredients or solvents may interact with plastics, causing stress cracking or extractables. We run migration and extractables studies where necessary and recommend barrier coatings, liner films, or alternate substrates when incompatibilities are detected.
-              </p>
-              <p>
-                Barrier strategies can also include inner heat-seal liners for jars, foiled induction seals for tamper evidence, and oxygen-scavenging layers for oxidation-sensitive formulas. The correct combination preserves efficacy and extends shelf life without compromising consumer safety.
-              </p>
+            <h3>Protective Barriers & Compatibility Testing</h3>
+            <p>
+              Selecting a protective barrier requires compatibility testing against the specific product chemistry. Some active ingredients or solvents may interact with plastics, causing stress cracking or extractables. We run migration and extractables studies where necessary and recommend barrier coatings, liner films, or alternate substrates when incompatibilities are detected.
+            </p>
+            <p>
+              Barrier strategies can also include inner heat-seal liners for jars, foiled induction seals for tamper evidence, and oxygen-scavenging layers for oxidation-sensitive formulas. The correct combination preserves efficacy and extends shelf life without compromising consumer safety.
+            </p>
 
-              <h3>Supply Chain, Sustainability & Scale</h3>
-              <p>
-                Supply chain resilience and sustainability are equally important. We help brands select recycled-content polymers, lightweight glass options, and mono-material solutions that simplify recycling. Our sourcing team evaluates lead times, validates supplier qualifications, and provides traceability documentation to support large-scale rollouts with consistent quality across production runs.
-              </p>
+            <h3>Supply Chain, Sustainability & Scale</h3>
+            <p>
+              Supply chain resilience and sustainability are equally important. We help brands select recycled-content polymers, lightweight glass options, and mono-material solutions that simplify recycling. Our sourcing team evaluates lead times, validates supplier qualifications, and provides traceability documentation to support large-scale rollouts with consistent quality across production runs.
+            </p>
 
-              <p>
-                In short, primary packaging is where material science meets regulatory responsibility and brand storytelling. If your project requires validated sterilization pathways, compatibility testing, or premium retail finishes, our team can guide you through material selection, prototyping, and scale production to ensure the final package protects the product and elevates your shelf presence.
-              </p>
+            <p>
+              In short, primary packaging is where material science meets regulatory responsibility and brand storytelling. If your project requires validated sterilization pathways, compatibility testing, or premium retail finishes, our team can guide you through material selection, prototyping, and scale production to ensure the final package protects the product and elevates your shelf presence.
+            </p>
 
-            </div>
+          </div>
         </div>
       </section>
 

@@ -14,25 +14,21 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "../../assets/electronics-boxes/electronics-boxes-hero.jpg";
+import heroImage from "../../assets/electronics-boxes/electronics-boxes-hero.webp";
 
 // Specific images
-import hairDryerBoxes from "../../assets/electronics-boxes/hair-dryer-packaging.jpg";
-import chargerBoxes from "@/assets/charger_kabel_packaging.png";
-import batteryBoxes from "../../assets/electronics-boxes/battery-packaging.jpg";
-import cdJackets from "../../assets/electronics-boxes/cd-jackets.jpg";
-import cdCovers from "../../assets/electronics-boxes/cd-covers.jpg";
-import cameraPackaging from "../../assets/electronics-boxes/camera-packaging.jpg";
-import phoneBoxes from "../../assets/electronics-boxes/phone-boxes.jpg";
-import headphonePackaging from "../../assets/electronics-boxes/headphone-packaging.jpg";
-import softwareBoxes from "../../assets/electronics-boxes/software-boxes.jpg";
+import hairDryerBoxes from "../../assets/electronics-boxes/hair-dryer-packaging.webp";
+import chargerBoxes from "@/assets/charger_kabel_packaging.webp";
+import batteryBoxes from "../../assets/electronics-boxes/battery-packaging.webp";
+import cdJackets from "../../assets/electronics-boxes/cd-jackets.webp";
+import cdCovers from "../../assets/electronics-boxes/cd-covers.webp";
+import cameraPackaging from "../../assets/electronics-boxes/camera-packaging.webp";
+import phoneBoxes from "../../assets/electronics-boxes/phone-boxes.webp";
+import headphonePackaging from "../../assets/electronics-boxes/headphone-packaging.webp";
+import softwareBoxes from "../../assets/electronics-boxes/software-boxes.webp";
 
 // General shapes mapping
-// import mailerBoxes from "@/assets/box-shapes/mailer-boxes.jpg";
-// import tuckBoxes from "@/assets/box-shapes/tuck-boxes.jpg";
-// import paperBags from "@/assets/box-shapes/custom-paper-bags.png";
-// import customShapeBoxes from "@/assets/box-shapes/custom-shape-boxes.jpg";
-// import shippingBoxes from "@/assets/box-shapes/shipping-boxes.jpg";
+
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -108,7 +104,7 @@ const ElectronicsBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Electronics Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -145,7 +141,7 @@ const ElectronicsBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

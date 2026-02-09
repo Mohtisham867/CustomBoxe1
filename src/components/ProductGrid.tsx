@@ -1,17 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import cosmeticBoxes from "@/assets/products/cosmetic-boxes-new.png";
-import soapBoxes from "@/assets/products/soap-boxes-new.jpg";
-import candleBoxes from "@/assets/products/candle-boxes-new.jpg";
-import displayBoxes from "@/assets/products/display-boxes.jpg";
-import mailerBoxes from "@/assets/products/mailer-boxes-new.jpg";
-import beveragePackaging from "@/assets/products/beverage-packaging-new.jpg";
-import cbdBoxes from "@/assets/products/cbd-boxes.jpg";
-import rigidBoxes from "@/assets/products/rigid-boxes-new.png";
-import tuckBoxes from "@/assets/products/tuck-boxes.jpg";
-import cigaretteBoxes from "@/assets/products/cigarette-boxes.jpg";
-import mylarBags from "@/assets/products/mylar-bags-new.png";
-import cardboardBoxes from "@/assets/products/cardboard-boxes-new.jpg";
+import cosmeticBoxes from "@/assets/products/cosmetic-boxes-new.webp";
+import soapBoxes from "@/assets/products/soap-boxes-new.webp";
+import candleBoxes from "@/assets/products/candle-boxes-new.webp";
+import displayBoxes from "@/assets/products/display-boxes.webp";
+import mailerBoxes from "@/assets/products/mailer-boxes-new.webp";
+import beveragePackaging from "@/assets/products/beverage-packaging-new.webp";
+import cbdBoxes from "@/assets/products/cbd-boxes.webp";
+import rigidBoxes from "@/assets/products/rigid-boxes-new.webp";
+import tuckBoxes from "@/assets/products/tuck-boxes.webp";
+import cigaretteBoxes from "@/assets/products/cigarette-boxes.webp";
+import mylarBags from "@/assets/products/mylar-bags-new.webp";
+import cardboardBoxes from "@/assets/products/cardboard-boxes-new.webp";
 
 const products = [
   { name: "COSMETIC BOXES", image: cosmeticBoxes, link: "/industries/cosmetic-boxes" },
@@ -54,7 +54,7 @@ export const ProductGrid = () => {
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy"
                       />
                     </div>
                     <div className="p-6 text-center bg-background">
@@ -74,7 +74,7 @@ export const ProductGrid = () => {
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy"
                       />
                     </div>
                     <div className="p-6 text-center bg-background">

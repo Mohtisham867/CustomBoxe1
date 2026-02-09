@@ -14,19 +14,19 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import vapeBoxesHero from "@/assets/vape-boxes-hero.png";
-import customECigaretteBoxes from "@/assets/custom-e-cigarette-boxes.png";
-import customVapeCartridgeBoxes from "@/assets/custom-vape-cartridge-boxes.png";
-import vapePenBoxes from "@/assets/vape-pen-boxes.png";
-import cannabisVapePackaging from "@/assets/cannabis-vape-packaging.png";
-import oneMlVapeCartridgeBoxes from "@/assets/one-ml-vape-cartridge-boxes.png";
-import vapeDisplayBoxes from "@/assets/vape-display-boxes.png";
-import disposableVapeBoxes from "@/assets/disposable-vape-boxes.png";
-import emptyVapeCartridgeBoxes from "@/assets/empty-vape-cartridge-boxes.png";
-import dankVapePackaging from "@/assets/dank-vape-packaging.png";
-import cbdVapeBoxes from "@/assets/cbd-vape-boxes.png";
-import vapeJuiceBoxes from "@/assets/vape-juice-boxes.png";
-import juulPackaging from "@/assets/juul-packaging.png";
+import vapeBoxesHero from "@/assets/vape-boxes-hero.webp";
+import customECigaretteBoxes from "@/assets/custom-e-cigarette-boxes.webp";
+import customVapeCartridgeBoxes from "@/assets/custom-vape-cartridge-boxes.webp";
+import vapePenBoxes from "@/assets/vape-pen-boxes.webp";
+import cannabisVapePackaging from "@/assets/cannabis-vape-packaging.webp";
+import oneMlVapeCartridgeBoxes from "@/assets/one-ml-vape-cartridge-boxes.webp";
+import vapeDisplayBoxes from "@/assets/vape-display-boxes.webp";
+import disposableVapeBoxes from "@/assets/disposable-vape-boxes.webp";
+import emptyVapeCartridgeBoxes from "@/assets/empty-vape-cartridge-boxes.webp";
+import dankVapePackaging from "@/assets/dank-vape-packaging.webp";
+import cbdVapeBoxes from "@/assets/cbd-vape-boxes.webp";
+import vapeJuiceBoxes from "@/assets/vape-juice-boxes.webp";
+import juulPackaging from "@/assets/juul-packaging.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -108,7 +108,7 @@ const VapeBoxes = () => {
                                     <img
                                         src={vapeBoxesHero}
                                         alt="Vape Boxes Background"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -141,13 +141,13 @@ const VapeBoxes = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         {/* Product image placeholder - intentionally empty */}
                                         {product.image ? (
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-muted flex items-center justify-center">

@@ -1,6 +1,6 @@
 import { ArrowRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/main-home-hero-new.png";
+import heroImage from "@/assets/main-home-hero-new.webp";
 import { useCounterAnimation } from "@/hooks/use-counter-animation";
 
 export const Hero = () => {
@@ -77,7 +77,7 @@ export const Hero = () => {
               <img
                 src={heroImage}
                 alt="Custom Packaging Boxes"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover" loading="lazy"
               />
             </div>
           </div>

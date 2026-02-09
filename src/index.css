@@ -20,7 +20,7 @@ All colors MUST be HSL.
     --primary: 186 76% 42%;
     --primary-foreground: 0 0% 100%;
     --primary-hover: 186 76% 35%;
-    
+
     --secondary: 210 17% 95%;
     --secondary-foreground: 210 24% 16%;
 
@@ -43,7 +43,7 @@ All colors MUST be HSL.
     --brand-gradient-start: 186 76% 42%;
     --brand-gradient-end: 186 85% 25%;
     --brand-light: 186 65% 95%;
-    
+
     /* Feature colors */
     --feature-1: 210 100% 50%;
     --feature-2: 150 70% 45%;
@@ -81,9 +81,7 @@ All colors MUST be HSL.
     --input: 210 17% 25%;
     --ring: 186 76% 50%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -91,7 +89,7 @@ All colors MUST be HSL.
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-background text-foreground antialiased;
   }
@@ -101,7 +99,7 @@ All colors MUST be HSL.
   .gradient-primary {
     background: linear-gradient(135deg, hsl(var(--brand-gradient-start)), hsl(var(--brand-gradient-end)));
   }
-  
+
   .gradient-text {
     background: linear-gradient(135deg, hsl(var(--brand-gradient-start)), hsl(var(--brand-gradient-end)));
     -webkit-background-clip: text;
@@ -114,8 +112,15 @@ All colors MUST be HSL.
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
   }
 
   .animate-marquee {
@@ -123,8 +128,13 @@ All colors MUST be HSL.
   }
 
   @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
   }
 
   .animate-fade-in-up {
@@ -136,6 +146,7 @@ All colors MUST be HSL.
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);

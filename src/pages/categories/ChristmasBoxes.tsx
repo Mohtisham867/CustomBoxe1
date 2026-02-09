@@ -13,22 +13,22 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import christmasBoxesHero from "@/assets/christmas-boxes-hero.png";
+import christmasBoxesHero from "@/assets/christmas-boxes-hero.webp";
 
 // Import professional product images
-import christmasChocolateBoxes from "@/assets/christmas-products/christmas-chocolate-boxes.jpg";
-import christmasTags from "@/assets/christmas-products/christmas-tags.jpg";
-import christmasGableBoxes from "@/assets/christmas-products/christmas-gable-boxes.jpg";
-import christmasCupcakeBoxes from "@/assets/christmas-products/christmas-cupcake-boxes.jpg";
-import christmasCandyBoxes from "@/assets/christmas-products/christmas-candy-boxes.jpg";
-import christmasGiftBoxes from "@/assets/christmas-products/christmas-gift-boxes.jpg";
-import christmasEveBoxes from "@/assets/christmas-products/christmas-eve-boxes.jpg";
-import christmasTreatBoxes from "@/assets/christmas-products/christmas-treat-boxes.jpg";
-import christmasPaperBags from "@/assets/christmas-products/christmas-paper-bags.jpg";
-import christmasGiftBags from "@/assets/christmas-products/christmas-gift-bags.jpg";
-import christmasFavorBoxes from "@/assets/christmas-products/christmas-favor-boxes.jpg";
-import christmasStickers from "@/assets/christmas-products/christmas-stickers.jpg";
-import adventCalendarBoxes from "@/assets/christmas-products/advent-calendar-boxes.jpg";
+import christmasChocolateBoxes from "@/assets/christmas-products/christmas-chocolate-boxes.webp";
+import christmasTags from "@/assets/christmas-products/christmas-tags.webp";
+import christmasGableBoxes from "@/assets/christmas-products/christmas-gable-boxes.webp";
+import christmasCupcakeBoxes from "@/assets/christmas-products/christmas-cupcake-boxes.webp";
+import christmasCandyBoxes from "@/assets/christmas-products/christmas-candy-boxes.webp";
+import christmasGiftBoxes from "@/assets/christmas-products/christmas-gift-boxes.webp";
+import christmasEveBoxes from "@/assets/christmas-products/christmas-eve-boxes.webp";
+import christmasTreatBoxes from "@/assets/christmas-products/christmas-treat-boxes.webp";
+import christmasPaperBags from "@/assets/christmas-products/christmas-paper-bags.webp";
+import christmasGiftBags from "@/assets/christmas-products/christmas-gift-bags.webp";
+import christmasFavorBoxes from "@/assets/christmas-products/christmas-favor-boxes.webp";
+import christmasStickers from "@/assets/christmas-products/christmas-stickers.webp";
+import adventCalendarBoxes from "@/assets/christmas-products/advent-calendar-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -97,7 +97,7 @@ const ChristmasBoxes = () => {
                   <img
                     src={christmasBoxesHero}
                     alt="Custom Christmas Boxes Collection"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover" loading="lazy"
                   />
                 </div>
               </div>
@@ -126,11 +126,11 @@ const ChristmasBoxes = () => {
                   className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                 >
                   <CardContent className="p-0">
-                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                       />
                     </div>
                     <div className="p-4 border-t border-border">

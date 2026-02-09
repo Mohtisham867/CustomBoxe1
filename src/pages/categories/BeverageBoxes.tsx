@@ -15,19 +15,19 @@ import {
 import { Link } from "react-router-dom";
 
 // Import hero image
-import beverageHeroImage from "@/assets/beverage-boxes-hero.png";
+import beverageHeroImage from "@/assets/beverage-boxes/hero.webp";
 
 // Import beverage product images
-import coffeePackaging from "@/assets/beverage-products/coffee-packaging.jpg";
-import teaBoxes from "@/assets/beverage-products/tea-boxes.jpg";
-import wineBoxes from "@/assets/beverage-products/wine-boxes.jpg";
-import beerPackaging from "@/assets/beverage-products/beer-packaging.jpg";
-import juiceBoxes from "@/assets/beverage-products/juice-boxes.jpg";
-import sodaPackaging from "@/assets/beverage-products/soda-packaging.jpg";
-import energyDrinkBoxes from "@/assets/beverage-products/energy-drink-boxes.jpg";
-import waterBottlePackaging from "@/assets/beverage-products/water-bottle-packaging.jpg";
-import milkPackaging from "@/assets/beverage-products/milk-packaging.jpg";
-import smoothiePackaging from "@/assets/beverage-products/smoothie-packaging.jpg";
+import coffeePackaging from "@/assets/beverage-boxes/coffee-packaging.webp";
+import teaBoxes from "@/assets/beverage-boxes/tea-boxes.webp";
+import wineBoxes from "@/assets/beverage-boxes/wine-boxes.webp";
+import beerPackaging from "@/assets/beverage-boxes/beer-packaging.webp";
+import juiceBoxes from "@/assets/beverage-boxes/juice-boxes.webp";
+import sodaPackaging from "@/assets/beverage-boxes/soda-packaging.webp";
+import energyDrinkBoxes from "@/assets/beverage-boxes/energy-drink-boxes.webp";
+import waterBottlePackaging from "@/assets/beverage-boxes/water-bottle-packaging.webp";
+import milkPackaging from "@/assets/beverage-boxes/milk-packaging.webp";
+import smoothiePackaging from "@/assets/beverage-boxes/smoothie-packaging.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -92,7 +92,7 @@ const BeverageBoxes = () => {
                   <img
                     src={beverageHeroImage}
                     alt="Custom Beverage Boxes Collection"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover" loading="lazy"
                   />
                 </div>
               </div>
@@ -125,7 +125,7 @@ const BeverageBoxes = () => {
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                        className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                       />
                     </div>
                     <div className="p-4 border-t border-border">

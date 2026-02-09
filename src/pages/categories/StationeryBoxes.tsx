@@ -14,21 +14,21 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/stationery-boxes/stationery-boxes-hero.png";
+import heroImage from "@/assets/stationery-boxes/stationery-boxes-hero.webp";
 
 // Product images
-import businessCards from "@/assets/stationery-boxes/custom-business-cards.png";
-import documentFolder from "@/assets/stationery-boxes/document-folder.png";
-import penGiftBoxes from "@/assets/stationery-boxes/pen-gift-boxes.png";
-import mailingEnvelopes from "@/assets/stationery-boxes/mailing-envelopes.png";
-import invitationBoxes from "@/assets/stationery-boxes/invitation-boxes.png";
-import markerBoxes from "@/assets/stationery-boxes/marker-boxes.png";
-import stapleBoxes from "@/assets/stationery-boxes/staple-boxes.png";
-import cardboardPencilBoxes from "@/assets/stationery-boxes/cardboard-pencil-boxes.png";
-import packagingInserts from "@/assets/stationery-boxes/packaging-inserts.png";
-import pencilBoxes from "@/assets/stationery-boxes/pencil-boxes.png";
-import customBookmarks from "@/assets/stationery-boxes/custom-bookmarks.png";
-import bookBoxes from "@/assets/stationery-boxes/book-boxes.png";
+import businessCards from "@/assets/stationery-boxes/custom-business-cards.webp";
+import documentFolder from "@/assets/stationery-boxes/document-folder.webp";
+import penGiftBoxes from "@/assets/stationery-boxes/pen-gift-boxes.webp";
+import mailingEnvelopes from "@/assets/stationery-boxes/mailing-envelopes.webp";
+import invitationBoxes from "@/assets/stationery-boxes/invitation-boxes.webp";
+import markerBoxes from "@/assets/stationery-boxes/marker-boxes.webp";
+import stapleBoxes from "@/assets/stationery-boxes/staple-boxes.webp";
+import cardboardPencilBoxes from "@/assets/stationery-boxes/cardboard-pencil-boxes.webp";
+import packagingInserts from "@/assets/stationery-boxes/packaging-inserts.webp";
+import pencilBoxes from "@/assets/stationery-boxes/pencil-boxes.webp";
+import customBookmarks from "@/assets/stationery-boxes/custom-bookmarks.webp";
+import bookBoxes from "@/assets/stationery-boxes/book-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -109,7 +109,7 @@ const StationeryBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Stationery Boxes Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -146,7 +146,7 @@ const StationeryBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

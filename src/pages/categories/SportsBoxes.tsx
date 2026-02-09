@@ -14,14 +14,14 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/sports-boxes/sports-boxes-hero.png";
+import heroImage from "@/assets/sports-boxes/sports-boxes-hero.webp";
 
 // Specific images maps
-import baseballBoxes from "@/assets/sports-boxes/custom-baseball-boxes.png";
-import golfBallBoxes from "@/assets/sports-boxes/custom-golf-ball-boxes.png";
-import footballBoxes from "@/assets/sports-boxes/football-boxes.png";
-import basketballBoxes from "@/assets/sports-boxes/basketball-boxes.png";
-import tennisBallBoxes from "@/assets/sports-boxes/tennis-ball-boxes.png";
+import baseballBoxes from "@/assets/sports-boxes/custom-baseball-boxes.webp";
+import golfBallBoxes from "@/assets/sports-boxes/custom-golf-ball-boxes.webp";
+import footballBoxes from "@/assets/sports-boxes/football-boxes.webp";
+import basketballBoxes from "@/assets/sports-boxes/basketball-boxes.webp";
+import tennisBallBoxes from "@/assets/sports-boxes/tennis-ball-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -88,7 +88,7 @@ const SportsBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Sports Boxes Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -125,7 +125,7 @@ const SportsBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

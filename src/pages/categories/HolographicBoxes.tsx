@@ -13,10 +13,10 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import holographicBoxesHero from "@/assets/holographic-boxes-hero.png";
-import holographicMylarBags from "@/assets/holographic-mylar-bags.png";
-import holographicBags from "@/assets/holographic-bags.png";
-import holographicFoilingBoxes from "@/assets/holographic-foiling-boxes.png";
+import holographicBoxesHero from "@/assets/holographic-boxes-hero.webp";
+import holographicMylarBags from "@/assets/holographic-mylar-bags.webp";
+import holographicBags from "@/assets/holographic-bags.webp";
+import holographicFoilingBoxes from "@/assets/holographic-foiling-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // Product list for dropdown
@@ -80,7 +80,7 @@ const HolographicBoxes = () => {
                                     <img
                                         src={holographicBoxesHero}
                                         alt="Holographic Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ const HolographicBoxes = () => {
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-muted flex items-center justify-center">

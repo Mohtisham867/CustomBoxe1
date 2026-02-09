@@ -14,17 +14,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/food-boxes-hero.png";
+import heroImage from "@/assets/food-boxes/hero.webp";
 
 // Specific images
-import chineseTakeout from "@/assets/chinese_takeout_box.png";
-import donutBoxes from "@/assets/donut_box_packaging.png";
-import popcornBoxes from "@/assets/custom_popcorn_boxes.png";
-import dietarySupplements from "@/assets/dietary_supplement_packaging.png";
-import pizzaSliceBoxes from "@/assets/custom_pizza_slice_boxes.png";
-import paperFoodBags from "@/assets/custom_paper_food_bags.png";
-import paperFoodTrays from "@/assets/paper_food_trays.png";
-import miniCerealBoxes from "@/assets/mini_cereal_boxes.png";
+import chineseTakeout from "@/assets/food-boxes/chinese-takeout-box.webp";
+import donutBoxes from "@/assets/food-boxes/donut-boxes.webp";
+import popcornBoxes from "@/assets/food-boxes/popcorn-boxes.webp";
+import dietarySupplements from "@/assets/food-boxes/dietary-supplements.webp";
+import pizzaSliceBoxes from "@/assets/food-boxes/pizza-slice-boxes.webp";
+import paperFoodBags from "@/assets/food-boxes/paper-food-bags.webp";
+import paperFoodTrays from "@/assets/food-boxes/paper-food-trays.webp";
+import miniCerealBoxes from "@/assets/food-boxes/mini-cereal-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 
@@ -99,7 +99,7 @@ const FoodBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Food Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ const FoodBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

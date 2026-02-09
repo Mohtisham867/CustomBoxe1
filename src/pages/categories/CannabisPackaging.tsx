@@ -13,14 +13,14 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/cannabis-boxes-hero.png";
-import cannabisTinctureBoxes from "@/assets/cannabis-products/cannabis-tincture-boxes.jpg";
-import cannabisVapePackaging from "@/assets/cannabis-products/cannabis-vape-packaging.jpg";
-import cannabisSeedPackaging from "@/assets/cannabis-products/cannabis-seed-packaging.jpg";
-import cannabisCigaretteBoxes from "@/assets/cannabis-products/cannabis-cigarette-boxes.jpg";
-import cannabisMylarBags from "@/assets/cannabis-products/cannabis-mylar-bags.jpg";
-import cannabisFlowerPackaging from "@/assets/cannabis-products/cannabis-flower-packaging.jpg";
-import cannabisCartridgePackaging from "@/assets/cannabis-products/cannabis-cartridge-packaging.jpg";
+import heroImage from "@/assets/cannabis-packaging/hero.webp";
+import cannabisTinctureBoxes from "@/assets/cannabis-packaging/tincture-boxes.webp";
+import cannabisVapePackaging from "@/assets/cannabis-packaging/vape-packaging.webp";
+import cannabisSeedPackaging from "@/assets/cannabis-packaging/seed-packaging.webp";
+import cannabisCigaretteBoxes from "@/assets/cannabis-packaging/cigarette-boxes.webp";
+import cannabisMylarBags from "@/assets/cannabis-packaging/mylar-bags.webp";
+import cannabisFlowerPackaging from "@/assets/cannabis-packaging/flower-packaging.webp";
+import cannabisCartridgePackaging from "@/assets/marijuana-packaging/cartridge-packaging.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -83,7 +83,7 @@ const CannabisPackaging = () => {
                   <img
                     src={heroImage}
                     alt="Cannabis Packaging"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover" loading="lazy"
                   />
                 </div>
               </div>
@@ -116,11 +116,11 @@ const CannabisPackaging = () => {
                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
               >
                 <CardContent className="p-0">
-                  <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                  <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                     />
                   </div>
                   <div className="p-4 border-t border-border">

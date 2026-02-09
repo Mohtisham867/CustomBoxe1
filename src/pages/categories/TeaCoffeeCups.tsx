@@ -15,18 +15,18 @@ import {
 import { Link } from "react-router-dom";
 
 // Images
-import teaCoffeeHero from "@/assets/tea-coffee-cups-hero.png";
-import customTeaBoxes from "@/assets/custom-tea-boxes.png";
-import customPrintedCoffee from "@/assets/custom-printed-coffee-packaging.png";
-import coffeeSleeves from "@/assets/coffee-sleeves.png";
-import coffeeCupsLids from "@/assets/coffee-cups-with-lids.png";
-import disposableCoffeeCups from "@/assets/disposable-coffee-cups.png";
-import paperCoffeeCups from "@/assets/paper-coffee-cups.png";
-import toGoCoffeeCups from "@/assets/to-go-coffee-cups.png";
-import cuteCoffeeCups from "@/assets/cute-coffee-cups.png";
-import compostableCoffeeCups from "@/assets/compostable-coffee-cups.png";
-import doubleWallCoffeeCups from "@/assets/double-wall-coffee-cups.png";
-import restaurantCoffeeCups from "@/assets/restaurant-coffee-cups.png";
+import teaCoffeeHero from "@/assets/tea-coffee-cups-hero.webp";
+import customTeaBoxes from "@/assets/custom-tea-boxes.webp";
+import customPrintedCoffee from "@/assets/custom-printed-coffee-packaging.webp";
+import coffeeSleeves from "@/assets/coffee-sleeves.webp";
+import coffeeCupsLids from "@/assets/coffee-cups-with-lids.webp";
+import disposableCoffeeCups from "@/assets/disposable-coffee-cups.webp";
+import paperCoffeeCups from "@/assets/paper-coffee-cups.webp";
+import toGoCoffeeCups from "@/assets/to-go-coffee-cups.webp";
+import cuteCoffeeCups from "@/assets/cute-coffee-cups.webp";
+import compostableCoffeeCups from "@/assets/compostable-coffee-cups.webp";
+import doubleWallCoffeeCups from "@/assets/double-wall-coffee-cups.webp";
+import restaurantCoffeeCups from "@/assets/restaurant-coffee-cups.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -106,7 +106,7 @@ const TeaCoffeeCups = () => {
                                     <img
                                         src={teaCoffeeHero}
                                         alt="Tea and Coffee Cups"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -143,7 +143,7 @@ const TeaCoffeeCups = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

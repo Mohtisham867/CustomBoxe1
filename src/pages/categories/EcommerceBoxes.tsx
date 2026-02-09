@@ -14,13 +14,13 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/ecommerce-boxes-hero.png";
-import mailerBoxes from "@/assets/box-shapes/mailer-boxes.jpg";
-import subscriptionBoxes from "@/assets/box-shapes/subscription-boxes.jpg";
-import shippingBoxes from "@/assets/box-shapes/shipping-boxes.jpg";
-import productBoxes from "@/assets/box-shapes/tuck-boxes.jpg";
-import corrugatedBoxes from "@/assets/box-shapes/shipping-boxes.jpg"; // Reusing shipping boxes as they are corrugated
-import insertsDividers from "@/assets/candle-products/candle-boxes-inserts.jpg";
+import heroImage from "@/assets/ecommerce-boxes-hero.webp";
+import mailerBoxes from "@/assets/box-shapes/mailer-boxes.webp";
+import subscriptionBoxes from "@/assets/box-shapes/subscription-boxes.webp";
+import shippingBoxes from "@/assets/box-shapes/shipping-boxes.webp";
+import productBoxes from "@/assets/box-shapes/tuck-boxes.webp";
+import corrugatedBoxes from "@/assets/box-shapes/shipping-boxes.webp"; // Reusing shipping boxes as they are corrugated
+import insertsDividers from "@/assets/candle-products/candle-boxes-inserts.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -90,7 +90,7 @@ const EcommerceBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="E-Commerce Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ const EcommerceBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

@@ -14,25 +14,25 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 import { ShoppingBag } from "lucide-react";
-import customPaperBagsHero from "@/assets/custom-paper-bags/hero-custom-paper-bags.jpg";
-import customAutoBottomGableBags from "@/assets/custom-paper-bags/custom-auto-bottom-gable-bags.jpg";
-import customPaperFoodBags from "@/assets/custom-paper-bags/custom-paper-food-bags.jpg";
-import christmasPaperBags from "@/assets/custom-paper-bags/christmas-paper-bags.jpg";
-import christmasGiftBags from "@/assets/custom-paper-bags/christmas-gift-bags.jpg";
-import customBrownPaperBags from "@/assets/custom-paper-bags/custom-brown-paper-bags.jpg";
-import paperShoppingBags from "@/assets/custom-paper-bags/paper-shopping-bags.jpg";
-import whitePaperBags from "@/assets/custom-paper-bags/white-paper-bags.jpg";
-import paperGiftBags from "@/assets/custom-paper-bags/paper-gift-bags.jpg";
-import paperLunchBags from "@/assets/custom-paper-bags/paper-lunch-bags.jpg";
-import friesBag from "@/assets/custom-paper-bags/fries-bag.jpg";
-import glassineBags from "@/assets/custom-paper-bags/glassine-bags.jpg";
-import candyBags from "@/assets/custom-paper-bags/candy-bags.jpg";
-import bakeryBags from "@/assets/custom-paper-bags/bakery-bags.jpg";
-import cookieBags from "@/assets/custom-paper-bags/cookie-bags.jpg";
-import giftBags from "@/assets/custom-paper-bags/gift-bags.jpg";
-import carryOutBags from "@/assets/custom-paper-bags/carry-out-bags.jpg";
-import exoticWeedBag from "@/assets/custom-paper-bags/exotic-weed-bag.jpg";
-import paperBagsWithHandles from "@/assets/custom-paper-bags/paper-bags-with-handles.jpg";
+import customPaperBagsHero from "@/assets/custom-paper-bags/hero-custom-paper-bags.webp";
+import customAutoBottomGableBags from "@/assets/custom-paper-bags/custom-auto-bottom-gable-bags.webp";
+import customPaperFoodBags from "@/assets/custom-paper-bags/custom-paper-food-bags.webp";
+import christmasPaperBags from "@/assets/custom-paper-bags/christmas-paper-bags.webp";
+import christmasGiftBags from "@/assets/custom-paper-bags/christmas-gift-bags.webp";
+import customBrownPaperBags from "@/assets/custom-paper-bags/custom-brown-paper-bags.webp";
+import paperShoppingBags from "@/assets/custom-paper-bags/paper-shopping-bags.webp";
+import whitePaperBags from "@/assets/custom-paper-bags/white-paper-bags.webp";
+import paperGiftBags from "@/assets/custom-paper-bags/paper-gift-bags.webp";
+import paperLunchBags from "@/assets/custom-paper-bags/paper-lunch-bags.webp";
+import friesBag from "@/assets/custom-paper-bags/fries-bag.webp";
+import glassineBags from "@/assets/custom-paper-bags/glassine-bags.webp";
+import candyBags from "@/assets/custom-paper-bags/candy-bags.webp";
+import bakeryBags from "@/assets/custom-paper-bags/bakery-bags.webp";
+import cookieBags from "@/assets/custom-paper-bags/cookie-bags.webp";
+import giftBags from "@/assets/custom-paper-bags/gift-bags.webp";
+import carryOutBags from "@/assets/custom-paper-bags/carry-out-bags.webp";
+import exoticWeedBag from "@/assets/custom-paper-bags/exotic-weed-bag.webp";
+import paperBagsWithHandles from "@/assets/custom-paper-bags/paper-bags-with-handles.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -107,7 +107,7 @@ const CustomPaperBags = () => {
                                     <img
                                         src={customPaperBagsHero}
                                         alt="Custom Paper Bags Collection"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -140,13 +140,13 @@ const CustomPaperBags = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         {/* Product image placeholder - intentionally empty */}
                                         {product.image ? (
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-muted flex items-center justify-center">

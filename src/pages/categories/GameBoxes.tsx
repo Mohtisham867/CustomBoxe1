@@ -14,13 +14,13 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/game-boxes/hero-game-boxes.png";
+import heroImage from "@/assets/game-boxes/hero-game-boxes.webp";
 
 // Specific images
-import customToyBoxes from "@/assets/game-boxes/custom-toy-boxes.png";
-import playingCardBoxes from "@/assets/game-boxes/playing-card-boxes.png";
-import subscriptionBoxes from "@/assets/game-boxes/gaming-subscription-box.png";
-import boardGameBoxes from "@/assets/game-boxes/custom-board-game-boxes.png";
+import customToyBoxes from "@/assets/game-boxes/custom-toy-boxes.webp";
+import playingCardBoxes from "@/assets/game-boxes/playing-card-boxes.webp";
+import subscriptionBoxes from "@/assets/game-boxes/gaming-subscription-box.webp";
+import boardGameBoxes from "@/assets/game-boxes/custom-board-game-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -86,7 +86,7 @@ const GameBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Game and Toy Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -123,7 +123,7 @@ const GameBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

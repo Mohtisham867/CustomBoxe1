@@ -24,7 +24,7 @@ const testimonials = [
     company: "Organic Foods Co.",
     role: "CEO",
     rating: 5,
-    text: "Working with CustomBoxPro was seamless. They understood our eco-friendly requirements and delivered sustainable packaging that our customers love.",
+    text: "Working with CustomPackMakers was seamless. They understood our eco-friendly requirements and delivered sustainable packaging that our customers love.",
     initials: "MC",
   },
   {

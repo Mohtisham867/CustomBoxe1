@@ -14,14 +14,14 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/jewelry-boxes-hero.png";
+import heroImage from "@/assets/jewelry-boxes-hero.webp";
 
 // Specific images
-import braceletBoxes from "@/assets/products/bracelet-boxes.png";
-import necklaceLidOffBoxes from "@/assets/products/necklace-lid-off-boxes.png";
-import pendantBoxes from "@/assets/products/pendant-boxes.png";
-import ringBoxes from "@/assets/products/ring-boxes.png";
-import earringBoxes from "@/assets/products/earring-boxes.png";
+import braceletBoxes from "@/assets/products/bracelet-boxes.webp";
+import necklaceLidOffBoxes from "@/assets/products/necklace-lid-off-boxes.webp";
+import pendantBoxes from "@/assets/products/pendant-boxes.webp";
+import ringBoxes from "@/assets/products/ring-boxes.webp";
+import earringBoxes from "@/assets/products/earring-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -95,7 +95,7 @@ const JewelryBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Luxury Jewelry Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -128,11 +128,11 @@ const JewelryBoxes = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

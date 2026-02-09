@@ -7,23 +7,23 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import childResistant from "@/assets/box-shapes/child-resistant-packaging.jpg";
-import customBags from "@/assets/box-shapes/custom-bags.jpg";
-import customMylarBags from "@/assets/box-shapes/custom-mylar-bags.jpg";
-import customPaperBags from "@/assets/box-shapes/custom-paper-bags.png"; // Updated to png
-import customShapeBoxes from "@/assets/box-shapes/custom-shape-boxes.jpg";
-import displayBoxes from "@/assets/box-shapes/display-boxes.jpg";
-import gableBoxes from "@/assets/box-shapes/gable-boxes.jpg";
-import hangTags from "@/assets/box-shapes/hang-tags.jpg";
-import mailerBoxes from "@/assets/box-shapes/mailer-boxes.jpg";
-import pillowBoxes from "@/assets/box-shapes/pillow-boxes.jpg";
-import shippingBoxes from "@/assets/box-shapes/shipping-boxes.jpg";
-import sleeveAndTray from "@/assets/box-shapes/sleeve-and-tray.jpg";
-import stickersAndLabels from "@/assets/box-shapes/stickers-and-labels.jpg";
-import subscriptionBoxes from "@/assets/box-shapes/subscription-boxes.jpg";
-import tuckBoxes from "@/assets/box-shapes/tuck-boxes.jpg";
-import weedBags from "@/assets/box-shapes/weed-bags.jpg";
-import windowPackaging from "@/assets/box-shapes/window-packaging.jpg";
+import childResistant from "@/assets/box-shapes/child-resistant-packaging.webp";
+import customBags from "@/assets/box-shapes/custom-bags.webp";
+import customMylarBags from "@/assets/box-shapes/custom-mylar-bags.webp";
+import customPaperBags from "@/assets/box-shapes/custom-paper-bags.webp"; // Updated to png
+import customShapeBoxes from "@/assets/box-shapes/custom-shape-boxes.webp";
+import displayBoxes from "@/assets/box-shapes/display-boxes.webp";
+import gableBoxes from "@/assets/box-shapes/gable-boxes.webp";
+import hangTags from "@/assets/box-shapes/hang-tags.webp";
+import mailerBoxes from "@/assets/box-shapes/mailer-boxes.webp";
+import pillowBoxes from "@/assets/box-shapes/pillow-boxes.webp";
+import shippingBoxes from "@/assets/box-shapes/shipping-boxes.webp";
+import sleeveAndTray from "@/assets/box-shapes/sleeve-and-tray.webp";
+import stickersAndLabels from "@/assets/box-shapes/stickers-and-labels.webp";
+import subscriptionBoxes from "@/assets/box-shapes/subscription-boxes.webp";
+import tuckBoxes from "@/assets/box-shapes/tuck-boxes.webp";
+import weedBags from "@/assets/box-shapes/weed-bags.webp";
+import windowPackaging from "@/assets/box-shapes/window-packaging.webp";
 
 const boxShapes = [
   { name: "Child Resistant Packaging", image: childResistant },
@@ -97,7 +97,7 @@ export const BoxShapesCarousel = () => {
                         <img
                           src={shape.image}
                           alt={shape.name}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"
                         />
                       </div>
                       <div className="p-4 text-center">

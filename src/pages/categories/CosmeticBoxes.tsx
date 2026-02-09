@@ -1,4 +1,4 @@
-import { Header } from "@/components/Header";
+﻿import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { QuoteForm } from "@/components/QuoteForm";
 import { InstantQuoteFormCompact } from "@/components/InstantQuoteFormCompact";
@@ -13,27 +13,27 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import cosmeticHero from "@/assets/cosmetic-boxes-hero.png";
-import customBeardOil from "@/assets/cosmetic-boxes/custom-beard-oil-boxes.png";
-import serumBoxes from "@/assets/cosmetic-boxes/serum-boxes.png";
-import hairColorBoxes from "@/assets/cosmetic-boxes/hair-color-boxes.png";
-import hairExtensionBoxes from "@/assets/cosmetic-boxes/hair-extension-boxes.png";
-import hairSprayBoxes from "@/assets/cosmetic-boxes/hair-spray-boxes.png";
-import customLipGlossBoxes from "@/assets/cosmetic-boxes/custom-lip-gloss-boxes.png";
-import customLipLinerBoxes from "@/assets/cosmetic-boxes/custom-lip-liner-boxes.png";
-import customLipstickBoxes from "@/assets/cosmetic-boxes/custom-lipstick-boxes.png";
-import mascaraBoxes from "@/assets/cosmetic-boxes/mascara-boxes.png";
-import nailPolishBoxes from "@/assets/cosmetic-boxes/nail-polish-boxes.png";
-import customEyeShadowBoxes from "@/assets/cosmetic-boxes/custom-eye-shadow-boxes.png";
-import eyelashBoxes from "@/assets/cosmetic-boxes/eyelash-boxes.png";
-import essentialOilBoxes from "@/assets/cosmetic-boxes/essential-oil-boxes.png";
-import foundationBoxes from "@/assets/cosmetic-boxes/foundation-boxes.png";
-import lipBalmBoxes from "@/assets/cosmetic-boxes/lip-balm-boxes.png";
-import nailBoxes from "@/assets/cosmetic-boxes/nail-boxes.png";
-import cosmeticLabels from "@/assets/cosmetic-boxes/cosmetic-labels.png";
-import lipTintPackaging from "@/assets/cosmetic-boxes/lip-tint-packaging.png";
-import customWigBoxes from "@/assets/cosmetic-boxes/custom-wig-boxes.png";
-import skinCarePackaging from "@/assets/cosmetic-boxes/skin-care-packaging.png";
+import cosmeticHero from "@/assets/cosmetic-boxes/cosmetic hero.webp";
+import customBeardOil from "@/assets/cosmetic-boxes/Custom Beard Oil Boxes.webp";
+import serumBoxes from "@/assets/cosmetic-boxes/Serum Boxes.webp";
+import hairColorBoxes from "@/assets/cosmetic-boxes/hair-color-boxes.webp";
+import hairExtensionBoxes from "@/assets/cosmetic-boxes/Hair Extension Boxes.webp";
+import hairSprayBoxes from "@/assets/cosmetic-boxes/Hair Spray Boxes.webp";
+import customLipGlossBoxes from "@/assets/cosmetic-boxes/Custom Lip Gloss Boxes.webp";
+import customLipLinerBoxes from "@/assets/cosmetic-boxes/Custom Lip Liner Boxes.webp";
+import customLipstickBoxes from "@/assets/cosmetic-boxes/Custom Lipstick Boxes.webp";
+import mascaraBoxes from "@/assets/cosmetic-boxes/Mascara Boxes.webp";
+import nailPolishBoxes from "@/assets/cosmetic-boxes/Nail Polish Boxes.webp";
+import customEyeShadowBoxes from "@/assets/cosmetic-boxes/Custom Eye Shadow Boxes.webp";
+import eyelashBoxes from "@/assets/cosmetic-boxes/Eyelash Boxes.webp";
+import essentialOilBoxes from "@/assets/cosmetic-boxes/Essential Oil Boxes.webp";
+import foundationBoxes from "@/assets/cosmetic-boxes/Foundation Boxes.webp";
+import lipBalmBoxes from "@/assets/cosmetic-boxes/Lip Balm Boxes.webp";
+import nailBoxes from "@/assets/cosmetic-boxes/Nail Boxes.webp";
+import cosmeticLabels from "@/assets/cosmetic-boxes/Cosmetic Lables.webp";
+import lipTintPackaging from "@/assets/cosmetic-boxes/Lip Tint Packaging.webp";
+import customWigBoxes from "@/assets/cosmetic-boxes/Custom Wig Boxes.webp";
+import skinCarePackaging from "@/assets/cosmetic-boxes/Skin Care Packaging.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // IMAGES INTENTIONALLY OMITTED - AWAITING USER INSTRUCTION
@@ -126,77 +126,77 @@ const CosmeticBoxes = () => {
                 Cosmetic Boxes
               </h1>
               <p className="text-[16px] text-muted-foreground leading-relaxed line-clamp-4">
-                High-quality, stylish, and protective custom packaging for makeup, skincare, and beauty products.
+                High-quality, stylish, and protective custom packaging for makeup, skincare, and beauty products  thoughtfully designed to enhance brand identity, protect products with care, and deliver a luxurious unboxing experience that attracts customers both in-store and online
               </p>
               <div className="pt-4 lg:pt-0">
                 <div className="relative w-full max-w-[480px] h-[300px] overflow-hidden rounded-lg shadow-lg bg-muted mx-auto lg:mx-0">
-                  <img
-                    src={cosmeticHero}
-                    alt="Premium Cosmetic Boxes Collection"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <img
+                  src={cosmeticHero}
+                  alt="Premium Cosmetic Boxes Collection"
+                  className="w-full h-full object-cover" loading="lazy"
+                />
               </div>
             </div>
+          </div>
 
-            {/* Right Form */}
-            <div className="flex justify-end">
-              <InstantQuoteFormCompact customProducts={productOptions} />
-            </div>
+          {/* Right Form */}
+          <div className="flex justify-end">
+            <InstantQuoteFormCompact customProducts={productOptions} />
           </div>
         </div>
-      </section>
+    </div>
+      </section >
 
-      {/* Related Products Section */}
-      <section className="py-16 bg-accent/20">
-        <div className="container mx-auto px-4">
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Cosmetic Packaging Options
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl">
-              Explore our comprehensive selection of cosmetic packaging solutions.
-            </p>
-          </div>
+  {/* Related Products Section */ }
+  < section className = "py-16 bg-accent/20" >
+    <div className="container mx-auto px-4">
+      <div className="mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          Cosmetic Packaging Options
+        </h2>
+        <p className="text-lg text-muted-foreground max-w-3xl">
+          Explore our comprehensive selection of cosmetic packaging solutions.
+        </p>
+      </div>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {relatedProducts.map((product, index) => (
-              <Card
-                key={index}
-                className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
-              >
-                <CardContent className="p-0">
-                  <div className="w-full aspect-square overflow-hidden">
-                    {product.image ? (
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
-                      />
-                    ) : (
-                      <div className="w-full h-full bg-muted flex items-center justify-center">
-                        <p className="text-muted-foreground text-xs">Image placeholder</p>
-                      </div>
-                    )}
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        {relatedProducts.map((product, index) => (
+          <Card
+            key={index}
+            className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
+          >
+            <CardContent className="p-0">
+              <div className="w-full aspect-square overflow-hidden">
+                {product.image ? (
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-muted flex items-center justify-center">
+                    <p className="text-muted-foreground text-xs">Image placeholder</p>
                   </div>
-                  <div className="p-4 border-t border-border">
-                    <h3 className="font-semibold text-foreground text-sm mb-2">
-                      {product.name}
-                    </h3>
-                    <p className="text-xs text-muted-foreground line-clamp-2">
-                      {product.description}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+                )}
+              </div>
+              <div className="p-4 border-t border-border">
+                <h3 className="font-semibold text-foreground text-sm mb-2">
+                  {product.name}
+                </h3>
+                <p className="text-xs text-muted-foreground line-clamp-2">
+                  {product.description}
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+      </section >
 
-      {/* Brand Rating */}
+  {/* Brand Rating */ }
 
-      <BrandRating />
+  < BrandRating />
 
       <QuoteForm />
 
@@ -204,12 +204,12 @@ const CosmeticBoxes = () => {
 
         <h2>The Ultimate Guide to Cosmetic Boxes</h2>
         <p>
-          In the competitive world of retail and e-commerce, packaging is no longer just a container—it's a powerful marketing tool that communicates your brand's value instantly.
+          In the competitive world of retail and e-commerce, packaging is no longer just a containerâ€”it's a powerful marketing tool that communicates your brand's value instantly.
           Our <strong>Cosmetic Boxes</strong> are engineered to deliver precisely that impact. merging superior structural integrity with breathtaking aesthetics, these boxes serve as the perfect ambassador for your products.
           Whether you are launching a new luxury line, shipping subscription kits, or displaying items on retail shelves, our custom packaging solutions are tailored to meet every nuance of your requirements.
         </p>
         <p>
-          We understand that the unboxing experience is a critical touchpoint for customer retention. That’s why we meticulously craft each box using premium-grade materials that scream quality from the first touch.
+          We understand that the unboxing experience is a critical touchpoint for customer retention. Thatâ€™s why we meticulously craft each box using premium-grade materials that scream quality from the first touch.
           From the robust protective outer layers to the refined interior finishes, every inch of our packaging is optimized to protect your merchandise while elevating your brand identity.
         </p>
 
@@ -242,7 +242,7 @@ const CosmeticBoxes = () => {
         <h3>Comprehensive Size & Shape Customization</h3>
         <p>
           One size does not fit all. We specialize in fully bespoke structural design. Whether you need a standard tuck-end box, a complex mailer with inserts, or a unique geometric shape to stand out on the shelf, we can engineer it.
-          Our CAD specialists work with you to create die-lines that fit your product perfectly—minimizing movement and preventing damage.
+          Our CAD specialists work with you to create die-lines that fit your product perfectlyâ€”minimizing movement and preventing damage.
         </p>
         <ul>
           <li><strong>Custom Inserts:</strong> Foam, cardboard, or molded pulp inserts custom-shaped to hold your product securely in place.</li>
@@ -258,7 +258,7 @@ const CosmeticBoxes = () => {
         </p>
       </SEOContent>
       <Footer />
-    </div>
+    </div >
   );
 };
 

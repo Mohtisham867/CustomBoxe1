@@ -14,17 +14,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/holiday-boxes-hero.png";
+import heroImage from "@/assets/holiday-boxes-hero.webp";
 
 // Specific images
-import christmasGiftBoxes from "@/assets/christmas-products/christmas-gift-boxes.jpg";
-import halloweenBoxes from "@/assets/products/halloween-boxes.png";
-import holidayGiftBoxes from "@/assets/christmas-products/christmas-eve-boxes.jpg";
-import thanksgivingBoxes from "@/assets/products/thanksgiving-boxes.png";
-import thanksgivingFoodBoxes from "@/assets/products/thanksgiving-boxes.png";
-import valentinesBoxes from "@/assets/products/valentines-boxes.png";
-import halloweenWindowBoxes from "@/assets/products/halloween-boxes.png";
-import christmasPillowBoxes from "@/assets/christmas-products/christmas-favor-boxes.jpg";
+import christmasGiftBoxes from "@/assets/christmas-products/christmas-gift-boxes.webp";
+import halloweenBoxes from "@/assets/products/halloween-boxes.webp";
+import holidayGiftBoxes from "@/assets/christmas-products/christmas-eve-boxes.webp";
+import thanksgivingBoxes from "@/assets/products/thanksgiving-boxes.webp";
+import thanksgivingFoodBoxes from "@/assets/products/thanksgiving-boxes.webp";
+import valentinesBoxes from "@/assets/products/valentines-boxes.webp";
+import halloweenWindowBoxes from "@/assets/products/halloween-boxes.webp";
+import christmasPillowBoxes from "@/assets/christmas-products/christmas-favor-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -98,7 +98,7 @@ const HolidayBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Custom Holiday Boxes"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ const HolidayBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

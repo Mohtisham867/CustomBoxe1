@@ -15,24 +15,24 @@ import {
 import { Link } from "react-router-dom";
 
 // Product Images
-import brochureDisplayHolder from "@/assets/display-boxes/brochure-display-holder.jpg";
-import customCandleDisplayBoxes from "@/assets/display-boxes/custom-candle-display-boxes.jpg";
-import customPreRollDisplayBoxes from "@/assets/display-boxes/custom-pre-roll-display-boxes.jpg";
-import vapeDisplayBoxes from "@/assets/display-boxes/vape-display-boxes.jpg";
-import cardboardDisplayBoxes from "@/assets/display-boxes/cardboard-display-boxes.jpg";
-import counterDisplayBoxes from "@/assets/display-boxes/counter-display-boxes.jpg";
-import jewelryDisplayBoxes from "@/assets/display-boxes/jewelry-display-boxes.jpg";
-import cbdDisplayBoxes from "@/assets/display-boxes/cbd-display-boxes.jpg";
-import lollipopDisplayBoxes from "@/assets/display-boxes/lollipop-display-boxes.jpg";
-import cigaretteDisplayBoxes from "@/assets/display-boxes/cigarette-display-boxes.jpg";
-import cosmeticDisplayBoxes from "@/assets/display-boxes/cosmetic-display-boxes.jpg";
-import clearLidBoxes from "@/assets/display-boxes/clear-lid-boxes.jpg";
-import productDisplayBoxes from "@/assets/display-boxes/product-display-boxes.jpg";
-import countertopDisplayBoxes from "@/assets/display-boxes/countertop-display-boxes.jpg";
-import watchDisplayBoxes from "@/assets/display-boxes/watch-display-boxes.jpg";
-import healthCounterDisplayBoxes from "@/assets/display-boxes/health-counter-display-boxes.jpg";
-import candyDisplayBoxes from "@/assets/display-boxes/candy-display-boxes.jpg";
-import displayBoxesHero from "@/assets/display-boxes/display-boxes-hero.png";
+import brochureDisplayHolder from "@/assets/display-boxes/brochure-display-holder.webp";
+import customCandleDisplayBoxes from "@/assets/display-boxes/custom-candle-display-boxes.webp";
+import customPreRollDisplayBoxes from "@/assets/display-boxes/custom-pre-roll-display-boxes.webp";
+import vapeDisplayBoxes from "@/assets/display-boxes/vape-display-boxes.webp";
+import cardboardDisplayBoxes from "@/assets/display-boxes/cardboard-display-boxes.webp";
+import counterDisplayBoxes from "@/assets/display-boxes/counter-display-boxes.webp";
+import jewelryDisplayBoxes from "@/assets/display-boxes/jewelry-display-boxes.webp";
+import cbdDisplayBoxes from "@/assets/display-boxes/cbd-display-boxes.webp";
+import lollipopDisplayBoxes from "@/assets/display-boxes/lollipop-display-boxes.webp";
+import cigaretteDisplayBoxes from "@/assets/display-boxes/cigarette-display-boxes.webp";
+import cosmeticDisplayBoxes from "@/assets/display-boxes/cosmetic-display-boxes.webp";
+import clearLidBoxes from "@/assets/display-boxes/clear-lid-boxes.webp";
+import productDisplayBoxes from "@/assets/display-boxes/product-display-boxes.webp";
+import countertopDisplayBoxes from "@/assets/display-boxes/countertop-display-boxes.webp";
+import watchDisplayBoxes from "@/assets/display-boxes/watch-display-boxes.webp";
+import healthCounterDisplayBoxes from "@/assets/display-boxes/health-counter-display-boxes.webp";
+import candyDisplayBoxes from "@/assets/display-boxes/candy-display-boxes.webp";
+import displayBoxesHero from "@/assets/display-boxes/display-boxes-hero.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 
@@ -123,7 +123,7 @@ const DisplayBoxes = () => {
                                     <img
                                         src={displayBoxesHero}
                                         alt="Display Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -156,13 +156,13 @@ const DisplayBoxes = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         {/* Product image placeholder - intentionally empty */}
                                         {product.image ? (
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-muted flex items-center justify-center">

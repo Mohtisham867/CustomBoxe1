@@ -14,18 +14,18 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/pharma-packaging-hero.png";
+import heroImage from "@/assets/pharma-packaging-hero.webp";
 
 // Specific images
-import pillBoxes from "@/assets/products/pill-boxes.png";
-import dispenserBoxes from "@/assets/products/dispenser-boxes.png";
-import dietarySupplementPackaging from "@/assets/dietary_supplement_packaging.png"; // Assuming this exists or I'll use medicine boxes fallback if build fails, actually I recalled seeing it in search
-import medicineBoxes from "@/assets/products/medicine-boxes.png";
-import oliveOilBoxes from "@/assets/products/olive-oil-boxes.png";
-import condomBoxes from "@/assets/products/condom-boxes.png";
-import glovesBoxes from "@/assets/products/gloves-boxes.png";
+import pillBoxes from "@/assets/products/pill-boxes.webp";
+import dispenserBoxes from "@/assets/products/dispenser-boxes.webp";
+import dietarySupplementPackaging from "@/assets/dietary_supplement_packaging.webp"; // Assuming this exists or I'll use medicine boxes fallback if build fails, actually I recalled seeing it in search
+import medicineBoxes from "@/assets/products/medicine-boxes.webp";
+import oliveOilBoxes from "@/assets/products/olive-oil-boxes.webp";
+import condomBoxes from "@/assets/products/condom-boxes.webp";
+import glovesBoxes from "@/assets/products/gloves-boxes.webp";
 // Substite for Bandage Boxes due to quota limit -> reusing medicine boxes
-import bandageBoxes from "@/assets/products/medicine-boxes.png";
+import bandageBoxes from "@/assets/products/medicine-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -98,7 +98,7 @@ const PharmaPackaging = () => {
                                     <img
                                         src={heroImage}
                                         alt="Pharmaceutical Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ const PharmaPackaging = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

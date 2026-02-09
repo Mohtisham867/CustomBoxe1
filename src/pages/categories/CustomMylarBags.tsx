@@ -15,20 +15,21 @@ import {
 import { Link } from "react-router-dom";
 
 // Images
-import mylarBagsHero from "@/assets/mylar-bags/mylar-bags-hero.png";
-import dispensaryMylarBags from "@/assets/mylar-bags/dispensary-mylar-bags.png";
-import dieCutMylarBags from "@/assets/mylar-bags/die-cut-mylar-bags.png";
-import mylarVacuumSealBags from "@/assets/mylar-bags/mylar-vacuum-seal-bags.png";
-import mylarFoodStorageBags from "@/assets/mylar-bags/mylar-food-storage-bags.png";
-import blackMylarBags from "@/assets/mylar-bags/black-mylar-bags.png";
-import smellProofMylarBags from "@/assets/mylar-bags/smell-proof-mylar-bags.png";
-import childResistantMylarBags from "@/assets/mylar-bags/child-resistant-mylar-bags.png";
-import exoticMylarBags from "@/assets/mylar-bags/exotic-mylar-bags.png";
-import smallMylarBags from "@/assets/mylar-bags/small-mylar-bags.png";
-import holographicMylarBags from "@/assets/mylar-bags/holographic-mylar-bags.png";
-import kraftMylarBags from "@/assets/mylar-bags/kraft-mylar-bags.png";
-import mylarZiplockBags from "@/assets/mylar-bags/mylar-ziplock-bags.png";
-import clearMylarBags from "@/assets/mylar-bags/clear-mylar-bags.png";
+// Images
+import mylarBagsHero from "@/assets/mylar-bags/mylar-bags-hero.webp";
+import dispensaryMylarBags from "@/assets/mylar-bags/dispensary-mylar-bags-premium.webp";
+import dieCutMylarBags from "@/assets/mylar-bags/die-cut-mylar-bags-premium.webp";
+import mylarVacuumSealBags from "@/assets/mylar-bags/mylar-vacuum-seal-bags-premium.webp";
+import mylarFoodStorageBags from "@/assets/mylar-bags/mylar-food-storage-bags-premium.webp";
+import blackMylarBags from "@/assets/mylar-bags/black-mylar-bags-premium-v2.webp";
+import smellProofMylarBags from "@/assets/mylar-bags/smell-proof-mylar-bags-premium.webp";
+import childResistantMylarBags from "@/assets/mylar-bags/child-resistant-mylar-bags-premium-v2.webp";
+import exoticMylarBags from "@/assets/mylar-bags/exotic-mylar-bags-premium.webp";
+import smallMylarBags from "@/assets/mylar-bags/small-mylar-bags-premium.webp";
+import holographicMylarBags from "@/assets/mylar-bags/holographic-mylar-bags-premium.webp";
+import kraftMylarBags from "@/assets/mylar-bags/kraft-mylar-bags-premium.webp";
+import mylarZiplockBags from "@/assets/mylar-bags/mylar-ziplock-bags-premium.webp";
+import clearMylarBags from "@/assets/mylar-bags/clear-mylar-bags-premium.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -90,7 +91,7 @@ const CustomMylarBags = () => {
                                     <img
                                         src={mylarBagsHero}
                                         alt="Custom Mylar Bags Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -123,11 +124,11 @@ const CustomMylarBags = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

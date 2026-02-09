@@ -1,7 +1,7 @@
 import { Package, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, ShieldCheck, Star, Award, CreditCard } from "lucide-react";
 import logo from "@/assets/logo.png";
-import googleReviewsBadge from "@/assets/google_reviews_badge.png";
-import trustpilotBadge from "@/assets/trustpilot_reviews_badge.png";
+import googleReviewsBadge from "@/assets/google_reviews_badge.webp";
+import trustpilotBadge from "@/assets/trustpilot_reviews_badge.webp";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
 
@@ -16,10 +16,9 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <img src={logo} alt="CustomBox" className="h-10 w-auto hue-rotate-[-45deg] brightness-110" />
-              <span className="text-xl font-bold gradient-text">CustomBox</span>
-            </div>
+            <a href="/" className="flex items-center cursor-pointer">
+              <img src={logo} alt="CustomPackMakers" className="h-10 w-auto object-contain transition-transform hover:scale-105" loading="lazy" />
+            </a>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Premium custom packaging solutions for businesses worldwide. Transform your brand with exceptional boxes.
             </p>
@@ -47,7 +46,9 @@ export const Footer = () => {
               <li><Link to="/packaging-hub" className="block py-2 text-muted-foreground hover:text-primary hover:translate-x-1 transition-all">Packaging Hub</Link></li>
               <li><Link to="/insights" className="block py-2 text-muted-foreground hover:text-primary hover:translate-x-1 transition-all">Insights</Link></li>
               <li><Link to="/contact" className="block py-2 text-muted-foreground hover:text-primary hover:translate-x-1 transition-all">Contact Us</Link></li>
-              <li><a href="#quote" className="block py-2 text-muted-foreground hover:text-primary hover:translate-x-1 transition-all">Get a Quote</a></li>
+              <li><Link to="/privacy-policy" className="block py-2 text-muted-foreground hover:text-primary hover:translate-x-1 transition-all">Privacy Policy</Link></li>
+              {/* <li><Link to="/terms-of-service" className="block py-2 text-muted-foreground hover:text-primary hover:translate-x-1 transition-all">Terms of Service</Link></li> */}
+              {/* <li><a href="#quote" className="block py-2 text-muted-foreground hover:text-primary hover:translate-x-1 transition-all">Get a Quote</a></li> */}
             </ul>
           </div>
 
@@ -85,16 +86,16 @@ export const Footer = () => {
                 <div className="bg-primary/10 p-2 rounded-full shrink-0">
                   <Mail className="h-4 w-4 text-primary" />
                 </div>
-                <a href="mailto:support@custombox.com" className="text-muted-foreground hover:text-primary transition-colors py-1">
-                  support@custombox.com
+                <a href="mailto:sales@custompackmakers.com" className="text-muted-foreground hover:text-primary transition-colors py-1">
+                  sales@custompackmakers.com
                 </a>
               </li>
             </ul>
 
             {/* Trust Badges */}
             <div className="mt-3 flex flex-row gap-1 items-center">
-              <img src={googleReviewsBadge} alt="Google Reviews" className="h-[80px] w-[160px] object-contain mix-blend-multiply" />
-              <img src={trustpilotBadge} alt="Trustpilot Reviews" className="h-[80px] w-[160px] object-contain mix-blend-multiply" />
+              <img src={googleReviewsBadge} alt="Google Reviews" loading="lazy" className="h-[80px] w-[160px] object-contain mix-blend-multiply" />
+              <img src={trustpilotBadge} alt="Trustpilot Reviews" loading="lazy" className="h-[80px] w-[160px] object-contain mix-blend-multiply" />
             </div>
           </div>
         </div>
@@ -105,7 +106,7 @@ export const Footer = () => {
         <div className="flex flex-col-reverse md:grid md:grid-cols-3 gap-8 items-center">
           {/* Copyright - Left */}
           <p className="text-sm text-muted-foreground text-center md:text-left justify-self-start">
-            © {currentYear} CustomBox. All rights reserved.
+            © {currentYear} CustomPackMakers. All rights reserved.
           </p>
 
           {/* Payment Methods - Center */}
@@ -134,9 +135,9 @@ export const Footer = () => {
 
           {/* Links - Right */}
           <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm text-muted-foreground justify-self-end">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">Sitemap</a>
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
+            {/* <a href="#" className="hover:text-primary transition-colors">Sitemap</a> */}
           </div>
         </div>
       </div>

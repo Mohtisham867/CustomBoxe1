@@ -14,17 +14,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/gift-boxes-hero.png";
+import heroImage from "@/assets/gift-boxes/gift hero.webp";
 
 // Specific images
-import favorBoxes from "@/assets/box-shapes/pillow-boxes.jpg";
-import giftCardBoxes from "@/assets/box-shapes/sleeve-and-tray.jpg";
-import customPrintedGiftBoxes from "@/assets/products/rigid-boxes.jpg";
-import hempGiftBoxes from "@/assets/custom-hemp-boxes-hero.png";
-import cardboardGiftBoxes from "@/assets/products/cardboard-boxes.jpg";
-import chocolateGiftBoxes from "@/assets/chocolate-products/chocolate-gift-boxes.jpg";
-import giftTags from "@/assets/box-shapes/hang-tags.jpg";
-import gableGiftBoxes from "@/assets/box-shapes/gable-boxes.jpg";
+import favorBoxes from "@/assets/gift-boxes/favor_boxes_square.webp";
+import giftCardBoxes from "@/assets/gift-boxes/Gift Card Boxes.webp";
+import customPrintedGiftBoxes from "@/assets/gift-boxes/Custom Printed Gift Boxes.webp";
+import hempGiftBoxes from "@/assets/gift-boxes/Hemp Gift Boxes.webp";
+import cardboardGiftBoxes from "@/assets/gift-boxes/Cardboard Gift Boxes.webp";
+import chocolateGiftBoxes from "@/assets/gift-boxes/Chocolate Gift Boxes.webp";
+import giftTags from "@/assets/gift-boxes/Gift Tags.webp";
+import gableGiftBoxes from "@/assets/gable-boxes/gable-gift-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -98,7 +98,7 @@ const GiftBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Custom Gift Boxes"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ const GiftBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

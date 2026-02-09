@@ -15,19 +15,19 @@ import {
 import { Link } from "react-router-dom";
 
 // Import hero image
-import bakeryHeroImage from "@/assets/bakery-boxes-hero.png";
+import bakeryHeroImage from "@/assets/bakery-products/Hero.webp";
 
 // Import bakery product images
-import customCakeBoxes from "@/assets/bakery-products/custom-cake-boxes.jpg";
-import pastryBoxes from "@/assets/bakery-products/pastry-boxes.jpg";
-import donutBoxes from "@/assets/bakery-products/donut-boxes.jpg";
-import cookieBoxes from "@/assets/bakery-products/cookie-boxes.jpg";
-import cupcakeBoxes from "@/assets/bakery-products/cupcake-boxes.jpg";
-import pieBoxes from "@/assets/bakery-products/pie-boxes.jpg";
-import muffinBoxes from "@/assets/bakery-products/muffin-boxes.jpg";
-import breadPackaging from "@/assets/bakery-products/bread-packaging.jpg";
-import macaronBoxes from "@/assets/bakery-products/macaron-boxes.jpg";
-import chocolateBoxes from "@/assets/bakery-products/chocolate-boxes.jpg";
+import customCakeBoxes from "@/assets/bakery-products/custom-cake-boxes.webp";
+import pastryBoxes from "@/assets/bakery-products/pastry-boxes.webp";
+import donutBoxes from "@/assets/bakery-products/donut-boxes.webp";
+import cookieBoxes from "@/assets/bakery-products/cookie-boxes.webp";
+import cupcakeBoxes from "@/assets/bakery-products/cupcake-boxes.webp";
+import pieBoxes from "@/assets/bakery-products/Pie Boxes.webp";
+import muffinBoxes from "@/assets/bakery-products/muffin-boxes.webp";
+import breadPackaging from "@/assets/bakery-products/Bread Packaging.webp";
+import macaronBoxes from "@/assets/bakery-products/Macaron Boxes.webp";
+import chocolateBoxes from "@/assets/bakery-products/Chocolate Boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -93,7 +93,7 @@ const BakeryBoxes = () => {
                   <img
                     src={bakeryHeroImage}
                     alt="Custom Bakery Boxes Collection"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover" loading="lazy"
                   />
                 </div>
               </div>
@@ -126,7 +126,7 @@ const BakeryBoxes = () => {
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                        className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                       />
                     </div>
                     <div className="p-4 border-t border-border">

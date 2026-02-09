@@ -13,16 +13,16 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import hangTagsHero from "@/assets/hang-tags/hang-tags-hero.png";
+import hangTagsHero from "@/assets/hang-tags/hang-tags-hero.webp";
 
-import customDoorHangers from "@/assets/hang-tags/custom-door-hangers.png";
-import christmasTags from "@/assets/hang-tags/christmas-tags.png";
-import giftTags from "@/assets/hang-tags/gift-tags.png";
-import paperTags from "@/assets/hang-tags/paper-tags.png";
-import clothingHangTags from "@/assets/hang-tags/clothing-hang-tags.png";
-import jewelryHangTags from "@/assets/hang-tags/jewelry-hang-tags.png";
-import customBookmarks from "@/assets/hang-tags/custom-bookmarks.png";
-import shippingTags from "@/assets/hang-tags/shipping-tags.png";
+import customDoorHangers from "@/assets/hang-tags/custom-door-hangers.webp";
+import christmasTags from "@/assets/hang-tags/christmas-tags.webp";
+import giftTags from "@/assets/hang-tags/gift-tags.webp";
+import paperTags from "@/assets/hang-tags/paper-tags.webp";
+import clothingHangTags from "@/assets/hang-tags/clothing-hang-tags.webp";
+import jewelryHangTags from "@/assets/hang-tags/jewelry-hang-tags.webp";
+import customBookmarks from "@/assets/hang-tags/custom-bookmarks.webp";
+import shippingTags from "@/assets/hang-tags/shipping-tags.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -85,7 +85,7 @@ const HangTags = () => {
                                     <img
                                         src={hangTagsHero}
                                         alt="Hang Tags Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -118,13 +118,13 @@ const HangTags = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         {/* Product image placeholder */}
                                         {product.image ? (
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-muted flex items-center justify-center">

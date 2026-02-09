@@ -16,9 +16,9 @@ import { Link } from "react-router-dom";
 
 // Placeholder images - using generic placeholders initially
 // Ideally these should be replaced with actual assets when available
-import cardstockHero from "@/assets/corrugated-boxes-hero.png"; // Placeholder
-import whiteCardstock from "@/assets/white-corrugated-boxes.png"; // Placeholder
-import kraftCardstock from "@/assets/kraft-corrugated-boxes.png"; // Placeholder
+import cardstockHero from "@/assets/corrugated-boxes-hero.webp"; // Placeholder
+import whiteCardstock from "@/assets/white-corrugated-boxes.webp"; // Placeholder
+import kraftCardstock from "@/assets/kraft-corrugated-boxes.webp"; // Placeholder
 import { SEOContent } from "@/components/SEOContent";
 
 const cardstockProducts = [
@@ -82,7 +82,7 @@ const CardstockBoxes = () => {
                                     <img
                                         src={cardstockHero}
                                         alt="Cardstock Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -125,7 +125,7 @@ const CardstockBoxes = () => {
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         </div>
                                         <div className="p-4 border-t border-border">

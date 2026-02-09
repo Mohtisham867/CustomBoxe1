@@ -13,17 +13,17 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/chocolate-boxes-hero.png";
-import artisanChocolateBox from "@/assets/chocolate-products/artisan-chocolate-box.jpg";
-import chocolateMilkBoxes from "@/assets/chocolate-products/chocolate-milk-boxes.jpg";
-import chocolateCandyBoxes from "@/assets/chocolate-products/chocolate-candy-boxes.jpg";
-import luxuryChocolateBoxes from "@/assets/chocolate-products/luxury-chocolate-boxes.jpg";
-import chocolateBombBoxes from "@/assets/chocolate-products/chocolate-bomb-boxes.jpg";
-import chocolateGiftBoxes from "@/assets/chocolate-products/chocolate-gift-boxes.jpg";
-import christmasChocolateBoxes from "@/assets/chocolate-products/christmas-chocolate-boxes.jpg";
-import mushroomChocolateBarPackaging from "@/assets/chocolate-products/mushroom-chocolate-bar-packaging.jpg";
-import chocolateBarPackaging from "@/assets/chocolate-products/chocolate-bar-packaging.jpg";
-import chocolateSubscriptionBox from "@/assets/chocolate-products/chocolate-subscription-box.jpg";
+import heroImage from "@/assets/chocolate-boxes-hero.webp";
+import artisanChocolateBox from "@/assets/chocolate-products/artisan-chocolate-box.webp";
+import chocolateMilkBoxes from "@/assets/chocolate-products/chocolate-milk-boxes.webp";
+import chocolateCandyBoxes from "@/assets/chocolate-products/chocolate-candy-boxes.webp";
+import luxuryChocolateBoxes from "@/assets/chocolate-products/luxury-chocolate-boxes.webp";
+import chocolateBombBoxes from "@/assets/chocolate-products/chocolate-bomb-boxes.webp";
+import chocolateGiftBoxes from "@/assets/chocolate-products/chocolate-gift-boxes.webp";
+import christmasChocolateBoxes from "@/assets/chocolate-products/christmas-chocolate-boxes.webp";
+import mushroomChocolateBarPackaging from "@/assets/chocolate-products/mushroom-chocolate-bar-packaging.webp";
+import chocolateBarPackaging from "@/assets/chocolate-products/chocolate-bar-packaging.webp";
+import chocolateSubscriptionBox from "@/assets/chocolate-products/chocolate-subscription-box.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -87,7 +87,7 @@ const ChocolateBoxes = () => {
                   <img
                     src={heroImage}
                     alt="Custom Chocolate Boxes"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover" loading="lazy"
                   />
                 </div>
               </div>
@@ -117,11 +117,11 @@ const ChocolateBoxes = () => {
                   className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                 >
                   <CardContent className="p-0">
-                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                       />
                     </div>
                     <div className="p-4 border-t border-border">

@@ -1,13 +1,13 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
-import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "@emailjs/browser";
 
 export const QuoteForm = () => {
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,37 +28,56 @@ export const QuoteForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    // Verify reCAPTCHA
-    const recaptchaValue = recaptchaRef.current?.getValue();
-    if (!recaptchaValue) {
-      toast.error("Please complete the reCAPTCHA verification");
-      return;
+    try {
+      // Prepare template parameters for large form
+      const templateParams = {
+        to_email: import.meta.env.VITE_RECEIVER_EMAIL,
+        from_name: formData.name,
+        from_email: formData.email,
+        phone_number: formData.phone,
+        material: formData.materials || "N/A",
+        dimensions: `${formData.length || "N/A"} x ${formData.width || "N/A"} x ${formData.height || "N/A"} ${formData.dimensionUnit || ""}`.trim(),
+        printing: formData.printingSides || "N/A",
+        lamination: formData.glossyLamination || "N/A",
+        quantity: "N/A", // Large form doesn't have quantity field
+        message: formData.message || "No additional message",
+      };
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
+      toast.success("Quote request submitted! We'll contact you within 24 hours.");
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        materials: "",
+        length: "",
+        width: "",
+        height: "",
+        dimensionUnit: "",
+        companyName: "",
+        printingSides: "",
+        cardThickness: "",
+        glossyLamination: "",
+        extraFinishing: "",
+        message: "",
+        file: null,
+      });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Failed to submit quote request. Please try again or contact us directly.");
+    } finally {
+      setIsSubmitting(false);
     }
-
-    toast.success("Quote request submitted! We'll contact you within 24 hours.");
-
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      materials: "",
-      length: "",
-      width: "",
-      height: "",
-      dimensionUnit: "",
-      companyName: "",
-      printingSides: "",
-      cardThickness: "",
-      glossyLamination: "",
-      extraFinishing: "",
-      message: "",
-      file: null,
-    });
-
-    // Reset reCAPTCHA
-    recaptchaRef.current?.reset();
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -239,19 +258,15 @@ export const QuoteForm = () => {
               </div>
             </div>
 
-            {/* reCAPTCHA and Submit Button */}
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey="YOUR_RECAPTCHA_SITE_KEY"
-                theme="light"
-              />
+            {/* Submit Button */}
+            <div className="flex justify-center w-full">
               <Button
                 type="submit"
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 h-12 font-semibold uppercase tracking-wide"
+                disabled={isSubmitting}
+                className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 h-12 font-semibold uppercase tracking-wide disabled:opacity-50"
               >
-                Get Inquiry
+                {isSubmitting ? "Sending..." : "Get Inquiry"}
               </Button>
             </div>
           </form>

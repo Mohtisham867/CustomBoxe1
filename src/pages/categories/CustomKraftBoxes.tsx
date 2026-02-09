@@ -15,32 +15,33 @@ import {
 import { Link } from "react-router-dom";
 
 // Generated Images
-import customHandleBoxes from "@/assets/kraft-boxes/custom-handle-boxes.png";
-import customPaperCups from "@/assets/kraft-boxes/custom-paper-cups.png";
-import kraftSandwichBoxes from "@/assets/kraft-boxes/kraft-sandwich-boxes.png";
-import customKraftSoapBoxes from "@/assets/kraft-boxes/custom-kraft-soap-boxes.png";
-import kraftPillowBoxes from "@/assets/kraft-boxes/kraft-pillow-boxes.png";
-import kraftJewelryBoxes from "@/assets/kraft-boxes/kraft-jewelry-boxes.png";
-import kraftGableBoxes from "@/assets/kraft-boxes/kraft-gable-boxes.png";
-import kraftLabels from "@/assets/kraft-boxes/kraft-labels.png";
-import paperTubePackaging from "@/assets/kraft-boxes/paper-tube-packaging.png";
-import kraftGiftBoxes from "@/assets/kraft-boxes/kraft-gift-boxes.png";
-import kraftBubbleMailers from "@/assets/kraft-boxes/kraft-bubble-mailers.png";
-import kraftCorrugatedBoxes from "@/assets/kraft-boxes/kraft-corrugated-boxes.png";
-import kraftTakeawayBoxes from "@/assets/kraft-boxes/kraft-takeaway-boxes.png";
-import kraftPaperBoxesWithWindow from "@/assets/kraft-boxes/kraft-paper-boxes-with-window.png";
-import kraftCupcakeBoxes from "@/assets/kraft-boxes/kraft-cupcake-boxes.png";
-import kraftBags from "@/assets/kraft-boxes/kraft-bags.png";
-import kraftPieBoxes from "@/assets/kraft-boxes/kraft-pie-boxes.png";
-import whiteKraftBoxes from "@/assets/kraft-boxes/white-kraft-boxes.png";
-import smallKraftBoxes from "@/assets/kraft-boxes/small-kraft-boxes.png";
-import kraftBoxesWithLids from "@/assets/kraft-boxes/kraft-boxes-with-lids.png";
+import customHandleBoxesV2 from "@/assets/kraft-boxes/custom-handle-boxes-v2.webp";
+import customPaperCupsV2 from "@/assets/kraft-boxes/custom-paper-cups-v2.webp";
+import kraftSandwichBoxesV2 from "@/assets/kraft-boxes/kraft-sandwich-boxes-v2.webp";
+import customKraftSoapBoxesV2 from "@/assets/kraft-boxes/custom-kraft-soap-boxes-v2.webp";
+import kraftPillowBoxesV2 from "@/assets/kraft-boxes/kraft-pillow-boxes-v2.webp";
+import kraftJewelryBoxesV2 from "@/assets/kraft-boxes/kraft-jewelry-boxes-v2.webp";
+import kraftGableBoxesV2 from "@/assets/kraft-boxes/kraft-gable-boxes-v2.webp";
+import kraftLabelsV2 from "@/assets/kraft-boxes/kraft-labels-v2.webp";
+import paperTubePackagingV2 from "@/assets/kraft-boxes/paper-tube-packaging-v2.webp";
+import kraftGiftBoxesV2 from "@/assets/kraft-boxes/kraft-gift-boxes-v2.webp";
 
-// Reused Images
-import tuckTopBoxes from "@/assets/tuck-boxes/tuck-top-boxes.png";
+// Remaining Old/Other Images
+import kraftBubbleMailers from "@/assets/kraft-boxes/kraft-bubble-mailers.webp";
+import kraftCorrugatedBoxes from "@/assets/kraft-boxes/kraft-corrugated-boxes.webp";
+import kraftTakeawayBoxes from "@/assets/kraft-boxes/kraft-takeaway-boxes.webp";
+import kraftPaperBoxesWithWindow from "@/assets/kraft-boxes/kraft-paper-boxes-with-window.webp";
+import kraftCupcakeBoxes from "@/assets/kraft-boxes/kraft-cupcake-boxes.webp";
+import kraftBags from "@/assets/kraft-boxes/kraft-bags.webp";
+import kraftPieBoxes from "@/assets/kraft-boxes/kraft-pie-boxes.webp";
+import whiteKraftBoxes from "@/assets/kraft-boxes/white-kraft-boxes.webp";
+import smallKraftBoxes from "@/assets/kraft-boxes/small-kraft-boxes.webp";
+import kraftBoxesWithLids from "@/assets/kraft-boxes/kraft-boxes-with-lids.webp";
+import kraftTuckTopBoxes from "@/assets/kraft-boxes/kraft-tuck-top-boxes.webp";
+import kraftShippingLabels from "@/assets/kraft-boxes/kraft-shipping-labels.webp";
 
 // Hero Image
-import kraftBoxesHero from "@/assets/kraft-boxes/kraft-boxes-hero.png";
+import kraftBoxesHeroV2 from "@/assets/kraft-boxes/kraft-boxes-hero-v2.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const kraftBoxProducts = [
@@ -69,16 +70,16 @@ const kraftBoxProducts = [
 ];
 
 const relatedProducts = [
-    { name: "Custom Handle Boxes", image: customHandleBoxes, description: "Convenient kraft boxes with built-in handles designed for easy transport and attractive retail display" },
-    { name: "Custom Paper Cups", image: customPaperCups, description: "Eco-friendly disposable kraft paper cups featuring high-heat resistance and custom branding surfaces" },
-    { name: "Kraft Sandwich Boxes", image: kraftSandwichBoxes, description: "Wedge-shaped boxes with clear windows designed for sandwiches and fresh deli product presentations" },
-    { name: "Custom Kraft Soap Boxes", image: customKraftSoapBoxes, description: "Natural rustic packaging for handmade soaps featuring breathable materials and organic brand appeal" },
-    { name: "Kraft Pillow Boxes", image: kraftPillowBoxes, description: "Unique pillow-shaped gift and favor boxes crafted from durable sustainable cardstock for unique gifting" },
-    { name: "Kraft Jewelry Boxes", image: kraftJewelryBoxes, description: "Elegant brown paper boxes for jewelry featuring soft inserts and premium custom logo printing options" },
-    { name: "Kraft Gable Boxes", image: kraftGableBoxes, description: "Classic barn-style containers with handles perfect for holiday treats and seasonal gift presentations" },
-    { name: "Kraft Labels", image: kraftLabels, description: "Rustic brown kraft paper stickers and labels designed to complement your eco-friendly brand identity" },
-    { name: "Paper Tube Packaging", image: paperTubePackaging, description: "Cylindrical kraft tubes for various products offering superior protection and unique retail shelf presence" },
-    { name: "Kraft Gift Boxes", image: kraftGiftBoxes, description: "Beautifully simple gift boxes for any occasion featuring robust construction and elegant organic finishes" },
+    { name: "Custom Handle Boxes", image: customHandleBoxesV2, description: "Convenient kraft boxes with built-in handles designed for easy transport and attractive retail display" },
+    { name: "Custom Paper Cups", image: customPaperCupsV2, description: "Eco-friendly disposable kraft paper cups featuring high-heat resistance and custom branding surfaces" },
+    { name: "Kraft Sandwich Boxes", image: kraftSandwichBoxesV2, description: "Wedge-shaped boxes with clear windows designed for sandwiches and fresh deli product presentations" },
+    { name: "Custom Kraft Soap Boxes", image: customKraftSoapBoxesV2, description: "Natural rustic packaging for handmade soaps featuring breathable materials and organic brand appeal" },
+    { name: "Kraft Pillow Boxes", image: kraftPillowBoxesV2, description: "Unique pillow-shaped gift and favor boxes crafted from durable sustainable cardstock for unique gifting" },
+    { name: "Kraft Jewelry Boxes", image: kraftJewelryBoxesV2, description: "Elegant brown paper boxes for jewelry featuring soft inserts and premium custom logo printing options" },
+    { name: "Kraft Gable Boxes", image: kraftGableBoxesV2, description: "Classic barn-style containers with handles perfect for holiday treats and seasonal gift presentations" },
+    { name: "Kraft Labels", image: kraftLabelsV2, description: "Rustic brown kraft paper stickers and labels designed to complement your eco-friendly brand identity" },
+    { name: "Paper Tube Packaging", image: paperTubePackagingV2, description: "Cylindrical kraft tubes for various products offering superior protection and unique retail shelf presence" },
+    { name: "Kraft Gift Boxes", image: kraftGiftBoxesV2, description: "Beautifully simple gift boxes for any occasion featuring robust construction and elegant organic finishes" },
     { name: "Kraft Bubble Mailers", image: kraftBubbleMailers, description: "Padded protective envelopes for shipping small items securely with eco-friendly kraft paper exteriors" },
     { name: "Kraft Corrugated Boxes", image: kraftCorrugatedBoxes, description: "Durable fluted boxes for shipping and storage engineered for maximum crush resistance and safety" },
     { name: "Kraft Takeaway Boxes", image: kraftTakeawayBoxes, description: "Grease-resistant food pails and containers designed for sustainable and professional takeout services" },
@@ -89,8 +90,8 @@ const relatedProducts = [
     { name: "White Kraft Boxes", image: whiteKraftBoxes, description: "Bleached white kraft paper for a clean and professional look with eco-friendly material benefits" },
     { name: "Small Kraft Boxes", image: smallKraftBoxes, description: "Tiny boxes for favors, samples, or small luxury items featuring durable cardstock and organic charm" },
     { name: "Kraft Boxes With Lids", image: kraftBoxesWithLids, description: "Classic two-piece telescopic kraft boxes designed for premium storage and high-end gift presentation" },
-    { name: "Kraft Tuck Top Boxes", image: tuckTopBoxes, description: "Simple tuck-top retail packaging boxes offering easy assembly and secure product containment features" },
-    { name: "Shipping Labels", image: kraftLabels, description: "Essential shipping labels designed to adhere securely to your packages with clear informational layout" },
+    { name: "Kraft Tuck Top Boxes", image: kraftTuckTopBoxes, description: "Simple tuck-top retail packaging boxes offering easy assembly and secure product containment features" },
+    { name: "Shipping Labels", image: kraftShippingLabels, description: "Essential shipping labels designed to adhere securely to your packages with clear informational layout" },
 ];
 
 const CustomKraftBoxes = () => {
@@ -139,9 +140,9 @@ const CustomKraftBoxes = () => {
                             <div className="flex justify-center lg:justify-start">
                                 <div className="w-full max-w-[480px] h-[300px] bg-gray-200 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
                                     <img
-                                        src={kraftBoxesHero}
+                                        src={kraftBoxesHeroV2}
                                         alt="Custom Kraft Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -171,12 +172,12 @@ const CustomKraftBoxes = () => {
                                     className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                                 >
                                     <CardContent className="p-0">
-                                        <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                        <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                             {product.image ? (
                                                 <img
                                                     src={product.image}
                                                     alt={product.name}
-                                                    className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                                 />
                                             ) : (
                                                 <div className="w-full h-full flex items-center justify-center bg-gray-200">

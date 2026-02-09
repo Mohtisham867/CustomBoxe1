@@ -13,19 +13,19 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import tuckTopMailerBoxes from "@/assets/mailer-boxes/tuck-top-mailer-boxes.jpg";
-import vinylRecordMailers from "@/assets/mailer-boxes/vinyl-record-mailers.jpg";
-import bubbleMailers from "@/assets/mailer-boxes/bubble-mailers.jpg";
-import bubbleMailers4x8 from "@/assets/mailer-boxes/4x8-bubble-mailers.jpg";
-import kraftBubbleMailers from "@/assets/mailer-boxes/kraft-bubble-mailers.jpg";
-import corrugatedMailerBoxes from "@/assets/mailer-boxes/corrugated-mailer-boxes.jpg";
-import earLockMailerBox from "@/assets/mailer-boxes/ear-lock-mailer-box.jpg";
-import polyBubbleMailers from "@/assets/mailer-boxes/poly-bubble-mailers.jpg";
-import whiteMailerBoxes from "@/assets/mailer-boxes/white-mailer-boxes.jpg";
-import kraftMailerBoxes from "@/assets/mailer-boxes/kraft-mailer-boxes.jpg";
-import blackMailerBoxes from "@/assets/mailer-boxes/black-mailer-boxes.jpg";
-import coloredMailerBoxes from "@/assets/mailer-boxes/colored-mailer-boxes.jpg";
-import mailerBoxesHero from "@/assets/mailer-boxes/mailer-boxes-hero.png";
+import vinylRecordMailers from "@/assets/mailer-boxes/vinyl-record-mailers.webp";
+import bubbleMailers from "@/assets/mailer-boxes/bubble-mailers.webp";
+import bubbleMailers4x8 from "@/assets/mailer-boxes/4x8-bubble-mailers.webp";
+import kraftBubbleMailers from "@/assets/mailer-boxes/kraft-bubble-mailers.webp";
+import corrugatedMailerBoxes from "@/assets/mailer-boxes/corrugated-mailer-boxes-updated.webp";
+import earLockMailerBox from "@/assets/mailer-boxes/ear-lock-mailer-box-updated.webp";
+import polyBubbleMailers from "@/assets/mailer-boxes/poly-bubble-mailers.webp";
+import whiteMailerBoxes from "@/assets/mailer-boxes/white-mailer-boxes.webp";
+import kraftMailerBoxes from "@/assets/mailer-boxes/kraft-mailer-boxes.webp";
+import blackMailerBoxes from "@/assets/mailer-boxes/black-mailer-boxes.webp";
+import coloredMailerBoxes from "@/assets/mailer-boxes/colored-mailer-boxes.webp";
+import tuckTopMailerBoxes from "@/assets/mailer-boxes/tuck-top-mailer-boxes.webp";
+import mailerBoxesHero from "@/assets/mailer-boxes/mailer-boxes-hero.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // IMAGES INTENTIONALLY OMITTED - AWAITING USER INSTRUCTION
@@ -109,7 +109,7 @@ const MailerBoxes = () => {
                                     <img
                                         src={mailerBoxesHero}
                                         alt="Mailer Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -142,13 +142,13 @@ const MailerBoxes = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         {/* Product image placeholder - intentionally empty */}
                                         {product.image ? (
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-muted flex items-center justify-center">

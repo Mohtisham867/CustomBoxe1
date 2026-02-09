@@ -14,27 +14,27 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import sleevesTraysHero from "@/assets/sleeves-and-trays/sleeves-and-trays-hero.png";
-import placeholder from "@/assets/sleeves-and-trays/placeholder.png";
-import rollEndTrayImg from "@/assets/sleeves-and-trays/roll-end-tray.jpg";
-import customBowlSleevesImg from "@/assets/sleeves-and-trays/custom-bowl-sleeves.jpg";
-import customDrawerPaperBoxesImg from "@/assets/sleeves-and-trays/custom-drawer-paper-boxes.jpg";
-import paperFoodTraysImg from "@/assets/sleeves-and-trays/paper-food-trays.jpg";
-import hotDogSleevesImg from "@/assets/sleeves-and-trays/hot-dog-sleeves.jpg";
-import cupSleevesImg from "@/assets/sleeves-and-trays/cup-sleeves.jpg";
-import coffeeSleevesImg from "@/assets/sleeves-and-trays/coffee-sleeves.jpg";
-import packagingSleevesImg from "@/assets/sleeves-and-trays/packaging-sleeves.jpg";
-import soapSleevesImg from "@/assets/sleeves-and-trays/soap-sleeves.jpg";
-import giftCardSleevesImg from "@/assets/sleeves-and-trays/gift-card-sleeves.jpg";
-import packagingInsertsImg from "@/assets/sleeves-and-trays/packaging-inserts.jpg";
-import foamInsertsImg from "@/assets/sleeves-and-trays/foam-inserts.jpg";
-import slideBoxesImg from "@/assets/sleeves-and-trays/slide-boxes.jpg";
-import sleeveBoxesImg from "@/assets/sleeves-and-trays/sleeve-boxes.jpg";
-import customShrinkSleevesImg from "@/assets/sleeves-and-trays/custom-shrink-sleeves.jpg";
-import soapPackagingSleevesImg from "@/assets/sleeves-and-trays/soap-packaging-sleeves.jpg";
-import trayBoxesImg from "@/assets/sleeves-and-trays/tray-boxes.jpg";
-import kraftSleeveBoxesImg from "@/assets/sleeves-and-trays/kraft-sleeve-boxes.jpg";
-import customConeSleeveImg from "@/assets/sleeves-and-trays/custom-cone-sleeve.jpg";
+import sleevesTraysHero from "@/assets/sleeves-and-trays/sleeves-and-trays-hero.webp";
+import placeholder from "@/assets/sleeves-and-trays/placeholder.webp";
+import rollEndTrayImg from "@/assets/sleeves-and-trays/roll-end-tray.webp";
+import customBowlSleevesImg from "@/assets/sleeves-and-trays/custom-bowl-sleeves.webp";
+import customDrawerPaperBoxesImg from "@/assets/sleeves-and-trays/custom-drawer-paper-boxes.webp";
+import paperFoodTraysImg from "@/assets/sleeves-and-trays/paper-food-trays.webp";
+import hotDogSleevesImg from "@/assets/sleeves-and-trays/hot-dog-sleeves.webp";
+import cupSleevesImg from "@/assets/sleeves-and-trays/cup-sleeves.webp";
+import coffeeSleevesImg from "@/assets/sleeves-and-trays/coffee-sleeves.webp";
+import packagingSleevesImg from "@/assets/sleeves-and-trays/packaging-sleeves.webp";
+import soapSleevesImg from "@/assets/sleeves-and-trays/soap-sleeves.webp";
+import giftCardSleevesImg from "@/assets/sleeves-and-trays/gift-card-sleeves.webp";
+import packagingInsertsImg from "@/assets/sleeves-and-trays/packaging-inserts.webp";
+import foamInsertsImg from "@/assets/sleeves-and-trays/foam-inserts.webp";
+import slideBoxesImg from "@/assets/sleeves-and-trays/slide-boxes.webp";
+import sleeveBoxesImg from "@/assets/sleeves-and-trays/sleeve-boxes.webp";
+import customShrinkSleevesImg from "@/assets/sleeves-and-trays/custom-shrink-sleeves.webp";
+import soapPackagingSleevesImg from "@/assets/sleeves-and-trays/soap-packaging-sleeves.webp";
+import trayBoxesImg from "@/assets/sleeves-and-trays/tray-boxes.webp";
+import kraftSleeveBoxesImg from "@/assets/sleeves-and-trays/kraft-sleeve-boxes.webp";
+import customConeSleeveImg from "@/assets/sleeves-and-trays/custom-cone-sleeve.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -108,7 +108,7 @@ const SleevesAndTrays = () => {
                                     <img
                                         src={sleevesTraysHero}
                                         alt="Sleeves and Trays Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -145,7 +145,7 @@ const SleevesAndTrays = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className={`w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110 ${product.isPlaceholder ? 'opacity-80' : ''}`}
+                                            className={`w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110 ${product.isPlaceholder ? 'opacity-80' : ''}`} loading="lazy"
                                         />
                                         {product.isPlaceholder && (
                                             <div className="absolute inset-0 flex items-center justify-center bg-black/5">

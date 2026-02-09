@@ -13,23 +13,23 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import hempCardboardBoxes from "@/assets/hemp-cardboard-boxes.jpg";
-import cardboardCigaretteBoxes from "@/assets/cardboard-cigarette-boxes.jpg";
-import cardboardGiftBoxes from "@/assets/cardboard-gift-boxes.jpg";
-import blackCardboardBoxes from "@/assets/black-cardboard-boxes.jpg";
-import whiteCardboardBoxes from "@/assets/box-shapes/white-cardboard-boxes.jpg";
-import cardboardDividerBoxes from "@/assets/box-shapes/cardboard-divider-boxes.jpg";
-import cardboardJewelryBoxes from "@/assets/box-shapes/cardboard-jewelry-boxes.jpg";
-import cardboardBoxWithHandle from "@/assets/box-shapes/cardboard-box-with-handle.jpg";
-import ammoCardboardBoxes from "@/assets/box-shapes/ammo-cardboard-boxes.jpg";
-import cardboardInserts from "@/assets/box-shapes/cardboard-inserts.jpg";
-import paperboardBoxes from "@/assets/box-shapes/paperboard-boxes.jpg";
-import cardboardShoeBoxes from "@/assets/box-shapes/cardboard-shoe-boxes.jpg";
-import cardboardBoxWithInserts from "@/assets/box-shapes/cardboard-box-with-inserts.jpg";
-import cardboardCigarBoxes from "@/assets/box-shapes/cardboard-cigar-boxes.jpg";
-import cosmeticCardboardBoxes from "@/assets/box-shapes/cosmetic-cardboard-boxes.jpg";
-import cardboardSoapBoxes from "@/assets/box-shapes/cardboard-soap-boxes.jpg";
-import cardboardBoxesHero from "@/assets/cardboard-boxes-hero.png";
+import hempCardboardBoxes from "@/assets/hemp-cardboard-boxes.webp";
+import cardboardCigaretteBoxes from "@/assets/cardboard-cigarette-boxes.webp";
+import cardboardGiftBoxes from "@/assets/cardboard-gift-boxes.webp";
+import blackCardboardBoxes from "@/assets/black-cardboard-boxes.webp";
+import whiteCardboardBoxes from "@/assets/box-shapes/white-cardboard-boxes.webp";
+import cardboardDividerBoxes from "@/assets/box-shapes/cardboard-divider-boxes.webp";
+import cardboardJewelryBoxes from "@/assets/box-shapes/cardboard-jewelry-boxes.webp";
+import cardboardBoxWithHandle from "@/assets/box-shapes/cardboard-box-with-handle.webp";
+import ammoCardboardBoxes from "@/assets/box-shapes/ammo-cardboard-boxes.webp";
+import cardboardInserts from "@/assets/box-shapes/cardboard-inserts.webp";
+import paperboardBoxes from "@/assets/box-shapes/paperboard-boxes.webp";
+import cardboardShoeBoxes from "@/assets/box-shapes/cardboard-shoe-boxes.webp";
+import cardboardBoxWithInserts from "@/assets/box-shapes/cardboard-box-with-inserts.webp";
+import cardboardCigarBoxes from "@/assets/box-shapes/cardboard-cigar-boxes.webp";
+import cosmeticCardboardBoxes from "@/assets/box-shapes/cosmetic-cardboard-boxes.webp";
+import cardboardSoapBoxes from "@/assets/box-shapes/cardboard-soap-boxes.webp";
+import cardboardBoxesHero from "@/assets/cardboard-boxes-hero.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // Product list for dropdown
@@ -119,7 +119,7 @@ const CardboardBoxes = () => {
                                     <img
                                         src={cardboardBoxesHero}
                                         alt="Cardboard Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -148,12 +148,12 @@ const CardboardBoxes = () => {
                                     className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                                 >
                                     <CardContent className="p-0">
-                                        <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                        <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                             {product.image ? (
                                                 <img
                                                     src={product.image}
                                                     alt={product.name}
-                                                    className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                                 />
                                             ) : (
                                                 <div className="w-full h-full flex items-center justify-center bg-gray-200">

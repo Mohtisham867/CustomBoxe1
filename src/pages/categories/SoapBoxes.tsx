@@ -14,18 +14,18 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/soap-boxes/soap-boxes-hero.png";
+import heroImage from "@/assets/soap-boxes/soap hero.webp";
 
 // Specific images
-import kraftSoapBoxes from "@/assets/soap-boxes/custom-kraft-soap-boxes.png";
-import bathBombPackaging from "@/assets/soap-boxes/bath-bomb-packaging.png";
-import wrappingPaper from "@/assets/soap-boxes/custom-soap-wrapping-paper.png";
-import handmadeSoapBoxes from "@/assets/soap-boxes/custom-handmade-soap-boxes.png";
-import squareSoapBoxes from "@/assets/soap-boxes/square-soap-boxes.png";
-import soapBarBoxes from "@/assets/soap-boxes/custom-soap-bar-boxes.png";
-import luxurySoapPackaging from "@/assets/soap-boxes/luxury-soap-packaging.png";
-import soapSleeves from "@/assets/soap-boxes/soap-sleeves.png";
-import soapBarLabels from "@/assets/soap-boxes/soap-sleeves.png"; // Placeholder (Quota Limit)
+import kraftSoapBoxes from "@/assets/soap-boxes/custom-kraft-soap-boxes.webp";
+import bathBombPackaging from "@/assets/soap-boxes/bath-bomb-packaging.webp";
+import wrappingPaper from "@/assets/soap-boxes/custom-soap-wrapping-paper.webp";
+import handmadeSoapBoxes from "@/assets/soap-boxes/custom-handmade-soap-boxes.webp";
+import squareSoapBoxes from "@/assets/soap-boxes/square-soap-boxes.webp";
+import soapBarBoxes from "@/assets/soap-boxes/custom-soap-bar-boxes.webp";
+import luxurySoapPackaging from "@/assets/soap-boxes/luxury-soap-packaging.webp";
+import soapSleeves from "@/assets/soap-boxes/soap-sleeves.webp";
+import soapBarLabels from "@/assets/soap-boxes/soap-sleeves.webp"; // Placeholder (Quota Limit)
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -100,7 +100,7 @@ const SoapBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Soap Boxes Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -137,7 +137,7 @@ const SoapBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

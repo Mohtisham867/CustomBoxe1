@@ -13,17 +13,17 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import pillowBoxesHero from "@/assets/pillow-boxes/pillow-boxes-hero.png";
-import whitePillowBoxes from "@/assets/pillow-boxes/white_pillow_boxes.png";
-import smallPillowBoxes from "@/assets/pillow-boxes/small_pillow_boxes.png";
-import kraftPillowBoxes from "@/assets/pillow-boxes/kraft_pillow_boxes.png";
-import largePillowBoxes from "@/assets/pillow-boxes/large_pillow_boxes.png";
-import pillowBoxesWithHandle from "@/assets/pillow-boxes/pillow_boxes_with_handle.png";
-import blackPillowBoxes from "@/assets/pillow-boxes/black_pillow_boxes.png";
-import pillowBoxesWithWindow from "@/assets/pillow-boxes/pillow_boxes_with_window.png";
-import cardboardPillowBoxes from "@/assets/pillow-boxes/cardboard_pillow_boxes.png";
-import paperPillowBox from "@/assets/pillow-boxes/paper_pillow_box.png";
-import pillowGiftBoxes from "@/assets/pillow-boxes/pillow_gift_boxes.png";
+import pillowBoxesHero from "@/assets/pillow-boxes/pillow-boxes-hero.webp";
+import whitePillowBoxes from "@/assets/pillow-boxes/white_pillow_boxes.webp";
+import smallPillowBoxes from "@/assets/pillow-boxes/small_pillow_boxes.webp";
+import kraftPillowBoxes from "@/assets/pillow-boxes/kraft_pillow_boxes.webp";
+import largePillowBoxes from "@/assets/pillow-boxes/large_pillow_boxes.webp";
+import pillowBoxesWithHandle from "@/assets/pillow-boxes/pillow_boxes_with_handle.webp";
+import blackPillowBoxes from "@/assets/pillow-boxes/black_pillow_boxes.webp";
+import pillowBoxesWithWindow from "@/assets/pillow-boxes/pillow_boxes_with_window.webp";
+import cardboardPillowBoxes from "@/assets/pillow-boxes/cardboard_pillow_boxes.webp";
+import paperPillowBox from "@/assets/pillow-boxes/paper_pillow_box.webp";
+import pillowGiftBoxes from "@/assets/pillow-boxes/pillow_gift_boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -88,7 +88,7 @@ const PillowBoxes = () => {
                                     <img
                                         src={pillowBoxesHero}
                                         alt="Pillow Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -121,13 +121,13 @@ const PillowBoxes = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         {/* Product image placeholder */}
                                         {product.image ? (
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-muted flex items-center justify-center">

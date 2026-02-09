@@ -14,17 +14,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/retail-boxes/retail-boxes-hero.png";
+import heroImage from "@/assets/retail-boxes/retail hero.webp";
 
 // Specific images maps
-import businessCards from "@/assets/retail-boxes/custom-business-cards.png";
-import matchBoxes from "@/assets/retail-boxes/custom-match-boxes.png";
-import supplementPackaging from "@/assets/retail-boxes/dietary-supplement-packaging.png";
-import businessLabels from "@/assets/retail-boxes/business-labels.png";
-import boxesWithLogo from "@/assets/retail-boxes/custom-boxes-with-logo.png";
-import clamshellBoxes from "@/assets/retail-boxes/clamshell-boxes.png";
-import barbieBoxes from "@/assets/retail-boxes/barbie-boxes.png";
-import foldingCartons from "@/assets/retail-boxes/folding-cartons.png";
+import businessCards from "@/assets/retail-boxes/Custom Business Cards.webp";
+import matchBoxes from "@/assets/retail-boxes/Custom Match Boxes.webp";
+import supplementPackaging from "@/assets/retail-boxes/Dietary Supplement Packaging.webp";
+import businessLabels from "@/assets/retail-boxes/Business Labels.webp";
+import boxesWithLogo from "@/assets/retail-boxes/Custom Boxes with Logo.webp";
+import clamshellBoxes from "@/assets/retail-boxes/Clamshell Boxes.webp";
+import barbieBoxes from "@/assets/retail-boxes/barbie-boxes.webp";
+import foldingCartons from "@/assets/retail-boxes/Folding Cartons.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -97,7 +97,7 @@ const RetailBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Retail Boxes Packaging"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -130,11 +130,11 @@ const RetailBoxes = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

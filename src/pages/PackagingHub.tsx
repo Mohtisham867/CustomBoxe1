@@ -16,15 +16,15 @@ import { Link } from "react-router-dom";
 import { Circle, User } from "lucide-react";
 
 // Images
-import cardboardHero from "@/assets/cardboard-boxes-hero.png";
-import rigidHero from "@/assets/rigid-boxes/rigid-boxes-hero.jpg";
-import cosmeticHero from "@/assets/cosmetic-boxes-hero.png";
-import apparelHero from "@/assets/apparel-boxes-hero.png";
-import cannabisTinctureBoxes from "@/assets/cannabis-products/cannabis-tincture-boxes.jpg";
-import hairExtensionBoxes from "@/assets/cosmetic-boxes/hair-extension-boxes.png";
-import glassCandleJars from "@/assets/primary-packaging/glass-candle-jars.jpg";
-import chocolateBoxes from "@/assets/chocolate-boxes-hero.png"; // Assuming exist or similar
-import kraftBoxes from "@/assets/cardboard-boxes-hero.png"; // Reusing for now to ensure load, can swap if custom-kraft exists
+import cardboardHero from "@/assets/cardboard-boxes-hero.webp";
+import rigidHero from "@/assets/rigid-boxes/rigid-boxes-hero.webp";
+import cosmeticHero from "@/assets/cosmetic-boxes-hero.webp";
+import apparelHero from "@/assets/apparel-boxes/hero.webp";
+import cannabisTinctureBoxes from "@/assets/cannabis-packaging/tincture-boxes.webp";
+import hairExtensionBoxes from "@/assets/cosmetic-boxes/Hair Extension Boxes.webp";
+import glassCandleJars from "@/assets/primary-packaging/glass-candle-jars.webp";
+import chocolateBoxes from "@/assets/chocolate-boxes-hero.webp"; // Assuming exist or similar
+import kraftBoxes from "@/assets/cardboard-boxes-hero.webp"; // Reusing for now to ensure load, can swap if custom-kraft exists
 
 const inspirationItems = [
     {
@@ -116,7 +116,7 @@ const PackagingHub = () => {
                                         <img
                                             src={item.image}
                                             alt={item.title}
-                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"
                                         />
                                         {/* Overlay slightly on hover for effect? Optional. Keeping clean as requested. */}
                                     </div>

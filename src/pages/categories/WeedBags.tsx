@@ -15,12 +15,12 @@ import {
 import { Link } from "react-router-dom";
 
 // Images
-import weedBagsHero from "@/assets/weed-bags/weed-bags-hero.png";
-import exoticWeedBag from "@/assets/weed-bags/exotic-weed-bag.png";
-import smellProofWeedBags from "@/assets/weed-bags/smell-proof-weed-bags.png";
-import weedBags35 from "@/assets/weed-bags/weed-bags-3-5.png";
-import zipWeedBags from "@/assets/weed-bags/zip-weed-bags.png";
-import weedPoundBags from "@/assets/weed-bags/weed-pound-bags.png";
+import weedBagsHero from "@/assets/weed-bags/weed-bags-hero.webp";
+import exoticWeedBag from "@/assets/weed-bags/exotic-weed-bag.webp";
+import smellProofWeedBags from "@/assets/weed-bags/smell-proof-weed-bags.webp";
+import weedBags35 from "@/assets/weed-bags/weed-bags-3-5.webp";
+import zipWeedBags from "@/assets/weed-bags/zip-weed-bags.webp";
+import weedPoundBags from "@/assets/weed-bags/weed-pound-bags.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -80,7 +80,7 @@ const WeedBags = () => {
                                     <img
                                         src={weedBagsHero}
                                         alt="Custom Weed Bags Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -113,11 +113,11 @@ const WeedBags = () => {
                                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                             >
                                 <CardContent className="p-0">
-                                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

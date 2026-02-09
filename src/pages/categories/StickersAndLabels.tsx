@@ -15,40 +15,40 @@ import {
 import { Link } from "react-router-dom";
 
 // Images
-import stickersLabelsHero from "@/assets/stickers-and-labels/stickers-and-labels-hero.jpg";
-import preRollLabelsImg from "@/assets/stickers-and-labels/pre-roll-labels.jpg";
-import foodLabelsImg from "@/assets/stickers-and-labels/food-labels.jpg";
-import circleLabelsImg from "@/assets/stickers-and-labels/circle-labels.jpg";
-import dieCutStickersImg from "@/assets/stickers-and-labels/die-cut-stickers.jpg";
-import soapBarLabelsImg from "@/assets/stickers-and-labels/soap-bar-labels.jpg";
-import tableTentsImg from "@/assets/stickers-and-labels/table-tents.jpg";
-import christmasStickersImg from "@/assets/stickers-and-labels/christmas-stickers.jpg";
-import paperStickersImg from "@/assets/stickers-and-labels/paper-stickers.jpg";
-import businessLabelsImg from "@/assets/stickers-and-labels/business-labels.jpg";
-import candleLabelsImg from "@/assets/stickers-and-labels/candle-labels.jpg";
-import soapLabelsImg from "@/assets/stickers-and-labels/soap-labels.jpg";
-import wineLabelsImg from "@/assets/stickers-and-labels/wine-labels.jpg";
-import kraftLabelsImg from "@/assets/stickers-and-labels/kraft-labels.jpg";
-import chapstickLabelsImg from "@/assets/stickers-and-labels/chapstick-labels.jpg";
-import metallicLabelsImg from "@/assets/stickers-and-labels/metallic-labels.jpg";
-import bottleLabelsImg from "@/assets/stickers-and-labels/bottle-labels.jpg";
-import cosmeticLabelsImg from "@/assets/stickers-and-labels/cosmetic-labels.jpg";
-import sprayBottleLabelsImg from "@/assets/stickers-and-labels/spray-bottle-labels.jpg";
-import bagLabelsImg from "@/assets/stickers-and-labels/bag-labels.jpg";
-import iceCreamLabelsImg from "@/assets/stickers-and-labels/ice-cream-labels.jpg";
-import honeyLabelsImg from "@/assets/stickers-and-labels/honey-labels.jpg";
-import bodyButterLabelsImg from "@/assets/stickers-and-labels/body-butter-labels.jpg";
-import cookieLabelsImg from "@/assets/stickers-and-labels/cookie-labels.jpg";
-import lotionLabelsImg from "@/assets/stickers-and-labels/lotion-labels.jpg";
-import bathBombLabelsImg from "@/assets/stickers-and-labels/bath-bomb-labels.jpg";
-import colorLabelsImg from "@/assets/stickers-and-labels/color-labels.jpg";
-import vinylStickersImg from "@/assets/stickers-and-labels/vinyl-stickers.jpg";
-import customRollLabelsImg from "@/assets/stickers-and-labels/custom-roll-labels.jpg";
-import waterproofLabelsImg from "@/assets/stickers-and-labels/waterproof-labels.jpg";
-import packagingLabelsImg from "@/assets/stickers-and-labels/packaging-labels.jpg";
-import decalsImg from "@/assets/stickers-and-labels/decals.jpg";
-import privateLabelPackagingImg from "@/assets/stickers-and-labels/private-label-packaging.jpg";
-import placeholder from "@/assets/stickers-and-labels/placeholder.png";
+import stickersLabelsHero from "@/assets/stickers-and-labels/stickers-and-labels-hero.webp";
+import preRollLabelsImg from "@/assets/stickers-and-labels/pre-roll-labels.webp";
+import foodLabelsImg from "@/assets/stickers-and-labels/food-labels.webp";
+import circleLabelsImg from "@/assets/stickers-and-labels/circle-labels.webp";
+import dieCutStickersImg from "@/assets/stickers-and-labels/die-cut-stickers.webp";
+import soapBarLabelsImg from "@/assets/stickers-and-labels/soap-bar-labels.webp";
+import tableTentsImg from "@/assets/stickers-and-labels/table-tents.webp";
+import christmasStickersImg from "@/assets/stickers-and-labels/christmas-stickers.webp";
+import paperStickersImg from "@/assets/stickers-and-labels/paper-stickers.webp";
+import businessLabelsImg from "@/assets/stickers-and-labels/business-labels.webp";
+import candleLabelsImg from "@/assets/stickers-and-labels/candle-labels.webp";
+import soapLabelsImg from "@/assets/stickers-and-labels/soap-labels.webp";
+import wineLabelsImg from "@/assets/stickers-and-labels/wine-labels.webp";
+import kraftLabelsImg from "@/assets/stickers-and-labels/kraft-labels.webp";
+import chapstickLabelsImg from "@/assets/stickers-and-labels/chapstick-labels.webp";
+import metallicLabelsImg from "@/assets/stickers-and-labels/metallic-labels.webp";
+import bottleLabelsImg from "@/assets/stickers-and-labels/bottle-labels.webp";
+import cosmeticLabelsImg from "@/assets/stickers-and-labels/cosmetic-labels.webp";
+import sprayBottleLabelsImg from "@/assets/stickers-and-labels/spray-bottle-labels.webp";
+import bagLabelsImg from "@/assets/stickers-and-labels/bag-labels.webp";
+import iceCreamLabelsImg from "@/assets/stickers-and-labels/ice-cream-labels.webp";
+import honeyLabelsImg from "@/assets/stickers-and-labels/honey-labels.webp";
+import bodyButterLabelsImg from "@/assets/stickers-and-labels/body-butter-labels.webp";
+import cookieLabelsImg from "@/assets/stickers-and-labels/cookie-labels.webp";
+import lotionLabelsImg from "@/assets/stickers-and-labels/lotion-labels.webp";
+import bathBombLabelsImg from "@/assets/stickers-and-labels/bath-bomb-labels.webp";
+import colorLabelsImg from "@/assets/stickers-and-labels/color-labels.webp";
+import vinylStickersImg from "@/assets/stickers-and-labels/vinyl-stickers.webp";
+import customRollLabelsImg from "@/assets/stickers-and-labels/custom-roll-labels.webp";
+import waterproofLabelsImg from "@/assets/stickers-and-labels/waterproof-labels.webp";
+import packagingLabelsImg from "@/assets/stickers-and-labels/packaging-labels.webp";
+import decalsImg from "@/assets/stickers-and-labels/decals.webp";
+import privateLabelPackagingImg from "@/assets/stickers-and-labels/private-label-packaging.webp";
+import placeholder from "@/assets/stickers-and-labels/placeholder.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // Placeholder assignments
@@ -175,7 +175,7 @@ const StickersAndLabels = () => {
                                     <img
                                         src={stickersLabelsHero}
                                         alt="Stickers and Labels Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -212,7 +212,7 @@ const StickersAndLabels = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className={`w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110 ${product.image === placeholder ? 'opacity-80' : ''}`}
+                                            className={`w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110 ${product.image === placeholder ? 'opacity-80' : ''}`} loading="lazy"
                                         />
                                         {product.image === placeholder && (
                                             <div className="absolute inset-0 flex items-center justify-center bg-black/5">

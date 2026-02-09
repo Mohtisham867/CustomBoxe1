@@ -11,25 +11,25 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import childResistantPackaging from "@/assets/box-shapes/child-resistant-packaging.jpg";
-import customBags from "@/assets/box-shapes/custom-bags.png";
-import customMylarBags from "@/assets/box-shapes/custom-mylar-bags.jpg";
-import customPaperBags from "@/assets/box-shapes/custom-paper-bags.png";
-import customShapeBoxes from "@/assets/box-shapes/custom-shape-boxes.jpg";
-import displayBoxes from "@/assets/box-shapes/display-boxes.jpg";
-import gableBoxes from "@/assets/box-shapes/gable-boxes.jpg";
-import hangTags from "@/assets/box-shapes/hang-tags.jpg";
-import mailerBoxes from "@/assets/box-shapes/mailer-boxes.jpg";
-import pillowBoxes from "@/assets/box-shapes/pillow-boxes.jpg";
-import rigidBoxes from "@/assets/box-shapes/rigid-boxes.png";
-import shippingBoxes from "@/assets/box-shapes/shipping-boxes.jpg";
-import sleeveAndTray from "@/assets/box-shapes/sleeve-and-tray.jpg";
-import stickersAndLabels from "@/assets/box-shapes/stickers-and-labels.jpg";
-import subscriptionBoxes from "@/assets/box-shapes/subscription-boxes.jpg";
-import tuckBoxes from "@/assets/box-shapes/tuck-boxes.png";
-import weedBags from "@/assets/box-shapes/weed-bags.jpg";
-import windowPackaging from "@/assets/box-shapes/window-packaging.jpg";
-import heroBackground from "@/assets/shapes-styles-hero-bg.jpg";
+import childResistantPackaging from "@/assets/box-shapes/child-resistant-packaging.webp";
+import customBags from "@/assets/box-shapes/custom-bags.webp";
+import customMylarBags from "@/assets/box-shapes/custom-mylar-bags.webp";
+import customPaperBags from "@/assets/box-shapes/custom-paper-bags.webp";
+import customShapeBoxes from "@/assets/box-shapes/custom-shape-boxes.webp";
+import displayBoxes from "@/assets/box-shapes/display-boxes.webp";
+import gableBoxes from "@/assets/box-shapes/gable-boxes.webp";
+import hangTags from "@/assets/box-shapes/hang-tags.webp";
+import mailerBoxes from "@/assets/box-shapes/mailer-boxes.webp";
+import pillowBoxes from "@/assets/box-shapes/pillow-boxes.webp";
+import rigidBoxes from "@/assets/box-shapes/rigid-boxes.webp";
+import shippingBoxes from "@/assets/box-shapes/shipping-boxes.webp";
+import sleeveAndTray from "@/assets/box-shapes/sleeve-and-tray.webp";
+import stickersAndLabels from "@/assets/box-shapes/stickers-and-labels.webp";
+import subscriptionBoxes from "@/assets/box-shapes/subscription-boxes.webp";
+import tuckBoxes from "@/assets/box-shapes/tuck-boxes.webp";
+import weedBags from "@/assets/box-shapes/weed-bags.webp";
+import windowPackaging from "@/assets/box-shapes/window-packaging.webp";
+import heroBackground from "@/assets/shapes-styles-hero-bg.webp";
 
 const shapesStyles = [
   { name: "Child Resistant Packaging", image: childResistantPackaging, link: "/shapes-styles/child-resistant-packaging" },
@@ -111,7 +111,7 @@ const ShapesStyles = () => {
                       <img
                         src={shape.image}
                         alt={shape.name}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"
                       />
                     </div>
                     <div className="p-4 text-center border-t border-border">
@@ -142,7 +142,7 @@ const ShapesStyles = () => {
                 [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:space-y-3 [&>li]:text-gray-800 [&>li]:text-[15px]">
 
             <p className="mt-0">
-              The shape and style of your packaging are fundamental to brand recognition, product protection, and customer experience. Beyond mere aesthetics, packaging structure determines assembly efficiency, shipping durability, retail presentation, and unboxing satisfaction. At CustomBoxe, we offer an extensive portfolio of packaging shapes and styles—each engineered for specific functional requirements while providing unlimited customization possibilities. This comprehensive guide explores the structural characteristics, practical applications, and design opportunities of our most popular packaging formats, helping you select the ideal solution for your brand.
+              The shape and style of your packaging are fundamental to brand recognition, product protection, and customer experience. Beyond mere aesthetics, packaging structure determines assembly efficiency, shipping durability, retail presentation, and unboxing satisfaction. At CustomPackMakers, we offer an extensive portfolio of packaging shapes and styles—each engineered for specific functional requirements while providing unlimited customization possibilities. This comprehensive guide explores the structural characteristics, practical applications, and design opportunities of our most popular packaging formats, helping you select the ideal solution for your brand.
             </p>
 
             <h3>Tuck Boxes: Versatile, Secure, and Cost-Effective</h3>
@@ -262,7 +262,7 @@ const ShapesStyles = () => {
               Printing options include offset printing for large runs with precise color matching, digital printing for short runs and variable data, and flexographic printing for corrugated materials. Finishing techniques transform standard packaging into premium brand experiences: matte or gloss lamination for protection and visual appeal, spot UV for contrast and texture, foil stamping in metallic or holographic finishes, embossing and debossing for tactile dimension, and soft-touch coating for luxurious feel.
             </p>
             <p>
-              Our design and production teams work collaboratively with brands to engineer packaging solutions that balance aesthetic goals, functional requirements, budget constraints, and production timelines. From initial concept sketches through prototyping, sampling, and full-scale production, we ensure your packaging achieves both structural integrity and brand excellence. Partner with CustomBoxe to create packaging shapes and styles that protect your products, elevate your brand, and create memorable customer experiences.
+              Our design and production teams work collaboratively with brands to engineer packaging solutions that balance aesthetic goals, functional requirements, budget constraints, and production timelines. From initial concept sketches through prototyping, sampling, and full-scale production, we ensure your packaging achieves both structural integrity and brand excellence. Partner with CustomPackMakers to create packaging shapes and styles that protect your products, elevate your brand, and create memorable customer experiences.
             </p>
 
           </div>

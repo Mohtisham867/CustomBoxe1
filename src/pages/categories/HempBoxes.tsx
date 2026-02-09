@@ -14,17 +14,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/custom-hemp-boxes-hero.png";
-import hempPaperBoxes from "@/assets/cbd-products/custom-cbd-isolate-boxes.jpg";
-import hempShippingBoxes from "@/assets/box-shapes/shipping-boxes.jpg";
-import hempPreRollBoxes from "@/assets/cannabis-products/cannabis-cigarette-boxes.jpg";
-import hempOilBoxes from "@/assets/cbd-products/cbd-oil-boxes.jpg";
-import hempGiftBoxes from "@/assets/apparel-products/apparel-gift-boxes.jpg";
-import hempCardboardBoxes from "@/assets/box-shapes/mailer-boxes.jpg";
-import hempCigaretteBoxes from "@/assets/cigarette-products/hemp-cigarette-boxes.jpg";
-import eLiquidBoxes from "@/assets/cigarette-products/e-cigarette-boxes.jpg";
-import hempTeaBags from "@/assets/beverage-products/tea-boxes.jpg";
-import cbdHempOilBoxes from "@/assets/cbd-products/cbd-oil-boxes.jpg"; // Reusing cbd-oil-boxes
+import heroImage from "@/assets/custom-hemp-boxes-hero.webp";
+import hempPaperBoxes from "@/assets/cbd-boxes/custom-cbd-isolate-boxes.webp";
+import hempShippingBoxes from "@/assets/hemp-shipping-boxes.webp";
+import hempPreRollBoxes from "@/assets/cannabis-packaging/cigarette-boxes.webp";
+import hempOilBoxes from "@/assets/cbd-boxes/cbd-hemp-oil-boxes.webp";
+import hempGiftBoxes from "@/assets/apparel-boxes/apparel-gift-boxes.webp";
+import hempCardboardBoxes from "@/assets/box-shapes/mailer-boxes.webp";
+import hempCigaretteBoxes from "@/assets/cigarette-boxes/hemp-cigarette-boxes.webp";
+import eLiquidBoxes from "@/assets/e-liquid-boxes.webp";
+import hempTeaBags from "@/assets/beverage-boxes/tea-boxes.webp";
+import cbdHempOilBoxes from "@/assets/cbd-boxes/cbd-oil-boxes.webp"; // Reusing cbd-oil-boxes
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -102,7 +102,7 @@ const HempBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Custom Hemp Boxes"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -139,7 +139,7 @@ const HempBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

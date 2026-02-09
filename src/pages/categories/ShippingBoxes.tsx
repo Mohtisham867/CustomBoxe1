@@ -15,20 +15,20 @@ import {
 import { Link } from "react-router-dom";
 
 // Images
-import shippingBoxesHero from "@/assets/shipping-boxes/shipping-boxes-hero.jpg";
-import chineseTakeoutBox from "@/assets/shipping-boxes/chinese-takeout-boxes.jpg";
-import hempShippingBox from "@/assets/shipping-boxes/hemp-shipping-boxes.jpg";
-import doubleWallTuck from "@/assets/shipping-boxes/double-wall-tuck-front.jpg";
-import whiteShippingBox from "@/assets/shipping-boxes/white-shipping-boxes.png";
-import deliveryBox from "@/assets/shipping-boxes/delivery-boxes.png";
-import candleShippingBox from "@/assets/shipping-boxes/candle-shipping-boxes.jpg";
-import hatShippingBox from "@/assets/shipping-boxes/hat-shipping-boxes.jpg";
-import box8x6x4Box from "@/assets/shipping-boxes/8x6x4-shipping-boxes.jpg";
-import box5x5x5Box from "@/assets/shipping-boxes/5x5x5-boxes.jpg";
-import wineShippingBox from "@/assets/shipping-boxes/wine-shipping-boxes.jpg";
-import longNarrowBox from "@/assets/shipping-boxes/long-narrow-shipping-boxes.jpg";
-import shippingLabelsBox from "@/assets/shipping-boxes/shipping-labels.jpg";
-import placeholder from "@/assets/shipping-boxes/placeholder.png";
+import shippingBoxesHero from "@/assets/shipping-boxes/shipping-boxes-hero.webp";
+import chineseTakeoutBox from "@/assets/shipping-boxes/chinese-takeout-boxes.webp";
+import hempShippingBox from "@/assets/shipping-boxes/hemp-shipping-boxes.webp";
+import doubleWallTuck from "@/assets/shipping-boxes/double-wall-tuck-front.webp";
+import whiteShippingBox from "@/assets/shipping-boxes/white-shipping-boxes.webp";
+import deliveryBox from "@/assets/shipping-boxes/delivery-boxes.webp";
+import candleShippingBox from "@/assets/shipping-boxes/candle-shipping-boxes.webp";
+import hatShippingBox from "@/assets/shipping-boxes/hat-shipping-boxes.webp";
+import box8x6x4Box from "@/assets/shipping-boxes/8x6x4-shipping-boxes.webp";
+import box5x5x5Box from "@/assets/shipping-boxes/5x5x5-boxes.webp";
+import wineShippingBox from "@/assets/shipping-boxes/wine-shipping-boxes.webp";
+import longNarrowBox from "@/assets/shipping-boxes/long-narrow-shipping-boxes.webp";
+import shippingLabelsBox from "@/assets/shipping-boxes/shipping-labels.webp";
+import placeholder from "@/assets/shipping-boxes/placeholder.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // Placeholder assignments for missing value
@@ -104,7 +104,7 @@ const ShippingBoxes = () => {
                                     <img
                                         src={shippingBoxesHero}
                                         alt="Shipping Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -142,7 +142,7 @@ const ShippingBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className={`h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110 ${product.image === placeholder ? "opacity-80" : ""}`}
+                                            className={`h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110 ${product.image === placeholder ? "opacity-80" : ""}`} loading="lazy"
                                         />
                                         {product.image === placeholder && (
                                             <div className="absolute inset-0 flex items-center justify-center bg-black/5">

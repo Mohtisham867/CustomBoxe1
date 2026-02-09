@@ -13,23 +13,23 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-
+import heroImage from "@/assets/tuck-boxes/tuck hero.webp";
 // Product Images
-import reverseTuckEnd from "@/assets/tuck-boxes/reverse-tuck-end.png";
-import reverseTuckEndBoxes from "@/assets/tuck-boxes/reverse-tuck-end-boxes.png";
-import straightTuckEnd from "@/assets/tuck-boxes/straight-tuck-end.png";
-import straightTuckEndBoxes from "@/assets/tuck-boxes/straight-tuck-end-boxes.png";
-import tuckTopBox from "@/assets/tuck-boxes/tuck-top-box.png";
-import tuckTopBoxes from "@/assets/tuck-boxes/tuck-top-boxes.png";
-import tuckTopSnapBottom from "@/assets/tuck-boxes/tuck-top-snap-bottom-box.png";
-import tuckTopAutoBottom from "@/assets/tuck-boxes/tuck-top-auto-bottom-box.png";
-import tuckFrontBoxes from "@/assets/tuck-boxes/tuck-front-boxes.png";
-import doubleWallTuckFront from "@/assets/tuck-boxes/double-wall-tuck-front.png";
-import doubleWallTuckTopBoxes from "@/assets/tuck-boxes/double-wall-tuck-top-boxes.png";
-import straightTuckHangTab from "@/assets/tuck-boxes/straight-tuck-with-hang-tab.png";
-import reverseTuckHangTab from "@/assets/tuck-boxes/reverse-tuck-with-hang-tab.png";
-import straightTuckWindow from "@/assets/tuck-boxes/straight-tuck-with-customize-window.png";
-import reverseTuckWindow from "@/assets/tuck-boxes/reverse-tuck-with-customize-window.png";
+import reverseTuckEnd from "@/assets/tuck-boxes/reverse-tuck-end.webp";
+import reverseTuckEndBoxes from "@/assets/tuck-boxes/reverse-tuck-end-boxes.webp";
+import straightTuckEnd from "@/assets/tuck-boxes/Straight Tuck End.webp";
+import straightTuckEndBoxes from "@/assets/tuck-boxes/straight-tuck-end-boxes.webp";
+import tuckTopBox from "@/assets/tuck-boxes/tuck-top-box.webp";
+import tuckTopBoxes from "@/assets/tuck-boxes/tuck-top-boxes.webp";
+import tuckTopSnapBottom from "@/assets/tuck-boxes/tuck-top-snap-bottom-box.webp";
+import tuckTopAutoBottom from "@/assets/tuck-boxes/tuck-top-auto-bottom-box.webp";
+import tuckFrontBoxes from "@/assets/tuck-boxes/tuck-front-boxes.webp";
+import doubleWallTuckFront from "@/assets/tuck-boxes/double-wall-tuck-front.webp";
+import doubleWallTuckTopBoxes from "@/assets/tuck-boxes/double-wall-tuck-top-boxes.webp";
+import straightTuckHangTab from "@/assets/tuck-boxes/straight-tuck-with-hang-tab.webp";
+import reverseTuckHangTab from "@/assets/tuck-boxes/reverse-tuck-with-hang-tab.webp";
+import straightTuckWindow from "@/assets/tuck-boxes/straight-tuck-with-customize-window.webp";
+import reverseTuckWindow from "@/assets/tuck-boxes/reverse-tuck-with-customize-window.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const tuckBoxProducts = [
@@ -115,9 +115,9 @@ const TuckBoxes = () => {
                             <div className="flex justify-center lg:justify-start">
                                 <div className="w-full max-w-[480px] h-[300px] overflow-hidden rounded-lg shadow-lg">
                                     <img
-                                        src={tuckTopBoxes}
+                                        src={heroImage}
                                         alt="Tuck Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -146,11 +146,11 @@ const TuckBoxes = () => {
                                     className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                                 >
                                     <CardContent className="p-0">
-                                        <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                                        <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                             />
                                         </div>
                                         <div className="p-4 border-t border-border">

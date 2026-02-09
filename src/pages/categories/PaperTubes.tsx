@@ -22,22 +22,22 @@ import {
 } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import glassSerumBottle from "@/assets/primary-packaging/glass-serum-bottle.jpg";
-import plasticCleanserTube from "@/assets/primary-packaging/plastic-cleanser-tube.jpg";
-import plasticMistBottle from "@/assets/primary-packaging/plastic-mist-bottle.jpg";
-import glassRollOnBottle from "@/assets/primary-packaging/glass-roll-on-bottle.jpg";
-import plasticShampooBottle from "@/assets/primary-packaging/plastic-shampoo-bottle.jpg";
-import paperTubes from "@/assets/primary-packaging/paper-tubes.jpg";
-import glassCandleJars from "@/assets/primary-packaging/glass-candle-jars.jpg";
-import glassPerfumeBottle from "@/assets/primary-packaging/glass-perfume-bottle.jpg";
-import plasticCapsuleBottle from "@/assets/primary-packaging/plastic-capsule-bottle.jpg";
-import moisturizerJar from "@/assets/primary-packaging/moisturizer-jar.jpg";
-import plasticLotionBottle from "@/assets/primary-packaging/plastic-lotion-bottle.jpg";
-import glassCreamJars from "@/assets/primary-packaging/glass-cream-jars.jpg";
-import customPreRollTubes from "@/assets/primary-packaging/custom-pre-roll-tubes.jpg";
-import dropperBottles from "@/assets/primary-packaging/dropper-bottles.jpg";
-import jarsWithPump from "@/assets/primary-packaging/jars-with-pump.jpg";
-import heroImage from "@/assets/primary-packaging/paper-tubes-hero.png";
+import glassSerumBottle from "@/assets/primary-packaging/glass-serum-bottle-premium.webp";
+import plasticCleanserTube from "@/assets/primary-packaging/plastic-cleanser-tube-premium.webp";
+import plasticMistBottle from "@/assets/primary-packaging/plastic-mist-bottle-premium.webp";
+import glassRollOnBottle from "@/assets/primary-packaging/glass-roll-on-bottle-premium.webp";
+import plasticShampooBottle from "@/assets/primary-packaging/plastic-shampoo-bottle-premium.webp";
+import paperTubes from "@/assets/primary-packaging/paper-tubes-premium.webp";
+import glassCandleJars from "@/assets/primary-packaging/glass-candle-jars-premium.webp";
+import glassPerfumeBottle from "@/assets/primary-packaging/glass-perfume-bottle-premium.webp";
+import plasticCapsuleBottle from "@/assets/primary-packaging/plastic-capsule-bottle-premium.webp";
+import moisturizerJar from "@/assets/primary-packaging/moisturizer-jar-premium.webp";
+import plasticLotionBottle from "@/assets/primary-packaging/plastic-lotion-bottle-premium.webp";
+import glassCreamJars from "@/assets/primary-packaging/glass-cream-jars-premium.webp";
+import customPreRollTubes from "@/assets/primary-packaging/custom-pre-roll-tubes-premium.webp";
+import dropperBottles from "@/assets/primary-packaging/dropper-bottles-premium.webp";
+import jarsWithPump from "@/assets/primary-packaging/jars-with-pump-premium.webp";
+import heroImage from "@/assets/primary-packaging/paper-tubes-hero.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -119,7 +119,7 @@ const PaperTubes = () => {
                             </p>
                             <div className="pt-4 flex justify-center lg:justify-start">
                                 <div className="relative w-full max-w-[480px] h-[300px] overflow-hidden rounded-lg shadow-lg bg-muted flex items-center justify-center">
-                                    <img src={heroImage} alt="Paper Tubes" className="w-full h-full object-cover" />
+                                    <img src={heroImage} alt="Paper Tubes" className="w-full h-full object-cover" loading="lazy" />
                                 </div>
                             </div>
                         </div>
@@ -161,7 +161,7 @@ const PaperTubes = () => {
                                                         <img
                                                             src={product.image}
                                                             alt={product.name}
-                                                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                                         />
                                                     </div>
                                                     <div className="p-4 border-t border-border">

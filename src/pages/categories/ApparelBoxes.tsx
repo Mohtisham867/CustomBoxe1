@@ -13,26 +13,26 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import apparelBoxesHero from "@/assets/apparel-boxes-hero.png";
+import apparelBoxesHero from "@/assets/apparel-boxes/hero.webp";
 
 // Import professional product images
-import customShoeBoxes from "@/assets/apparel-products/custom-shoe-boxes.jpg";
-import cufflinkBoxes from "@/assets/apparel-products/cufflink-boxes.jpg";
-import tieBoxes from "@/assets/apparel-products/tie-boxes.jpg";
-import beltBoxes from "@/assets/apparel-products/belt-boxes.jpg";
-import clothingBoxes from "@/assets/apparel-products/clothing-boxes.jpg";
-import lingerieBoxes from "@/assets/apparel-products/lingerie-boxes.jpg";
-import underwearBoxes from "@/assets/apparel-products/underwear-boxes.jpg";
-import tshirtBoxes from "@/assets/apparel-products/tshirt-boxes.jpg";
-import socksBoxes from "@/assets/apparel-products/socks-boxes.jpg";
-import clothingHangTags from "@/assets/apparel-products/clothing-hang-tags.jpg";
-import hatShippingBoxes from "@/assets/apparel-products/hat-shipping-boxes.jpg";
-import sunglassesBoxes from "@/assets/apparel-products/sunglasses-boxes.jpg";
-import apparelGiftBoxes from "@/assets/apparel-products/apparel-gift-boxes.jpg";
-import hoodiePackaging from "@/assets/apparel-products/hoodie-packaging.jpg";
-import weddingDressBoxes from "@/assets/apparel-products/wedding-dress-boxes.jpg";
-import hatBoxes from "@/assets/apparel-products/hat-boxes.jpg";
-import luxuryApparelBoxes from "@/assets/apparel-products/luxury-apparel-boxes.jpg";
+import customShoeBoxes from "@/assets/apparel-boxes/custom-shoe-boxes.webp";
+import cufflinkBoxes from "@/assets/apparel-boxes/cufflink-boxes.webp";
+import tieBoxes from "@/assets/apparel-boxes/tie-boxes.webp";
+import beltBoxes from "@/assets/apparel-boxes/belt-boxes.webp";
+import clothingBoxes from "@/assets/apparel-boxes/clothing-boxes.webp";
+import lingerieBoxes from "@/assets/apparel-boxes/lingerie-boxes.webp";
+import underwearBoxes from "@/assets/apparel-boxes/underwear-boxes.webp";
+import tshirtBoxes from "@/assets/apparel-boxes/tshirt-boxes.webp";
+import socksBoxes from "@/assets/apparel-boxes/socks-boxes.webp";
+import clothingHangTags from "@/assets/apparel-boxes/clothing-hang-tags.webp";
+import hatShippingBoxes from "@/assets/apparel-boxes/hat-shipping-boxes.webp";
+import sunglassesBoxes from "@/assets/apparel-boxes/sunglasses-boxes.webp";
+import apparelGiftBoxes from "@/assets/apparel-boxes/apparel-gift-boxes.webp";
+import hoodiePackaging from "@/assets/apparel-boxes/hoodie-packaging.webp";
+import weddingDressBoxes from "@/assets/apparel-boxes/wedding-dress-boxes.webp";
+import hatBoxes from "@/assets/apparel-boxes/hat-boxes.webp";
+import luxuryApparelBoxes from "@/assets/apparel-boxes/luxury-apparel-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -105,7 +105,7 @@ const ApparelBoxes = () => {
                   <img
                     src={apparelBoxesHero}
                     alt="Custom Apparel Boxes Collection"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover" loading="lazy"
                   />
                 </div>
               </div>
@@ -134,11 +134,11 @@ const ApparelBoxes = () => {
                   className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                 >
                   <CardContent className="p-0">
-                    <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
+                    <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
                       />
                     </div>
                     <div className="p-4 border-t border-border">

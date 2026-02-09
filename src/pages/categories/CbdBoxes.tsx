@@ -14,32 +14,32 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/cbd-boxes-hero.png";
-import cbdCapsuleBoxes from "@/assets/cbd-products/custom-cbd-capsule-boxes.jpg";
-import cbdCreamBoxes from "@/assets/cbd-products/custom-cbd-cream-boxes.jpg";
-import cbdLotionBoxes from "@/assets/cbd-products/custom-cbd-lotion-boxes.jpg";
-import cbdOilBoxes from "@/assets/cbd-products/cbd-oil-boxes.jpg";
-import essentialOilBoxes from "@/assets/cbd-products/essential-oil-boxes.jpg";
-import cbdIsolateBoxes from "@/assets/cbd-products/custom-cbd-isolate-boxes.jpg";
-import cbdPodBoxes from "@/assets/cbd-products/custom-cbd-pod-boxes.jpg";
-import cbdLollipopBoxes from "@/assets/cbd-products/cbd-lollipop-boxes.jpg";
-import cbdGummiesBoxes from "@/assets/cbd-products/cbd-gummies-boxes.jpg";
-import delta8ThcBoxes from "@/assets/cbd-products/delta-8-thc-boxes.jpg";
-import cbdDisplayBoxes from "@/assets/cbd-products/cbd-display-boxes.jpg";
-import tinctureBoxes from "@/assets/cbd-products/tincture-boxes.jpg";
-import bluntBoxes from "@/assets/cbd-products/blunt-boxes.jpg";
-import cbdTinctureBoxes from "@/assets/cbd-products/cbd-tincture-boxes.jpg";
-import dropperBottleBoxes from "@/assets/cbd-products/dropper-bottle-boxes.jpg";
-import cbdChocolateBoxes from "@/assets/cbd-products/cbd-chocolate-boxes.jpg";
-import cbdMailerBoxes from "@/assets/cbd-products/cbd-mailer-boxes.jpg";
-import cbdHempOilBoxes from "@/assets/cbd-products/cbd-hemp-oil-boxes.jpg";
-import cbdSoapBoxes from "@/assets/cbd-products/cbd-soap-boxes.jpg";
-import delta9Packaging from "@/assets/cbd-products/delta-9-packaging.jpg";
-import cbdVapeBoxes from "@/assets/cbd-products/cbd-vape-boxes.jpg";
-import cbdPreRollBoxes from "@/assets/cbd-products/cbd-pre-roll-boxes.jpg";
-import concentratePackaging from "@/assets/cbd-products/concentrate-packaging.jpg";
-import cbdSubscriptionBoxes from "@/assets/cbd-products/cbd-subscription-boxes.jpg";
-import cbdBathBombBoxes from "@/assets/cbd-products/cbd-bath-bomb-boxes.jpg";
+import heroImage from "@/assets/cbd-boxes/hero.webp";
+import cbdCapsuleBoxes from "@/assets/cbd-boxes/custom-cbd-capsule-boxes.webp";
+import cbdCreamBoxes from "@/assets/cbd-boxes/custom-cbd-cream-boxes.webp";
+import cbdLotionBoxes from "@/assets/cbd-boxes/custom-cbd-lotion-boxes.webp";
+import cbdOilBoxes from "@/assets/cbd-boxes/cbd-oil-boxes.webp";
+import essentialOilBoxes from "@/assets/cbd-boxes/essential-oil-boxes.webp";
+import cbdIsolateBoxes from "@/assets/cbd-boxes/custom-cbd-isolate-boxes.webp";
+import cbdPodBoxes from "@/assets/cbd-boxes/custom-cbd-pod-boxes.webp";
+import cbdLollipopBoxes from "@/assets/cbd-boxes/cbd-lollipop-boxes.webp";
+import cbdGummiesBoxes from "@/assets/cbd-boxes/cbd-gummies-boxes.webp";
+import delta8ThcBoxes from "@/assets/cbd-boxes/delta-8-thc-boxes.webp";
+import cbdDisplayBoxes from "@/assets/cbd-boxes/cbd-display-boxes.webp";
+import tinctureBoxes from "@/assets/cbd-boxes/tincture-boxes.webp";
+import bluntBoxes from "@/assets/cbd-boxes/blunt-boxes.webp";
+import cbdTinctureBoxes from "@/assets/cbd-boxes/cbd-tincture-boxes.webp";
+import dropperBottleBoxes from "@/assets/cbd-boxes/dropper-bottle-boxes.webp";
+import cbdChocolateBoxes from "@/assets/cbd-boxes/cbd-chocolate-boxes.webp";
+import cbdMailerBoxes from "@/assets/cbd-boxes/cbd-mailer-boxes.webp";
+import cbdHempOilBoxes from "@/assets/cbd-boxes/cbd-hemp-oil-boxes.webp";
+import cbdSoapBoxes from "@/assets/cbd-boxes/cbd-soap-boxes.webp";
+import delta9Packaging from "@/assets/cbd-boxes/delta-9-packaging.webp";
+import cbdVapeBoxes from "@/assets/cbd-boxes/cbd-vape-boxes.webp";
+import cbdPreRollBoxes from "@/assets/cbd-boxes/cbd-pre-roll-boxes.webp";
+import concentratePackaging from "@/assets/cbd-boxes/concentrate-packaging.webp";
+import cbdSubscriptionBoxes from "@/assets/cbd-boxes/cbd-subscription-boxes.webp";
+import cbdBathBombBoxes from "@/assets/cbd-boxes/cbd-bath-bomb-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // Placeholder image for new products
@@ -150,7 +150,7 @@ const CbdBoxes = () => {
                                     <img
                                         src={heroImage}
                                         alt="Custom CBD Boxes"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -187,7 +187,7 @@ const CbdBoxes = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                                         />
                                     </div>
                                     <div className="p-4 border-t border-border">

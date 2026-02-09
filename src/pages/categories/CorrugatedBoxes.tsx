@@ -13,11 +13,11 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import corrugatedBoxesHero from "@/assets/corrugated-boxes-hero.png";
-import corrugatedBoxesWithLids from "@/assets/corrugated-boxes-with-lids.png";
-import corrugatedMailerBoxes from "@/assets/corrugated-mailer-boxes.png";
-import kraftCorrugatedBoxes from "@/assets/kraft-corrugated-boxes.png";
-import whiteCorrugatedBoxes from "@/assets/white-corrugated-boxes.png";
+import corrugatedBoxesHero from "@/assets/corrugated-boxes-hero.webp";
+import corrugatedBoxesWithLids from "@/assets/corrugated-boxes-with-lids.webp";
+import corrugatedMailerBoxes from "@/assets/corrugated-mailer-boxes.webp";
+import kraftCorrugatedBoxes from "@/assets/kraft-corrugated-boxes.webp";
+import whiteCorrugatedBoxes from "@/assets/white-corrugated-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 // Product list for dropdown
@@ -83,7 +83,7 @@ const CorrugatedBoxes = () => {
                                     <img
                                         src={corrugatedBoxesHero}
                                         alt="Custom Corrugated Boxes Hero"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -112,20 +112,18 @@ const CorrugatedBoxes = () => {
                                     className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
                                 >
                                     <CardContent className="p-0">
-                                        <div className="h-48 lg:h-72 w-full flex items-center justify-center bg-gray-50 rounded-t-lg overflow-hidden">
-                                            <div className="relative h-full w-full flex items-center justify-center">
-                                                {product.image ? (
-                                                    <img
-                                                        src={product.image}
-                                                        alt={product.name}
-                                                        className="h-full w-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
-                                                    />
-                                                ) : (
-                                                    <div className="w-full h-full flex items-center justify-center bg-gray-200">
-                                                        <span className="text-gray-400 text-xs">Image Placeholder</span>
-                                                    </div>
-                                                )}
-                                            </div>
+                                        <div className="h-48 lg:h-72 w-full bg-gray-50 rounded-t-lg overflow-hidden">
+                                            {product.image ? (
+                                                <img
+                                                    src={product.image}
+                                                    alt={product.name}
+                                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy"
+                                                />
+                                            ) : (
+                                                <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                                                    <span className="text-gray-400 text-xs">Image Placeholder</span>
+                                                </div>
+                                            )}
                                         </div>
                                         <div className="p-4 border-t border-border">
                                             <h3 className="font-semibold text-foreground text-sm mb-2">

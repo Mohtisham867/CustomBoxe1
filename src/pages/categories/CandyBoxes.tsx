@@ -14,16 +14,16 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/candy-boxes-hero.png";
-import gummyBoxes from "@/assets/candy-products/custom-gummy-boxes.jpg";
-import lollipopBoxes from "@/assets/candy-products/custom-lollipop-boxes.jpg";
-import hardCandyBoxes from "@/assets/candy-products/custom-hard-candy-boxes.jpg";
-import chocolateBoxes from "@/assets/candy-products/chocolate-boxes.jpg";
-import candyAppleBoxes from "@/assets/candy-products/candy-apple-boxes.jpg";
-import candyBoxesWindow from "@/assets/candy-products/candy-boxes-window.jpg";
-import christmasCandyBoxes from "@/assets/candy-products/christmas-candy-boxes.jpg";
-import mylarBagsCandies from "@/assets/candy-products/mylar-bags-candies.jpg";
-import candyDisplayBoxes from "@/assets/candy-products/candy-display-boxes.jpg";
+import heroImage from "@/assets/candy-boxes-hero.webp";
+import gummyBoxes from "@/assets/candy-products/custom-gummy-boxes.webp";
+import lollipopBoxes from "@/assets/candy-products/custom-lollipop-boxes.webp";
+import hardCandyBoxes from "@/assets/candy-products/custom-hard-candy-boxes.webp";
+import chocolateBoxes from "@/assets/candy-products/chocolate-boxes.webp";
+import candyAppleBoxes from "@/assets/candy-products/candy-apple-boxes.webp";
+import candyBoxesWindow from "@/assets/candy-products/candy-boxes-window.webp";
+import christmasCandyBoxes from "@/assets/candy-products/christmas-candy-boxes.webp";
+import mylarBagsCandies from "@/assets/candy-products/mylar-bags-candies.webp";
+import candyDisplayBoxes from "@/assets/candy-products/candy-display-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
@@ -84,7 +84,7 @@ const CandyBoxes = () => {
                 <img
                   src={heroImage}
                   alt="Custom Candy Boxes"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover" loading="lazy"
                 />
               </div>
             </div>
@@ -120,7 +120,7 @@ const CandyBoxes = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                      className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
                     />
                   </div>
                   <div className="p-4 border-t border-border">
