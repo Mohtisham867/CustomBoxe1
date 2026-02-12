@@ -151,7 +151,7 @@ export const Header = () => {
     "🏭 Your Trusted Manufacturing Partner for High-End Branded Packaging",
     "📦 Wide Range of Solutions: From Luxury Mailer Boxes to Specialized Pharma Packaging",
     "🌟 Exceptional Presentation: Elevate Your Brand with Our Professional Designs",
-    "🌍 Committed to Sustainability: 100% Eco-Friendly and Recyclable Materials",
+    "🌍 Committed to Sustainability: 100% Eco-Friendly and Recyclable Materialsw",
   ];
 
   const navItems = [
@@ -161,7 +161,7 @@ export const Header = () => {
     { label: "Mylar Bags", href: "/categories/custom-mylar-bags", hasDropdown: false },
     { label: "Primary Packaging", href: "/primary-packaging", hasDropdown: false },
     { label: "Packaging Hub", href: "/packaging-hub", hasDropdown: false },
-    { label: "Help & FAQ", href: "#faq", hasDropdown: false },
+    { label: "Help & FAQ", href: "/#faq", hasDropdown: false },
   ];
 
   const industryCategories = [
@@ -242,6 +242,7 @@ export const Header = () => {
               <div className="relative w-full search-container">
                 <Search className={`absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 z-10 transition-colors ${showDropdown ? 'text-primary' : 'text-muted-foreground'}`} />
                 <Input
+                  id="search-input"
                   type="text"
                   placeholder="Search for custom boxes..."
                   value={searchQuery}

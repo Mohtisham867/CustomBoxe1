@@ -13,7 +13,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import cosmeticHero from "@/assets/cosmetic-boxes/cosmetic hero.webp";
+import cosmeticHero from "@/assets/cosmetic-boxes/hero.webp";
 import customBeardOil from "@/assets/cosmetic-boxes/Custom Beard Oil Boxes.webp";
 import serumBoxes from "@/assets/cosmetic-boxes/Serum Boxes.webp";
 import hairColorBoxes from "@/assets/cosmetic-boxes/hair-color-boxes.webp";
@@ -125,78 +125,78 @@ const CosmeticBoxes = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-foreground">
                 Cosmetic Boxes
               </h1>
-              <p className="text-[16px] text-muted-foreground leading-relaxed line-clamp-4">
+              <p className="text-[16px] text-muted-foreground mb-8 leading-relaxed line-clamp-4">
                 High-quality, stylish, and protective custom packaging for makeup, skincare, and beauty products  thoughtfully designed to enhance brand identity, protect products with care, and deliver a luxurious unboxing experience that attracts customers both in-store and online
               </p>
               <div className="pt-4 lg:pt-0">
                 <div className="relative w-full max-w-[480px] h-[300px] overflow-hidden rounded-lg shadow-lg bg-muted mx-auto lg:mx-0">
-                <img
-                  src={cosmeticHero}
-                  alt="Premium Cosmetic Boxes Collection"
-                  className="w-full h-full object-cover" loading="lazy"
-                />
+                  <img
+                    src={cosmeticHero}
+                    alt="Premium Cosmetic Boxes Collection"
+                    className="w-full h-full object-cover" loading="lazy"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Right Form */}
-          <div className="flex justify-end">
-            <InstantQuoteFormCompact customProducts={productOptions} />
+            {/* Right Form */}
+            <div className="flex justify-end">
+              <InstantQuoteFormCompact customProducts={productOptions} />
+            </div>
           </div>
         </div>
-    </div>
       </section >
 
-  {/* Related Products Section */ }
-  < section className = "py-16 bg-accent/20" >
-    <div className="container mx-auto px-4">
-      <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-          Cosmetic Packaging Options
-        </h2>
-        <p className="text-lg text-muted-foreground max-w-3xl">
-          Explore our comprehensive selection of cosmetic packaging solutions.
-        </p>
-      </div>
+      {/* Related Products Section */}
+      < section className="py-16 bg-accent/20" >
+        <div className="container mx-auto px-4">
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Cosmetic Packaging Options
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl">
+              Explore our comprehensive selection of cosmetic packaging solutions.
+            </p>
+          </div>
 
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-        {relatedProducts.map((product, index) => (
-          <Card
-            key={index}
-            className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
-          >
-            <CardContent className="p-0">
-              <div className="w-full aspect-square overflow-hidden">
-                {product.image ? (
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-muted flex items-center justify-center">
-                    <p className="text-muted-foreground text-xs">Image placeholder</p>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {relatedProducts.map((product, index) => (
+              <Card
+                key={index}
+                className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
+              >
+                <CardContent className="p-0">
+                  <div className="w-full aspect-square overflow-hidden">
+                    {product.image ? (
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" loading="lazy"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-muted flex items-center justify-center">
+                        <p className="text-muted-foreground text-xs">Image placeholder</p>
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-              <div className="p-4 border-t border-border">
-                <h3 className="font-semibold text-foreground text-sm mb-2">
-                  {product.name}
-                </h3>
-                <p className="text-xs text-muted-foreground line-clamp-2">
-                  {product.description}
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-    </div>
+                  <div className="p-4 border-t border-border">
+                    <h3 className="font-semibold text-foreground text-sm mb-2">
+                      {product.name}
+                    </h3>
+                    <p className="text-xs text-muted-foreground line-clamp-2">
+                      {product.description}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
       </section >
 
-  {/* Brand Rating */ }
+      {/* Brand Rating */}
 
-  < BrandRating />
+      < BrandRating />
 
       <QuoteForm />
 

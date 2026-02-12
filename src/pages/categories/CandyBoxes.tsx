@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/candy-boxes-hero.webp";
+import heroImage from "@/assets/candy-products/Custom Candy Boxes hero.png";
 import gummyBoxes from "@/assets/candy-products/custom-gummy-boxes.webp";
 import lollipopBoxes from "@/assets/candy-products/custom-lollipop-boxes.webp";
 import hardCandyBoxes from "@/assets/candy-products/custom-hard-candy-boxes.webp";
@@ -71,26 +71,29 @@ const CandyBoxes = () => {
       {/* Hero Split Section */}
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-16 items-start">
             {/* Left Content */}
-            <div className="flex-1 space-y-6 lg:space-y-0">
+            <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 Custom Candy Boxes
               </h1>
-              <p className="text-[16px] text-muted-foreground mb-8 leading-relaxed" style={{ display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                Make your sweet treats irresistible with our custom candy packaging solutions. From colorful gummy boxes to elegant chocolate packaging, we create unique and attractive designs that protect your confections while captivating customers. Perfect for retail displays, gifts, and special occasions.
+              <p className="text-[16px] text-muted-foreground leading-relaxed line-clamp-4">
+                Make your sweet treats irresistible with our custom candy packaging solutions.
+                From colorful gummy boxes to elegant chocolate packaging, we create unique and attractive designs that protect your confections while captivating customers. Perfect for retail displays, gifts, and special occasions.
               </p>
-              <div className="relative w-full max-w-[480px] h-[300px] overflow-hidden rounded-lg shadow-lg bg-muted mx-auto lg:mx-0">
-                <img
-                  src={heroImage}
-                  alt="Custom Candy Boxes"
-                  className="w-full h-full object-cover" loading="lazy"
-                />
+              <div className="pt-4 lg:pt-0">
+                <div className="relative w-full max-w-[480px] h-[300px] overflow-hidden rounded-lg shadow-lg bg-muted mx-auto lg:mx-0">
+                  <img
+                    src={heroImage}
+                    alt="Custom Candy Boxes"
+                    className="w-full h-full object-cover" loading="lazy"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Right Form */}
-            <div className="flex-shrink-0">
+            <div className="flex justify-end">
               <InstantQuoteFormCompact />
             </div>
           </div>
