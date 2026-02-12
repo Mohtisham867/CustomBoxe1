@@ -14,18 +14,18 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/pharma-packaging-hero.webp";
+import heroImage from "@/assets/pharma-packaging/pharma-packaging-hero.webp";
 
 // Specific images
-import pillBoxes from "@/assets/products/pill-boxes.webp";
-import dispenserBoxes from "@/assets/products/dispenser-boxes.webp";
-import dietarySupplementPackaging from "@/assets/dietary_supplement_packaging.webp"; // Assuming this exists or I'll use medicine boxes fallback if build fails, actually I recalled seeing it in search
-import medicineBoxes from "@/assets/products/medicine-boxes.webp";
-import oliveOilBoxes from "@/assets/products/olive-oil-boxes.webp";
-import condomBoxes from "@/assets/products/condom-boxes.webp";
-import glovesBoxes from "@/assets/products/gloves-boxes.webp";
-// Substite for Bandage Boxes due to quota limit -> reusing medicine boxes
-import bandageBoxes from "@/assets/products/medicine-boxes.webp";
+import pillBoxes from "@/assets/pharma-packaging/pill-boxes.webp";
+import dispenserBoxes from "@/assets/pharma-packaging/dispenser-boxes.webp";
+import dietarySupplementPackaging from "@/assets/pharma-packaging/dietary_supplement_packaging.webp";
+import medicineBoxes from "@/assets/pharma-packaging/medicine-boxes.webp";
+import oliveOilBoxes from "@/assets/pharma-packaging/olive-oil-boxes.webp";
+import condomBoxes from "@/assets/pharma-packaging/condom-boxes.webp";
+import glovesBoxes from "@/assets/pharma-packaging/gloves-boxes.webp";
+// Substitute for Bandage Boxes - reusing medicine boxes
+import bandageBoxes from "@/assets/pharma-packaging/medicine-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [

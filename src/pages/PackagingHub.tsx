@@ -27,7 +27,7 @@ import giftBoxes from "@/assets/gift-boxes/gift hero.webp";
 import holographicBoxes from "@/assets/holographic-boxes-hero.webp";
 import preRollBoxes from "@/assets/pre-roll-boxes/hero (pre).webp";
 import displayBoxes from "@/assets/display-boxes/display-boxes-hero.webp";
-import pharmaPackaging from "@/assets/pharma-packaging-hero.webp";
+import pharmaPackaging from "@/assets/pharma-packaging/pharma-packaging-hero.webp";
 import fragranceBoxes from "@/assets/fragrance-boxes-hero.webp";
 import bakeryBoxes from "@/assets/bakery-products/Hero.webp";
 import retailBoxes from "@/assets/retail-boxes/hero.webp";

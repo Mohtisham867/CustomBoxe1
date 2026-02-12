@@ -147,11 +147,11 @@ export const Header = () => {
   };
 
   const promoOffers = [
-    "🎁 Limited Time Offer: Get 20% OFF on orders over 500 boxes | Free Shipping Nationwide",
-    "✨ New Customer Special: First Order Gets 15% OFF + Free Design Consultation",
-    "📦 Bulk Order Bonus: Order 1000+ boxes and get FREE Custom Printing",
-    "🚚 Express Delivery Available: Get your boxes in 48 hours",
-    "💚 Eco-Friendly Options: 100% Recyclable Materials Available Now",
+    "✨ Premium Quality Custom Packaging: Crafted for Excellence and Durability",
+    "🏭 Your Trusted Manufacturing Partner for High-End Branded Packaging",
+    "📦 Wide Range of Solutions: From Luxury Mailer Boxes to Specialized Pharma Packaging",
+    "🌟 Exceptional Presentation: Elevate Your Brand with Our Professional Designs",
+    "🌍 Committed to Sustainability: 100% Eco-Friendly and Recyclable Materials",
   ];
 
   const navItems = [
@@ -233,7 +233,7 @@ export const Header = () => {
           <div className="flex items-center justify-between h-20 gap-4">
             {/* Logo */}
             <a href="/" className="flex items-center group flex-shrink-0 cursor-pointer">
-              <img src={logo} alt="CustomPackMakers" className="h-12 md:h-15 w-auto object-contain mr-4 transition-transform " loading="lazy" />
+              <img src={logo} alt="CustomPackMakers" className="h-12 md:h-16 w-auto object-contain mr-4 transition-transform " loading="lazy" />
             </a>
 
             {/* Search Bar - Desktop */}

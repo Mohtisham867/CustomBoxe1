@@ -17,7 +17,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <a href="/" className="flex items-center cursor-pointer">
-              <img src={logo} alt="CustomPackMakers" className="h-10 w-auto object-contain transition-transform hover:scale-105" loading="lazy" />
+              <img src={logo} alt="CustomPackMakers" className="h-16 w-auto object-contain transition-transform " loading="lazy" />
             </a>
             <p className="text-muted-foreground text-sm leading-relaxed">
               CustomPackMakers provides premium packaging solutions to elevate your brand. We combine innovative designs with high-quality materials for every box. Your vision, our packaging—delivering excellence across every shipment..
