@@ -18,7 +18,7 @@ import heroImage from "@/assets/stationery-boxes/stationery-boxes-hero.webp";
 
 // Product images
 import businessCards from "@/assets/stationery-boxes/custom-business-cards.png";
-import documentFolder from "@/assets/stationery-boxes/Document Folder.png";
+import documentFolder from "@/assets/stationery-boxes/document-folder.png";
 import penGiftBoxes from "@/assets/stationery-boxes/pen-gift-box.png";
 import mailingEnvelopes from "@/assets/stationery-boxes/mailing-envelopes.webp";
 import invitationBoxes from "@/assets/stationery-boxes/invitation-boxes.webp";
