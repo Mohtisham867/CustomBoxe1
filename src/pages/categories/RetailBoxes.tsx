@@ -19,7 +19,7 @@ import heroImage from "@/assets/retail-boxes/retail hero.webp";
 // Specific images maps
 import businessCards from "@/assets/retail-boxes/Custom Business Cards.webp";
 import matchBoxes from "@/assets/retail-boxes/Custom Match Boxes.webp";
-import supplementPackaging from "@/assets/retail-boxes/Dietary Supplement Packaging.webp";
+import supplementPackaging from "@/assets/retail-boxes/dietary_supplement_packaging.webp";
 import businessLabels from "@/assets/retail-boxes/Business Labels.webp";
 import boxesWithLogo from "@/assets/retail-boxes/Custom Boxes with Logo.webp";
 import clamshellBoxes from "@/assets/retail-boxes/Clamshell Boxes.webp";

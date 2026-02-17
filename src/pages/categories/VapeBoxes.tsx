@@ -14,19 +14,19 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import vapeBoxesHero from "@/assets/vape-boxes-hero.webp";
-import customECigaretteBoxes from "@/assets/custom-e-cigarette-boxes.webp";
-import customVapeCartridgeBoxes from "@/assets/custom-vape-cartridge-boxes.webp";
-import vapePenBoxes from "@/assets/vape-pen-boxes.webp";
-import cannabisVapePackaging from "@/assets/cannabis-vape-packaging.webp";
-import oneMlVapeCartridgeBoxes from "@/assets/one-ml-vape-cartridge-boxes.webp";
-import vapeDisplayBoxes from "@/assets/vape-display-boxes.webp";
-import disposableVapeBoxes from "@/assets/disposable-vape-boxes.webp";
-import emptyVapeCartridgeBoxes from "@/assets/empty-vape-cartridge-boxes.webp";
-import dankVapePackaging from "@/assets/dank-vape-packaging.webp";
-import cbdVapeBoxes from "@/assets/cbd-vape-boxes.webp";
-import vapeJuiceBoxes from "@/assets/vape-juice-boxes.webp";
-import juulPackaging from "@/assets/juul-packaging.webp";
+import vapeBoxesHero from "@/assets/vape-boxes/vape-boxes-hero.webp";
+import customECigaretteBoxes from "@/assets/vape-boxes/custom-e-cigarette-boxes.webp";
+import customVapeCartridgeBoxes from "@/assets/vape-boxes/custom-vape-cartridge-boxes.webp";
+import vapePenBoxes from "@/assets/vape-boxes/vape-pen-boxes.webp";
+import cannabisVapePackaging from "@/assets/vape-boxes/Cannabis Vape Packaging.png";
+import oneMlVapeCartridgeBoxes from "@/assets/vape-boxes/1ml Vape Cartridge Boxes.png";
+import vapeDisplayBoxes from "@/assets/vape-boxes/Vape Display.png";
+import disposableVapeBoxes from "@/assets/vape-boxes/disposable-vape-boxes.webp";
+import emptyVapeCartridgeBoxes from "@/assets/vape-boxes/empty-vape-cartridge-boxes.webp";
+import dankVapePackaging from "@/assets/vape-boxes/dank-vape-packaging.webp";
+import cbdVapeBoxes from "@/assets/vape-boxes/cbd-vape-boxes.webp";
+import vapeJuiceBoxes from "@/assets/vape-boxes/vape-juice-boxes.webp";
+import juulPackaging from "@/assets/vape-boxes/juul-packaging.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [

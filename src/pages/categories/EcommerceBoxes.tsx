@@ -16,11 +16,11 @@ import { Link } from "react-router-dom";
 
 
 import heroImage from "@/assets/e-commerce/E-Commerce hero.webp";
-import mailerBoxes from "@/assets/e-commerce/mailer-boxes.webp";
-import subscriptionBoxes from "@/assets/e-commerce/subscription-boxes.webp";
+import mailerBoxes from "@/assets/e-commerce/Mailer box.png";
+import subscriptionBoxes from "@/assets/e-commerce/Subscription boxes.png";
 import shippingBoxes from "@/assets/e-commerce/shipping-boxes.webp";
-import productBoxes from "@/assets/e-commerce/product-boxes.webp";
-import corrugatedBoxes from "@/assets/e-commerce/shipping-boxes.webp"; // Reusing shipping boxes as they are corrugated
+import ecommerceProductBoxes from "@/assets/e-commerce/product-boxes.png";
+import corrugatedBoxes from "@/assets/e-commerce/Corrugated.png";
 import insertsDividers from "@/assets/e-commerce/inserts-dividers.webp";
 import { SEOContent } from "@/components/SEOContent";
 
@@ -28,7 +28,7 @@ const relatedProducts = [
     { name: "Custom Mailer Boxes", image: mailerBoxes, description: "Durable and stylish mailers for brand impact featuring self-locking tabs and premium print surfaces" },
     { name: "Subscription Boxes", image: subscriptionBoxes, description: "Curated packaging experiences for subscribers designed for recurring transit and premium brand unboxing" },
     { name: "Shipping Boxes", image: shippingBoxes, description: "Heavy-duty protection for transit utilizing reinforced corrugated board for maximum product security" },
-    { name: "E-commerce Product Boxes", image: productBoxes, description: "Versatile retail boxes for various products featuring high-definition graphics and secure closures" },
+    { name: "E-commerce Product Boxes", image: ecommerceProductBoxes, description: "Versatile retail boxes for various products featuring high-definition graphics and secure closures" },
     { name: "Corrugated Boxes", image: corrugatedBoxes, description: "Strong and lightweight corrugated solutions engineered for superior crush resistance during shipping" },
     { name: "Custom Inserts & Dividers", image: insertsDividers, description: "Organize and protect items inside the box with custom-fitted compartments for professional delivery" },
 ];

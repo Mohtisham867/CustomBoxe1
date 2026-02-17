@@ -21,7 +21,7 @@ import christmasPaperBags from "@/assets/custom-paper-bags/christmas-paper-bags.
 import christmasGiftBags from "@/assets/custom-paper-bags/christmas-gift-bags.webp";
 import customBrownPaperBags from "@/assets/custom-paper-bags/custom-brown-paper-bags.webp";
 import paperShoppingBags from "@/assets/custom-paper-bags/paper-shopping-bags.webp";
-import whitePaperBags from "@/assets/custom-paper-bags/white-paper-bags.webp";
+import whitePaperBags from "@/assets/custom-paper-bags/white paper bags.webp";
 import paperGiftBags from "@/assets/custom-paper-bags/paper-gift-bags.webp";
 import paperLunchBags from "@/assets/custom-paper-bags/paper-lunch-bags.webp";
 import friesBag from "@/assets/custom-paper-bags/fries-bag.webp";

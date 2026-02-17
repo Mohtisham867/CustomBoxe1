@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 import apparelBoxesHero from "@/assets/apparel-boxes/Apparel boxe hero.png";
 
 // Import professional product images
-import customShoeBoxes from "@/assets/apparel-boxes/custom-shoe-boxes.jpg";
+import customShoeBoxes from "@/assets/apparel-boxes/custom-shoe-boxes.webp";
 import cufflinkBoxes from "@/assets/apparel-boxes/cufflink-boxes.webp";
 import tieBoxes from "@/assets/apparel-boxes/tie-boxes.webp";
 import beltBoxes from "@/assets/apparel-boxes/belt-boxes.webp";

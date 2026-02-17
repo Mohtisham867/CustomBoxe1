@@ -14,12 +14,12 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/cannabis-packaging/hero.webp";
-import cannabisTinctureBoxes from "@/assets/cannabis-packaging/tincture-boxes.webp";
-import cannabisVapePackaging from "@/assets/cannabis-packaging/vape-packaging.webp";
-import cannabisSeedPackaging from "@/assets/cannabis-packaging/seed-packaging.webp";
-import cannabisCigaretteBoxes from "@/assets/cannabis-packaging/cigarette-boxes.webp";
+import cannabisTinctureBoxes from "@/assets/cannabis-packaging/tincture-boxes.png";
+import cannabisVapePackaging from "@/assets/cannabis-packaging/vape-packaging.png";
+import cannabisSeedPackaging from "@/assets/cannabis-packaging/seed-packaging.png";
+import cannabisCigaretteBoxes from "@/assets/cannabis-packaging/Cannabis Cigarette Boxes.png";
 import cannabisMylarBags from "@/assets/cannabis-packaging/mylar-bags.webp";
-import cannabisFlowerPackaging from "@/assets/cannabis-packaging/flower-packaging.webp";
+import cannabisFlowerPackaging from "@/assets/cannabis-packaging/flower-packaging.png";
 import cannabisCartridgePackaging from "@/assets/marijuana-packaging/cartridge-packaging.webp";
 import { SEOContent } from "@/components/SEOContent";
 

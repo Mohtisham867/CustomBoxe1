@@ -14,17 +14,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/custom-hemp-boxes-hero.webp";
-import hempPaperBoxes from "@/assets/cbd-boxes/custom-cbd-isolate-boxes.webp";
-import hempShippingBoxes from "@/assets/hemp-shipping-boxes.webp";
-import hempPreRollBoxes from "@/assets/cannabis-packaging/cigarette-boxes.webp";
-import hempOilBoxes from "@/assets/cbd-boxes/cbd-hemp-oil-boxes.webp";
-import hempGiftBoxes from "@/assets/apparel-boxes/apparel-gift-boxes.webp";
-import hempCardboardBoxes from "@/assets/box-shapes/mailer-boxes.webp";
-import hempCigaretteBoxes from "@/assets/cigarette-boxes/hemp-cigarette-boxes.webp";
-import eLiquidBoxes from "@/assets/e-liquid-boxes.webp";
-import hempTeaBags from "@/assets/beverage-boxes/tea-boxes.webp";
-import cbdHempOilBoxes from "@/assets/cbd-boxes/cbd-oil-boxes.webp"; // Reusing cbd-oil-boxes
+import heroImage from "@/assets/hemp-boxes/custom-hemp-boxes-hero.webp";
+import hempPaperBoxes from "@/assets/hemp-boxes/custom-cbd-isolate-boxes.webp";
+import hempShippingBoxes from "@/assets/hemp-boxes/hemp-shipping-boxes.webp";
+import hempPreRollBoxes from "@/assets/hemp-boxes/Hemp Pre Roll Boxes.webp";
+import hempOilBoxes from "@/assets/hemp-boxes/Hemp Oil Boxes.webp";
+import hempGiftBoxes from "@/assets/hemp-boxes/apparel-gift-boxes.webp";
+import hempCardboardBoxes from "@/assets/hemp-boxes/Hemp Cardboard Boxes.webp";
+import hempCigaretteBoxes from "@/assets/hemp-boxes/hemp-cigarette-boxes.webp";
+import eLiquidBoxes from "@/assets/hemp-boxes/e-liquid-boxes.webp";
+import hempTeaBags from "@/assets/hemp-boxes/tea-boxes.webp";
+import cbdHempOilBoxes from "@/assets/hemp-boxes/cbd-oil-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [

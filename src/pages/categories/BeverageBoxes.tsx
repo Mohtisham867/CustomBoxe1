@@ -18,16 +18,16 @@ import { Link } from "react-router-dom";
 import beverageHeroImage from "@/assets/beverage-boxes/hero.webp";
 
 // Import beverage product images
-import coffeePackaging from "@/assets/beverage-boxes/coffee-packaging.webp";
+import coffeePackaging from "@/assets/beverage-boxes/Coffee packaging.png";
 import teaBoxes from "@/assets/beverage-boxes/tea-boxes.webp";
-import wineBoxes from "@/assets/beverage-boxes/wine-boxes.webp";
+import wineBoxes from "@/assets/beverage-boxes/Wine boxes.png";
 import beerPackaging from "@/assets/beverage-boxes/beer-packaging.webp";
 import juiceBoxes from "@/assets/beverage-boxes/juice-boxes.webp";
 import sodaPackaging from "@/assets/beverage-boxes/soda-packaging.webp";
 import energyDrinkBoxes from "@/assets/beverage-boxes/energy-drink-boxes.webp";
 import waterBottlePackaging from "@/assets/beverage-boxes/water-bottle-packaging.webp";
 import milkPackaging from "@/assets/beverage-boxes/milk-packaging.webp";
-import smoothiePackaging from "@/assets/beverage-boxes/smoothie-packaging.webp";
+import smoothiePackaging from "@/assets/beverage-boxes/smoothie-packaging.png";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [

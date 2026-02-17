@@ -25,7 +25,7 @@ import oliveOilBoxes from "@/assets/pharma-packaging/olive-oil-boxes.webp";
 import condomBoxes from "@/assets/pharma-packaging/condom-boxes.webp";
 import glovesBoxes from "@/assets/pharma-packaging/gloves-boxes.webp";
 // Substitute for Bandage Boxes - reusing medicine boxes
-import bandageBoxes from "@/assets/pharma-packaging/medicine-boxes.webp";
+import bandageBoxes from "@/assets/pharma-packaging/Bandage Boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [

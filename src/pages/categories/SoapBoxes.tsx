@@ -25,7 +25,7 @@ import squareSoapBoxes from "@/assets/soap-boxes/square-soap-boxes.webp";
 import soapBarBoxes from "@/assets/soap-boxes/custom-soap-bar-boxes.webp";
 import luxurySoapPackaging from "@/assets/soap-boxes/luxury-soap-packaging.webp";
 import soapSleeves from "@/assets/soap-boxes/soap-sleeves.webp";
-import soapBarLabels from "@/assets/soap-boxes/soap-sleeves.webp"; // Placeholder (Quota Limit)
+import soapBarLabels from "@/assets/soap-boxes/Soap Bar Labels.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [

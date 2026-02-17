@@ -15,18 +15,18 @@ import {
 import { Link } from "react-router-dom";
 
 // Images
-import teaCoffeeHero from "@/assets/tea-coffee-cups-hero.webp";
-import customTeaBoxes from "@/assets/custom-tea-boxes.webp";
-import customPrintedCoffee from "@/assets/custom-printed-coffee-packaging.webp";
-import coffeeSleeves from "@/assets/coffee-sleeves.webp";
-import coffeeCupsLids from "@/assets/coffee-cups-with-lids.webp";
-import disposableCoffeeCups from "@/assets/disposable-coffee-cups.webp";
-import paperCoffeeCups from "@/assets/paper-coffee-cups.webp";
-import toGoCoffeeCups from "@/assets/to-go-coffee-cups.webp";
-import cuteCoffeeCups from "@/assets/cute-coffee-cups.webp";
-import compostableCoffeeCups from "@/assets/compostable-coffee-cups.webp";
-import doubleWallCoffeeCups from "@/assets/double-wall-coffee-cups.webp";
-import restaurantCoffeeCups from "@/assets/restaurant-coffee-cups.webp";
+import teaCoffeeHero from "@/assets/tea-coffee-cups/tea-coffee-cups-hero.webp";
+import customTeaBoxes from "@/assets/tea-coffee-cups/custom-tea-boxes.webp";
+import customPrintedCoffee from "@/assets/tea-coffee-cups/custom-printed-coffee-packaging.webp";
+import coffeeSleeves from "@/assets/tea-coffee-cups/coffee-sleeves.webp";
+import coffeeCupsLids from "@/assets/tea-coffee-cups/coffee-cups-with-lids.webp";
+import disposableCoffeeCups from "@/assets/tea-coffee-cups/Disposable Coffee Cups.png";
+import paperCoffeeCups from "@/assets/tea-coffee-cups/paper-coffee-cups.webp";
+import toGoCoffeeCups from "@/assets/tea-coffee-cups/to-go-coffee-cups.webp";
+import cuteCoffeeCups from "@/assets/tea-coffee-cups/Cute Coffee Cups.png";
+import compostableCoffeeCups from "@/assets/tea-coffee-cups/compostable-coffee-cups.webp";
+import doubleWallCoffeeCups from "@/assets/tea-coffee-cups/Double wall cofee cups.png";
+import restaurantCoffeeCups from "@/assets/tea-coffee-cups/Restaurant Coffee Cups.png";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [

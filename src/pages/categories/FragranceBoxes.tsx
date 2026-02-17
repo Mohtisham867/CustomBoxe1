@@ -14,13 +14,13 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import heroImage from "@/assets/fragrance-boxes-hero.webp";
+import heroImage from "@/assets/fragrance-boxes/hero.webp";
 
 // Specific images
-import customPerfumeBoxes from "@/assets/custom_perfume_boxes.webp";
-import perfumeSubscriptionBoxes from "@/assets/perfume_subscription_boxes.webp";
-import luxuryPerfumePackaging from "@/assets/luxury_perfume_packaging.webp";
-import incenseBoxes from "@/assets/incense_boxes.webp";
+import customPerfumeBoxes from "@/assets/fragrance-boxes/custom-perfume-boxes.webp";
+import perfumeSubscriptionBoxes from "@/assets/fragrance-boxes/perfume-subscription-boxes.webp";
+import luxuryPerfumePackaging from "@/assets/fragrance-boxes/luxury-perfume-packaging.webp";
+import incenseBoxes from "@/assets/fragrance-boxes/incense-boxes.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [

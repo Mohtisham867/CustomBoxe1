@@ -15,13 +15,13 @@ import {
 import { Link } from "react-router-dom";
 
 // Import hero image
-import candleHeroImage from "@/assets/candle-boxes-hero.webp";
+import candleHeroImage from "@/assets/candle-products/Candle Boxes hero.webp";
 
 // Import candle product images
-import candleDisplayBoxes from "@/assets/candle-products/candle-display-boxes.webp";
-import candleJarBoxes from "@/assets/candle-products/candle-jar-boxes.webp";
-import twoPieceCandleBoxes from "@/assets/candle-products/two-piece-candle-boxes.webp";
-import candleShippingBoxes from "@/assets/candle-products/candle-shipping-boxes.webp";
+import candleDisplayBoxes from "@/assets/candle-products/Custom Candle Display Boxes.webp";
+import candleJarBoxes from "@/assets/candle-products/Custom Candle Jar Boxes.webp";
+import twoPieceCandleBoxes from "@/assets/candle-products/Two Piece Candle Boxes.webp";
+import candleShippingBoxes from "@/assets/candle-products/Candle Shipping Boxes.webp";
 import taperCandleBoxes from "@/assets/candle-products/taper-candle-boxes.webp";
 import candleBoxesInserts from "@/assets/candle-products/candle-boxes-inserts.webp";
 import candleLabels from "@/assets/candle-products/candle-labels.webp";
@@ -29,8 +29,8 @@ import candleBoxesWindow from "@/assets/candle-products/candle-boxes-window.webp
 import waxMeltPackaging from "@/assets/candle-products/wax-melt-packaging.webp";
 import candleSubscriptionBoxes from "@/assets/candle-products/candle-subscription-boxes.webp";
 import luxuryCandleBoxes from "@/assets/candle-products/luxury-candle-boxes.webp";
-import wishesCandleBoxes from "@/assets/candle-products/16-wishes-candle-boxes.webp";
-import candleDustCovers from "@/assets/candle-products/candle-dust-covers.webp";
+import wishesCandleBoxes from "@/assets/candle-products/16 Wishes Candle Boxes.webp";
+import candleDustCovers from "@/assets/candle-products/Candle Dust Covers.webp";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [

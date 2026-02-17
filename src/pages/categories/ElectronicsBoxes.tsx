@@ -19,13 +19,13 @@ import heroImage from "../../assets/electronics-boxes/electronics-boxes-hero.web
 // Specific images
 import hairDryerBoxes from "../../assets/electronics-boxes/hair-dryer-packaging.webp";
 import chargerBoxes from "@/assets/charger_kabel_packaging.webp";
-import batteryBoxes from "../../assets/electronics-boxes/battery-packaging.webp";
+import batteryBoxes from "../../assets/electronics-boxes/battery-packaging.jpeg";
 import cdJackets from "../../assets/electronics-boxes/cd-jackets.webp";
 import cdCovers from "../../assets/electronics-boxes/cd-covers.webp";
 import cameraPackaging from "../../assets/electronics-boxes/camera-packaging.webp";
-import phoneBoxes from "../../assets/electronics-boxes/phone-boxes.webp";
-import headphonePackaging from "../../assets/electronics-boxes/headphone-packaging.webp";
-import softwareBoxes from "../../assets/electronics-boxes/software-boxes.webp";
+import phoneBoxes from "../../assets/electronics-boxes/Phone Boxes.png";
+import headphonePackaging from "../../assets/electronics-boxes/Headphone Packaging.png";
+import softwareBoxes from "../../assets/electronics-boxes/Software Boxes.png";
 
 // General shapes mapping
 

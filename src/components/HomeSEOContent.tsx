@@ -1,7 +1,7 @@
 
 export const HomeSEOContent = () => {
     return (
-        <section className="py-24 px-[10px] bg-white border-t border-slate-100">
+        <section className="py-24 px-[10px] bg-cyan-50 border-t border-slate-100">
             <div className="max-w-7xl mx-auto text-left">
 
                 {/* Main Heading Outside the Box */}
@@ -10,7 +10,7 @@ export const HomeSEOContent = () => {
                 </h2>
 
                 {/* Scrollable Content Box - Visible Scrollbar */}
-                <div className="h-[500px] overflow-y-auto border border-gray-200 bg-gray-50/50 p-8 rounded-lg shadow-sm
+                <div className="h-[550px] overflow-y-auto border border-gray-200 bg-white p-8 rounded-lg shadow-sm
                         scrollbar-thin scrollbar-thumb-primary scrollbar-track-gray-100
                         [&::-webkit-scrollbar]:w-2
                         [&::-webkit-scrollbar-track]:bg-gray-100

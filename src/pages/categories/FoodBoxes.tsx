@@ -21,7 +21,7 @@ import chineseTakeout from "@/assets/food-boxes/chinese-takeout-box.webp";
 import donutBoxes from "@/assets/food-boxes/donut-boxes.webp";
 import popcornBoxes from "@/assets/food-boxes/popcorn-boxes.webp";
 import dietarySupplements from "@/assets/food-boxes/dietary-supplements.webp";
-import pizzaSliceBoxes from "@/assets/food-boxes/pizza-slice-boxes.webp";
+import pizzaSliceBoxes from "@/assets/food-boxes/Custom Pizza Slice Boxes.webp";
 import paperFoodBags from "@/assets/food-boxes/paper-food-bags.webp";
 import paperFoodTrays from "@/assets/food-boxes/paper-food-trays.webp";
 import miniCerealBoxes from "@/assets/food-boxes/mini-cereal-boxes.webp";

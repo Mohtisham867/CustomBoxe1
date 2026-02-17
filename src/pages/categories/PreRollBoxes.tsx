@@ -21,7 +21,7 @@ import hempPreRollBoxes from "@/assets/pre-roll-boxes/hemp-pre-roll-boxes.webp";
 import preRollDisplayBoxes from "@/assets/pre-roll-boxes/custom-pre-roll-display-boxes.webp";
 import preRollLabels from "@/assets/pre-roll-boxes/pre-roll-packaging-labels.webp";
 import luxuryPreRollPackaging from "@/assets/pre-roll-boxes/luxury-pre-roll-packaging.webp";
-import preRollConePackaging from "@/assets/pre-roll-boxes/custom-pre-roll-cone-packaging.webp";
+import preRollConePackaging from "@/assets/pre-roll-boxes/custom-pre-roll-cone-packaging.jpeg";
 import preRollJointBoxes from "@/assets/pre-roll-boxes/pre-roll-joint-boxes.webp";
 import childResistantPreRollBox from "@/assets/pre-roll-boxes/child-resistant-pre-roll-box.webp";
 import { SEOContent } from "@/components/SEOContent";

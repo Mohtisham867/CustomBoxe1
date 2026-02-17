@@ -13,7 +13,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import automotiveBoxesHero from "@/assets/automotive-boxes-hero.webp";
+import automotiveBoxesHero from "@/assets/automotive-products/Automotive Boxes hero.webp";
 
 // Import professional product images
 import carAccessoriesBoxes from "@/assets/automotive-products/car-accessories-boxes.webp";

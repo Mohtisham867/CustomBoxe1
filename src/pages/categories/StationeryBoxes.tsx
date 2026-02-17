@@ -17,9 +17,9 @@ import { Link } from "react-router-dom";
 import heroImage from "@/assets/stationery-boxes/stationery-boxes-hero.webp";
 
 // Product images
-import businessCards from "@/assets/stationery-boxes/custom-business-cards.webp";
-import documentFolder from "@/assets/stationery-boxes/document-folder.webp";
-import penGiftBoxes from "@/assets/stationery-boxes/pen-gift-boxes.webp";
+import businessCards from "@/assets/stationery-boxes/custom-business-cards.png";
+import documentFolder from "@/assets/stationery-boxes/Document Folder.png";
+import penGiftBoxes from "@/assets/stationery-boxes/pen-gift-box.png";
 import mailingEnvelopes from "@/assets/stationery-boxes/mailing-envelopes.webp";
 import invitationBoxes from "@/assets/stationery-boxes/invitation-boxes.webp";
 import markerBoxes from "@/assets/stationery-boxes/marker-boxes.webp";
@@ -28,7 +28,7 @@ import cardboardPencilBoxes from "@/assets/stationery-boxes/cardboard-pencil-box
 import packagingInserts from "@/assets/stationery-boxes/packaging-inserts.webp";
 import pencilBoxes from "@/assets/stationery-boxes/pencil-boxes.webp";
 import customBookmarks from "@/assets/stationery-boxes/custom-bookmarks.webp";
-import bookBoxes from "@/assets/stationery-boxes/book-boxes.webp";
+import bookBoxes from "@/assets/stationery-boxes/Book Box.png";
 import { SEOContent } from "@/components/SEOContent";
 
 const relatedProducts = [
