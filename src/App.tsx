@@ -11,6 +11,10 @@ import ShapesStyles from "./pages/ShapesStyles";
 import PrimaryPackaging from "./pages/PrimaryPackaging";
 import PackagingHub from "./pages/PackagingHub";
 import ApparelBoxes from "./pages/categories/ApparelBoxes";
+import CustomShoeBoxes from "./pages/industry-pages/apparel-boxes/CustomShoeBoxes";
+import TieBoxes from "./pages/industry-pages/apparel-boxes/TieBoxes";
+import BeltBoxes from "./pages/industry-pages/apparel-boxes/BeltBoxes";
+import CufflinkBoxes from "./pages/industry-pages/apparel-boxes/CufflinkBoxes";
 import AutomotiveBoxes from "./pages/categories/AutomotiveBoxes";
 import BakeryBoxes from "./pages/categories/BakeryBoxes";
 import BeverageBoxes from "./pages/categories/BeverageBoxes";
@@ -103,6 +107,11 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/industries/apparel-boxes" element={<ApparelBoxes />} />
+          <Route path="/categories/apparel-boxes" element={<ApparelBoxes />} />
+          <Route path="/apparel-boxes/custom-shoe-boxes" element={<CustomShoeBoxes />} />
+          <Route path="/apparel-boxes/tie-boxes" element={<TieBoxes />} />
+          <Route path="/apparel-boxes/belt-boxes" element={<BeltBoxes />} />
+          <Route path="/apparel-boxes/cufflink-boxes" element={<CufflinkBoxes />} />
           <Route path="/industries/automotive-boxes" element={<AutomotiveBoxes />} />
           <Route path="/industries/bakery-boxes" element={<BakeryBoxes />} />
           <Route path="/industries/beverage-boxes" element={<BeverageBoxes />} />
